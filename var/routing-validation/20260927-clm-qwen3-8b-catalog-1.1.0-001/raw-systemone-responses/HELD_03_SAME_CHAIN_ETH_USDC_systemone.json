@@ -1,0 +1,11 @@
+{
+  "scenario_id": "HELD_03_SAME_CHAIN_ETH_USDC",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "CONTINUE_SAME_CHAIN": 0.01087247139474998,
+    "REQUEST_HUMAN_REVIEW": 0.4263096650987386,
+    "GENERATE_EVIDENCE_REPORT": 0.5628178635065115
+  },
+  "input_hash": "08416fd7d44f039541d51ac59a1cf5a97f4b087b640f504d03d35728ccdd5c81"
+}

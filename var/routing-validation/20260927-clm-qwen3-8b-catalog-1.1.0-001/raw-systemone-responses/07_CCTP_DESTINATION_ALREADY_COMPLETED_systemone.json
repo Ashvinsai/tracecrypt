@@ -1,0 +1,10 @@
+{
+  "scenario_id": "07_CCTP_DESTINATION_ALREADY_COMPLETED",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.33960300515414793,
+    "GENERATE_EVIDENCE_REPORT": 0.660396994845852
+  },
+  "input_hash": "ebf350ed51d6f2f2fee3d8a918593ec3e0eb3b3b0b1eec574bcbd4459ae2c033"
+}

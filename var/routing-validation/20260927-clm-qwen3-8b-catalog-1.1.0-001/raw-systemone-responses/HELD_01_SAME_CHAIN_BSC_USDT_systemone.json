@@ -1,0 +1,11 @@
+{
+  "scenario_id": "HELD_01_SAME_CHAIN_BSC_USDT",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "CONTINUE_SAME_CHAIN": 0.006893066685305117,
+    "REQUEST_HUMAN_REVIEW": 0.30100401141975,
+    "GENERATE_EVIDENCE_REPORT": 0.6921029218949449
+  },
+  "input_hash": "bd6b62948fce760aafe08ec650943f457299e32bb366c2442350abf6408001be"
+}

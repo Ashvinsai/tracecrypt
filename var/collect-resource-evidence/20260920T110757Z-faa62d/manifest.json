@@ -1,0 +1,61 @@
+{
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that a provider, funder, or counterparty shares ownership with the candidate.",
+  "configuration": {
+    "data_mode": "LIVE",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "delegated_resource_errors": [],
+  "delegation_index_error": null,
+  "files": {
+    "evidence.json": "4bf46fb81868350bb4700fbc4f421eada70776ec137800b2fe3a6c1bfb0d6fda",
+    "raw/0001-post-wallet-getdelegatedresourceaccountindexv2.json": "9813c64f3f996bdea7f669f011c2a2cf402c616012411d5779be005fc9b922bc",
+    "raw/0002-post-wallet-getdelegatedresourcev2.json": "434623879e6688c0ca6d1d3b5f0fd4a2ad8f5bffb9df1ee7b3c630a3d73e0258",
+    "raw/0003-post-wallet-getdelegatedresourcev2.json": "83b4ddc283997044d2ad4080dcdfddec8a38fb24b72519dda3e3ca739c534969",
+    "raw/0004-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "a976a7707f3f0188238ae4101ed53831b6f6e05a79c66d6cb573be68bae4403f",
+    "raw/0005-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "5e56f64b816cb9d4a105df719ac9c48d9e97a998d648a7514d24b3c045ec05e1",
+    "raw/0006-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "46f12f3486d82cf692e7c852ca721aae22fb82e010044aeaac67727c7e64052f",
+    "raw/0007-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "ff15192334b35bc871c79e4d965cc4a7683e600f56681975d588ef8a138e3e2a",
+    "raw/0008-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "714e36aa94726a3ce64025db885409bb7e135074f449c93bb83450668b84edb2",
+    "raw/0009-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "b3d137a1e0843f0a777c4bcc5a3b88d18a15bbcf610b1337a18e7e0c324ad2d0",
+    "raw/0010-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "1e7d20dd7d4ed8a233066141f8d4096dfab22ea44976a8b970154fc0fd7423eb",
+    "raw/0011-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "6ca7f4293ef6586917ee5756d217afde8f894143b208e2a071e2138359209b7f",
+    "raw/0012-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "a2bbc5874f570af4e60aa5219e00bdcbe377fb416b92b4918cf317ca5d335ec0",
+    "raw/0013-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "9cafd1bd88a0170c5db90cdb594875c4ad6bc68d688a3f42f879342383852a6c",
+    "raw/0014-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "2a3957a6488017edb619ec0849bc9daeb006490019edaeff3a4c2cccb9184418",
+    "raw/0015-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "252803696c0c4468e0ecce82ab658b76ddfd7573558d5373f30f7deb34440f80",
+    "raw/0016-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "1e49086c1dd192e7fe636cf9deaad62b780a543062bfaf342ab4ab30c850bd3f",
+    "raw/0017-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "4bb3c98de60274a5e7850f8bc953f0776681cd4c6f0e53fbb4b7e8a965eaceb3",
+    "raw/0018-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "45b86f0ae8fa2e702f071d73ef265eed9197ef065c55a87b54acffed599197d5",
+    "raw/0019-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "077bc3d1faeda401a7c00b1bd7562c1b8fa82193bb768ed8153ec4d84f1db593",
+    "raw/0020-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions.json": "86104976cd14f8a8241e300b5c838c205db0e909e871dafb25a57400ebb24652"
+  },
+  "history_scan_error": null,
+  "provenance": {
+    "artifact_created_at": "2026-09-20T11:08:20.087982+00:00",
+    "backfilled": false,
+    "run_finished_at": "2026-09-20T11:08:20.083190+00:00",
+    "run_started_at": "2026-09-20T11:07:57.008717+00:00"
+  },
+  "query": {
+    "analysis_cutoff": "2026-08-10T16:59:54+00:00",
+    "analysis_start": "2026-08-10T13:59:54+00:00",
+    "candidate_address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "funder_limit": 10,
+    "max_requests": 20,
+    "network": "tron",
+    "provider_limit": 10
+  },
+  "relationship_counts": {
+    "resource_delegation": 14,
+    "token_transfer": 1,
+    "trx_funding": 0
+  },
+  "requests_used": 20,
+  "rows_found": 15,
+  "run_id": "20260920T110757Z-faa62d",
+  "truncated_by_funder_limit": false,
+  "truncated_by_provider_limit": true,
+  "truncated_by_request_budget": true,
+  "written": true
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cross-Chain Attribution Report — Circle CCTP V2</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; color: #1f2937; margin: 40px auto; max-width: 900px; padding: 0 20px; }
+  h1 { border-bottom: 2px solid #e5e7eb; padding-bottom: 12px; font-size: 24px; }
+  h2 { margin-top: 30px; font-size: 18px; color: #374151; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+  th, td { padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 14px; }
+  th { background-color: #f9fafb; font-weight: 600; width: 32%; }
+  .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-weight: 600; font-size: 12px; }
+  .badge-complete { background-color: #def7ec; color: #03543f; }
+  .code { font-family: monospace; font-size: 13px; word-break: break-all; }
+</style>
+</head>
+<body>
+<h1>Cross-Chain Fraud Attribution — Circle CCTP V2 Validation</h1>
+<p>
+  <strong>Linkage Status:</strong> <span class="badge badge-complete">COMPLETE</span><br>
+  <strong>Protocol:</strong> circle_cctp (generation 2)<br>
+  <strong>Route:</strong> Ethereum Mainnet (Domain 0) &rarr; Base Mainnet (Domain 6)<br>
+  <strong>Asset:</strong> USDC (6 decimals)
+</p>
+
+<h2>1. Source Blockchain Evidence (Ethereum Mainnet)</h2>
+<table>
+  <tr><th>Transaction Hash</th><td class="code">0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed</td></tr>
+  <tr><th>Burn Amount</th><td>9391319 base units (9.391319 USDC)</td></tr>
+  <tr><th>Depositor / Sender</th><td class="code">0x38a1c011890bc95fd4b43b622e1432c859d097bc</td></tr>
+  <tr><th>Mint Recipient</th><td class="code">0x38a1c011890bc95fd4b43b622e1432c859d097bc</td></tr>
+  <tr><th>Consensus Finality</th><td>finalized</td></tr>
+</table>
+
+<h2>2. Circle Protocol & Iris Attestation Evidence</h2>
+<table>
+  <tr><th>Message Nonce</th><td class="code">0x03c1ce4cab19841c55bc11af0cd262e3fd5e20cf3a06ecb50c2874816fbb900d</td></tr>
+  <tr><th>Message Hash</th><td class="code">0x6ac97f8df13e97580ec6342fd29b075be5a3099db7eb3188c46e6c25f533710e</td></tr>
+  <tr><th>Iris API Status</th><td>API_REPORTED_COMPLETE</td></tr>
+  <tr><th>Attestation Length</th><td>130 bytes</td></tr>
+  <tr><th>Signature Blob Breakdown</th><td>2 signature blobs &times; 65 bytes</td></tr>
+  <tr><th>Cryptographic Verification</th><td>False (API status: API_REPORTED_COMPLETE; destination consensus execution verified)</td></tr>
+  <tr><th>Message Header Version</th><td>1</td></tr>
+  <tr><th>Burn Message Version</th><td>1</td></tr>
+</table>
+
+<h2>3. Destination Blockchain Evidence (Base Mainnet)</h2>
+<table>
+  <tr><th>Discovery Method</th><td>Bounded eth_getLogs scan (blocks 51826900..51826935, 8 requests, 1 candidate event examined)</td></tr>
+  <tr><th>Discovered Tx Hash</th><td class="code">0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421</td></tr>
+  <tr><th>Receipt Status</th><td>0x1 (Success)</td></tr>
+  <tr><th>Observed Mint Amount</th><td>9391319 base units (9.391319 USDC)</td></tr>
+  <tr><th>Amount Reconciliation</th><td>MATCHES_PROTOCOL_EXPECTATION</td></tr>
+  <tr><th>Destination Finality</th><td>finalized</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,874 @@
+{
+  "acquisitions": [],
+  "branch_endings": [
+    {
+      "address": "0x7d4e22a6abbfe86f730b179d2b934c0981712f45",
+      "arrival_event_reference": "eip155:1:0xa2ce105a44426313c70819403c58b7427c50ceea8f818697a67147b593b8b17b:40",
+      "attribution_status": "unresolved",
+      "boundary_reason": "no_outgoing_activity",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xa2ce105a44426313c70819403c58b7427c50ceea8f818697a67147b593b8b17b:40"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "unresolved",
+      "hop_depth": 1,
+      "label": null,
+      "note": "No further observed transfer of this asset from this address within the analysed scope. An asset change, bridge, privacy mechanism, or opaque contract would also look like this; no continuation is assumed.",
+      "observed_amount_base_units": "28108401",
+      "observed_amount_display": "28.108401"
+    },
+    {
+      "address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "arrival_event_reference": "eip155:1:0xa16fc0b5236f0d3f4d7711fc2b3ac5d9c20e2f6277aff003cbf44fa005a76707:865",
+      "attribution_status": "unresolved",
+      "boundary_reason": null,
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xa16fc0b5236f0d3f4d7711fc2b3ac5d9c20e2f6277aff003cbf44fa005a76707:865"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "unresolved",
+      "hop_depth": 1,
+      "label": null,
+      "note": "Branch reconverged onto an already-explored path at eip155:1:0x1f05c93b1aac2601c1af9dcf8799bc1948b72c8b45d79ba361be8a7e1bf99714:29. The onward transfers are recorded once, on that path.",
+      "observed_amount_base_units": "2841642601",
+      "observed_amount_display": "2841.642601"
+    },
+    {
+      "address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "arrival_event_reference": "eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:11",
+      "attribution_status": "unresolved",
+      "boundary_reason": "no_outgoing_activity",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:11"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "unresolved",
+      "hop_depth": 1,
+      "label": null,
+      "note": "No further observed transfer of this asset from this address within the analysed scope. An asset change, bridge, privacy mechanism, or opaque contract would also look like this; no continuation is assumed.",
+      "observed_amount_base_units": "1389381678",
+      "observed_amount_display": "1389.381678"
+    },
+    {
+      "address": "0x7d4e22a6abbfe86f730b179d2b934c0981712f45",
+      "arrival_event_reference": "eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:14",
+      "attribution_status": "unresolved",
+      "boundary_reason": "no_outgoing_activity",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:14"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "unresolved",
+      "hop_depth": 1,
+      "label": null,
+      "note": "No further observed transfer of this asset from this address within the analysed scope. An asset change, bridge, privacy mechanism, or opaque contract would also look like this; no continuation is assumed.",
+      "observed_amount_base_units": "23227902",
+      "observed_amount_display": "23.227902"
+    },
+    {
+      "address": "0x8feab81d36e7576107d5de0758c1b839be31b4f6",
+      "arrival_event_reference": "eip155:1:0xe9f1b422628e93173e31f5a5de61f1875fbf80d28aae24604a134f76ddfc052a:627",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0xe9f1b422628e93173e31f5a5de61f1875fbf80d28aae24604a134f76ddfc052a:627"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "13006532",
+      "observed_amount_display": "13.006532"
+    },
+    {
+      "address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+      "arrival_event_reference": "eip155:1:0xa9288fbef1194ce996c4c69f2af536006212350f2e7b06227baead41e6ca93e5:265",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0xa9288fbef1194ce996c4c69f2af536006212350f2e7b06227baead41e6ca93e5:265"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "259923684",
+      "observed_amount_display": "259.923684"
+    },
+    {
+      "address": "0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02",
+      "arrival_event_reference": "eip155:1:0x1b561f223b294c7b6ae751d2e01e03fdccdb979fb3bf1902cc9ecdd7639b0c5d:115",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x1b561f223b294c7b6ae751d2e01e03fdccdb979fb3bf1902cc9ecdd7639b0c5d:115"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "5110098",
+      "observed_amount_display": "5.110098"
+    },
+    {
+      "address": "0xae3921825fec520cada98eb0790bc91a61d4286b",
+      "arrival_event_reference": "eip155:1:0x155684319195ba96871643c69aef1b4120649e8f412c2fff2c05eed7e60875cc:405",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x155684319195ba96871643c69aef1b4120649e8f412c2fff2c05eed7e60875cc:405"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "8749442",
+      "observed_amount_display": "8.749442"
+    },
+    {
+      "address": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+      "arrival_event_reference": "eip155:1:0xb6b1662ff0f6379eff3160cbb33ab680d166ee7ed78ef039707840606d1d3f32:381",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0xb6b1662ff0f6379eff3160cbb33ab680d166ee7ed78ef039707840606d1d3f32:381"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "5972616",
+      "observed_amount_display": "5.972616"
+    },
+    {
+      "address": "0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02",
+      "arrival_event_reference": "eip155:1:0xc2493c87453e075cb6e09c53b5b59ffc53025b4f959aad00960332de86eb641d:58",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0xc2493c87453e075cb6e09c53b5b59ffc53025b4f959aad00960332de86eb641d:58"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "4841413",
+      "observed_amount_display": "4.841413"
+    },
+    {
+      "address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+      "arrival_event_reference": "eip155:1:0x89544e34914b8ffeba49ff4bbe500c32165c87fa2339b6ffe255d6dbb0a509f6:53",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x89544e34914b8ffeba49ff4bbe500c32165c87fa2339b6ffe255d6dbb0a509f6:53"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "636536503",
+      "observed_amount_display": "636.536503"
+    },
+    {
+      "address": "0x4c82d1fbfe28c977cbb58d8c7ff8fcf9f70a2cca",
+      "arrival_event_reference": "eip155:1:0x2e05caf8d5ab3577baae5d74b2795e7384e7f58bdfa7c6520a686f140823fcbe:965",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x2e05caf8d5ab3577baae5d74b2795e7384e7f58bdfa7c6520a686f140823fcbe:965"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "299989149",
+      "observed_amount_display": "299.989149"
+    },
+    {
+      "address": "0x00000000f7952bd96dfa8c26e401df929a30b1ad",
+      "arrival_event_reference": "eip155:1:0xd80c6e3b61bd5786c6724ac8562e5be804faad82a266014065e5aacd091231ce:159",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0xd80c6e3b61bd5786c6724ac8562e5be804faad82a266014065e5aacd091231ce:159"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "2598811",
+      "observed_amount_display": "2.598811"
+    },
+    {
+      "address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+      "arrival_event_reference": "eip155:1:0xcaff23cedf4a948d195967db4e10bb1aa6bc5e2341e5dfa46b71d40ebdad6d5c:226",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0xcaff23cedf4a948d195967db4e10bb1aa6bc5e2341e5dfa46b71d40ebdad6d5c:226"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "580493154",
+      "observed_amount_display": "580.493154"
+    },
+    {
+      "address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+      "arrival_event_reference": "eip155:1:0x197895b9b88314913d03897da9b9590c1b407b6e592853d94fb75ac46ddf9cb0:478",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x197895b9b88314913d03897da9b9590c1b407b6e592853d94fb75ac46ddf9cb0:478"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "803333264",
+      "observed_amount_display": "803.333264"
+    },
+    {
+      "address": "0x23617e59a5925b2a4bf75d73ff6711cd0b29de85",
+      "arrival_event_reference": "eip155:1:0x60a36dd42f390b26aa2be740060a59bfdf107353948c25f94fe9e658e86333f8:656",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x60a36dd42f390b26aa2be740060a59bfdf107353948c25f94fe9e658e86333f8:656"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "213290621",
+      "observed_amount_display": "213.290621"
+    },
+    {
+      "address": "0x410144dec85bb1929057829d54fb3b8d3f0ea4a3",
+      "arrival_event_reference": "eip155:1:0x218158e52e6fef9b4851e6e72f661c4263fab639b9ebcb0a304b19676371a1db:0",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x218158e52e6fef9b4851e6e72f661c4263fab639b9ebcb0a304b19676371a1db:0"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "24029899987",
+      "observed_amount_display": "24029.899987"
+    },
+    {
+      "address": "0x720cf4927e79956c8b6cdf164e88b75442e22fe8",
+      "arrival_event_reference": "eip155:1:0xf84e60bc33325a18908c1145d16d739839b30297aeea77972c523443096fcef9:8",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0xf84e60bc33325a18908c1145d16d739839b30297aeea77972c523443096fcef9:8"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "4089339657",
+      "observed_amount_display": "4089.339657"
+    },
+    {
+      "address": "0x410144dec85bb1929057829d54fb3b8d3f0ea4a3",
+      "arrival_event_reference": "eip155:1:0x40e878f9301619c2f332e307df7e9b351a1015b135688f16162b1387c8c9b3ae:21",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x40e878f9301619c2f332e307df7e9b351a1015b135688f16162b1387c8c9b3ae:21"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "665683699",
+      "observed_amount_display": "665.683699"
+    },
+    {
+      "address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+      "arrival_event_reference": "eip155:1:0x1f05c93b1aac2601c1af9dcf8799bc1948b72c8b45d79ba361be8a7e1bf99714:29",
+      "attribution_status": "unresolved",
+      "boundary_reason": "hop_limit",
+      "branch_path": [
+        "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+        "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+        "eip155:1:0x1f05c93b1aac2601c1af9dcf8799bc1948b72c8b45d79ba361be8a7e1bf99714:29"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "boundary",
+      "hop_depth": 2,
+      "label": null,
+      "note": null,
+      "observed_amount_base_units": "1391983681",
+      "observed_amount_display": "1391.983681"
+    }
+  ],
+  "budget_use": {
+    "elapsed_seconds": 10.167,
+    "event_limit": 5000,
+    "events_examined": 26,
+    "hop_limit": 2,
+    "hops_used": 2,
+    "note": "budgets are configuration targets, not measured performance",
+    "traversal_request_limit": 400,
+    "traversal_requests": 6,
+    "wall_clock_limit_seconds": 300
+  },
+  "disclaimer": "An observed path establishes a sequence of transfers, not ownership of fungible units. Case-associated amounts default to allocation_unknown. This output does not identify a person, establish guilt, or authorise a freeze.",
+  "limitations": [
+    {
+      "address": null,
+      "code": "allocation_unknown",
+      "event_reference": null,
+      "message": "The observed amount is the transfer's own value, not an allocation to any specific case or claimant. An observed path is a sequence of transfers, not ownership of fungible units."
+    },
+    {
+      "address": null,
+      "code": "bounded_analysis_window",
+      "event_reference": null,
+      "message": "Analysed 2026-09-26T14:58:11+00:00 to 2026-09-26T15:08:11+00:00 only -- not the account's full history before or after it."
+    },
+    {
+      "address": null,
+      "code": "single_validation_case",
+      "event_reference": null,
+      "message": "One public-chain validation case, chosen to demonstrate the pipeline end to end. Not a general coverage claim about this address, this entity, or TRON activity broadly."
+    }
+  ],
+  "observed_transfers": [
+    {
+      "acquisition_id": null,
+      "amount_base_units": "673713920",
+      "amount_display": "673.713920",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:03:59+00:00",
+      "chain_sequence": "000026062400:000026:000096",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96",
+      "execution_status": "success",
+      "from_address": "0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+      "hop_depth": 1,
+      "ordering_ambiguous": false,
+      "to_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "tx_hash": "0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "28108401",
+      "amount_display": "28.108401",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:04:47+00:00",
+      "chain_sequence": "000026062404:000002:000040",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xa2ce105a44426313c70819403c58b7427c50ceea8f818697a67147b593b8b17b:40",
+      "execution_status": "success",
+      "from_address": "0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+      "hop_depth": 1,
+      "ordering_ambiguous": false,
+      "to_address": "0x7d4e22a6abbfe86f730b179d2b934c0981712f45",
+      "tx_hash": "0xa2ce105a44426313c70819403c58b7427c50ceea8f818697a67147b593b8b17b"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "2841642601",
+      "amount_display": "2841.642601",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:07:47+00:00",
+      "chain_sequence": "000026062419:000240:000865",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xa16fc0b5236f0d3f4d7711fc2b3ac5d9c20e2f6277aff003cbf44fa005a76707:865",
+      "execution_status": "success",
+      "from_address": "0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+      "hop_depth": 1,
+      "ordering_ambiguous": false,
+      "to_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "tx_hash": "0xa16fc0b5236f0d3f4d7711fc2b3ac5d9c20e2f6277aff003cbf44fa005a76707"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "1389381678",
+      "amount_display": "1389.381678",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:08:11+00:00",
+      "chain_sequence": "000026062421:000000:000011",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:11",
+      "execution_status": "success",
+      "from_address": "0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+      "hop_depth": 1,
+      "ordering_ambiguous": false,
+      "to_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "tx_hash": "0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "23227902",
+      "amount_display": "23.227902",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:08:11+00:00",
+      "chain_sequence": "000026062421:000000:000014",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:14",
+      "execution_status": "success",
+      "from_address": "0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+      "hop_depth": 1,
+      "ordering_ambiguous": false,
+      "to_address": "0x7d4e22a6abbfe86f730b179d2b934c0981712f45",
+      "tx_hash": "0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "13006532",
+      "amount_display": "13.006532",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:04:47+00:00",
+      "chain_sequence": "000026062404:000071:000627",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xe9f1b422628e93173e31f5a5de61f1875fbf80d28aae24604a134f76ddfc052a:627",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x8feab81d36e7576107d5de0758c1b839be31b4f6",
+      "tx_hash": "0xe9f1b422628e93173e31f5a5de61f1875fbf80d28aae24604a134f76ddfc052a"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "259923684",
+      "amount_display": "259.923684",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:04:59+00:00",
+      "chain_sequence": "000026062405:000032:000265",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xa9288fbef1194ce996c4c69f2af536006212350f2e7b06227baead41e6ca93e5:265",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+      "tx_hash": "0xa9288fbef1194ce996c4c69f2af536006212350f2e7b06227baead41e6ca93e5"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "5110098",
+      "amount_display": "5.110098",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:05:11+00:00",
+      "chain_sequence": "000026062406:000014:000115",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x1b561f223b294c7b6ae751d2e01e03fdccdb979fb3bf1902cc9ecdd7639b0c5d:115",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02",
+      "tx_hash": "0x1b561f223b294c7b6ae751d2e01e03fdccdb979fb3bf1902cc9ecdd7639b0c5d"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "8749442",
+      "amount_display": "8.749442",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:05:11+00:00",
+      "chain_sequence": "000026062406:000122:000405",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x155684319195ba96871643c69aef1b4120649e8f412c2fff2c05eed7e60875cc:405",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0xae3921825fec520cada98eb0790bc91a61d4286b",
+      "tx_hash": "0x155684319195ba96871643c69aef1b4120649e8f412c2fff2c05eed7e60875cc"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "5972616",
+      "amount_display": "5.972616",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:05:23+00:00",
+      "chain_sequence": "000026062407:000042:000381",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xb6b1662ff0f6379eff3160cbb33ab680d166ee7ed78ef039707840606d1d3f32:381",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+      "tx_hash": "0xb6b1662ff0f6379eff3160cbb33ab680d166ee7ed78ef039707840606d1d3f32"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "4841413",
+      "amount_display": "4.841413",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:05:35+00:00",
+      "chain_sequence": "000026062408:000059:000058",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xc2493c87453e075cb6e09c53b5b59ffc53025b4f959aad00960332de86eb641d:58",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02",
+      "tx_hash": "0xc2493c87453e075cb6e09c53b5b59ffc53025b4f959aad00960332de86eb641d"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "636536503",
+      "amount_display": "636.536503",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:05:47+00:00",
+      "chain_sequence": "000026062409:000017:000053",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x89544e34914b8ffeba49ff4bbe500c32165c87fa2339b6ffe255d6dbb0a509f6:53",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+      "tx_hash": "0x89544e34914b8ffeba49ff4bbe500c32165c87fa2339b6ffe255d6dbb0a509f6"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "299989149",
+      "amount_display": "299.989149",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:05:47+00:00",
+      "chain_sequence": "000026062409:000157:000965",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x2e05caf8d5ab3577baae5d74b2795e7384e7f58bdfa7c6520a686f140823fcbe:965",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x4c82d1fbfe28c977cbb58d8c7ff8fcf9f70a2cca",
+      "tx_hash": "0x2e05caf8d5ab3577baae5d74b2795e7384e7f58bdfa7c6520a686f140823fcbe"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "2598811",
+      "amount_display": "2.598811",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:06:35+00:00",
+      "chain_sequence": "000026062413:000011:000159",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xd80c6e3b61bd5786c6724ac8562e5be804faad82a266014065e5aacd091231ce:159",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x00000000f7952bd96dfa8c26e401df929a30b1ad",
+      "tx_hash": "0xd80c6e3b61bd5786c6724ac8562e5be804faad82a266014065e5aacd091231ce"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "580493154",
+      "amount_display": "580.493154",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:06:35+00:00",
+      "chain_sequence": "000026062413:000026:000226",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xcaff23cedf4a948d195967db4e10bb1aa6bc5e2341e5dfa46b71d40ebdad6d5c:226",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+      "tx_hash": "0xcaff23cedf4a948d195967db4e10bb1aa6bc5e2341e5dfa46b71d40ebdad6d5c"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "803333264",
+      "amount_display": "803.333264",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:06:47+00:00",
+      "chain_sequence": "000026062414:000104:000478",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x197895b9b88314913d03897da9b9590c1b407b6e592853d94fb75ac46ddf9cb0:478",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x666fedd4cdd4e890a5ad20e7b60975409435a64a",
+      "tx_hash": "0x197895b9b88314913d03897da9b9590c1b407b6e592853d94fb75ac46ddf9cb0"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "213290621",
+      "amount_display": "213.290621",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:06:47+00:00",
+      "chain_sequence": "000026062414:000165:000656",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x60a36dd42f390b26aa2be740060a59bfdf107353948c25f94fe9e658e86333f8:656",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x23617e59a5925b2a4bf75d73ff6711cd0b29de85",
+      "tx_hash": "0x60a36dd42f390b26aa2be740060a59bfdf107353948c25f94fe9e658e86333f8"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "24029899987",
+      "amount_display": "24029.899987",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:07:47+00:00",
+      "chain_sequence": "000026062419:000001:000000",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x218158e52e6fef9b4851e6e72f661c4263fab639b9ebcb0a304b19676371a1db:0",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x410144dec85bb1929057829d54fb3b8d3f0ea4a3",
+      "tx_hash": "0x218158e52e6fef9b4851e6e72f661c4263fab639b9ebcb0a304b19676371a1db"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "4089339657",
+      "amount_display": "4089.339657",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:07:47+00:00",
+      "chain_sequence": "000026062419:000002:000008",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0xf84e60bc33325a18908c1145d16d739839b30297aeea77972c523443096fcef9:8",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x720cf4927e79956c8b6cdf164e88b75442e22fe8",
+      "tx_hash": "0xf84e60bc33325a18908c1145d16d739839b30297aeea77972c523443096fcef9"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "665683699",
+      "amount_display": "665.683699",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:07:47+00:00",
+      "chain_sequence": "000026062419:000003:000021",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x40e878f9301619c2f332e307df7e9b351a1015b135688f16162b1387c8c9b3ae:21",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0x410144dec85bb1929057829d54fb3b8d3f0ea4a3",
+      "tx_hash": "0x40e878f9301619c2f332e307df7e9b351a1015b135688f16162b1387c8c9b3ae"
+    },
+    {
+      "acquisition_id": null,
+      "amount_base_units": "1391983681",
+      "amount_display": "1391.983681",
+      "asset": {
+        "decimals": 6,
+        "display_symbol": "USDT",
+        "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "block_time": "2026-09-26T15:07:59+00:00",
+      "chain_sequence": "000026062420:000005:000029",
+      "confirmation_state": "confirmed",
+      "event_reference": "eip155:1:0x1f05c93b1aac2601c1af9dcf8799bc1948b72c8b45d79ba361be8a7e1bf99714:29",
+      "execution_status": "success",
+      "from_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "hop_depth": 2,
+      "ordering_ambiguous": false,
+      "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+      "tx_hash": "0x1f05c93b1aac2601c1af9dcf8799bc1948b72c8b45d79ba361be8a7e1bf99714"
+    }
+  ],
+  "scope": {
+    "analysis_cutoff": "2026-09-26T15:08:11+00:00",
+    "case_flow_linkage": "established",
+    "coverage_status": "partial",
+    "data_mode": "LIVE",
+    "engine_version": "0.1.0",
+    "finished_at": "2026-09-26T16:21:36.288802+00:00",
+    "label_set_version": "0",
+    "label_snapshot": {
+      "accepted_service_claims": 2,
+      "claims_loaded": 3,
+      "files": [
+        {
+          "name": "verified_anchors.csv",
+          "rows_loaded": 2,
+          "rows_withdrawn": 0,
+          "sha256": "c2018baa8f2ea17873877375c66a0ede0ed0e61a3ba920deec7f3968ef4644a9"
+        },
+        {
+          "name": "deposit_candidates.csv",
+          "rows_loaded": 1,
+          "rows_withdrawn": 0,
+          "sha256": "d133e906be0c66ee184a47983764c64869624d92faa9c6a606a931d9563bb3dd"
+        }
+      ],
+      "source": "reviewed_sets"
+    },
+    "started_at": "2026-09-26T16:21:26.121899+00:00"
+  },
+  "seed": {
+    "address": "0x4d68b530920d26c3b01c99fecc19e21011b72bbd",
+    "asset": {
+      "decimals": 6,
+      "display_symbol": "USDT",
+      "token_contract": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+    },
+    "event_reference": "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+    "network_key": "ethereum"
+  },
+  "seed_transfer": {
+    "acquisition_id": null,
+    "amount_base_units": "898228643",
+    "amount_display": "898.228643",
+    "asset": {
+      "decimals": 6,
+      "display_symbol": "USDT",
+      "token_contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    },
+    "block_time": "2026-09-26T15:03:11+00:00",
+    "chain_sequence": "000026062396:000014:000125",
+    "confirmation_state": "confirmed",
+    "event_reference": "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+    "execution_status": "success",
+    "from_address": "0x4d68b530920d26c3b01c99fecc19e21011b72bbd",
+    "hop_depth": 0,
+    "ordering_ambiguous": false,
+    "to_address": "0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+    "tx_hash": "0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0"
+  }
+}

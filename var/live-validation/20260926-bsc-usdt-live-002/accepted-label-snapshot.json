@@ -1,0 +1,22 @@
+{
+  "claims_used": [],
+  "registry": {
+    "accepted_service_claims": 2,
+    "claims_loaded": 3,
+    "files": [
+      {
+        "name": "verified_anchors.csv",
+        "rows_loaded": 2,
+        "rows_withdrawn": 0,
+        "sha256": "c2018baa8f2ea17873877375c66a0ede0ed0e61a3ba920deec7f3968ef4644a9"
+      },
+      {
+        "name": "deposit_candidates.csv",
+        "rows_loaded": 1,
+        "rows_withdrawn": 0,
+        "sha256": "d133e906be0c66ee184a47983764c64869624d92faa9c6a606a931d9563bb3dd"
+      }
+    ],
+    "source": "reviewed_sets"
+  }
+}

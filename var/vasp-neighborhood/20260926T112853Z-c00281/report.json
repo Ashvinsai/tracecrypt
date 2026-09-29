@@ -1,0 +1,37 @@
+{
+  "address_only_context": [],
+  "anchor": {
+    "address": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+    "assertion_type": "service_control",
+    "entity_name": "OKX",
+    "review_state": "accepted",
+    "source_hash": "28a548b0518a1dfdb778c9bb729239fa35589fefed0c7ff3570e6fd197f99a41",
+    "source_reference": "https://www.okx.com/proof-of-reserves/download",
+    "valid_from": "2026-08-10T15:59:54+00:00",
+    "valid_to": "2026-08-10T15:59:54+00:00"
+  },
+  "candidate_count": 0,
+  "candidates": [],
+  "coverage": {
+    "address_limit": 10,
+    "addresses_examined": 0,
+    "complete": true,
+    "limitations": [],
+    "max_requests": 5,
+    "page_limit": 2,
+    "pages_per_address": 0,
+    "pages_used": 1,
+    "requests_used": 1
+  },
+  "disclaimer": "This relationship is a candidate generated from observed transactions; it does not establish service ownership, address role, customer identity, common control, fraud, or unique fund ownership. Only an independently evidence-backed, human-reviewed service_control claim can establish that.",
+  "excluded_observation_count": 0,
+  "limitations": [],
+  "network": "tron",
+  "observation_window": {
+    "end": "2026-08-10T16:00:24+00:00",
+    "start": "2026-08-10T15:59:24+00:00"
+  },
+  "policy_version": "1",
+  "report_type": "vasp_candidate_neighborhood",
+  "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+}

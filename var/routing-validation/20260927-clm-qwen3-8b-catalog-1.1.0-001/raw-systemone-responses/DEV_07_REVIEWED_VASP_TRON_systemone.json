@@ -1,0 +1,10 @@
+{
+  "scenario_id": "DEV_07_REVIEWED_VASP_TRON",
+  "model": "clm-latest",
+  "choice": "REQUEST_HUMAN_REVIEW",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.5201011977411383,
+    "GENERATE_EVIDENCE_REPORT": 0.47989880225886167
+  },
+  "input_hash": "38b893a5ed388ee67d14fe8f11a0199add665babf91894b8d9ec7d17a3c26bf6"
+}

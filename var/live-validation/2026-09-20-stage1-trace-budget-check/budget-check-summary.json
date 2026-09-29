@@ -1,0 +1,24 @@
+{
+  "purpose": "Check whether the real validate_live.py LIVE trace, seeded at the sender address, could reach the verified target transaction within the authorized 10-request budget for this step. _find_seed_event has no request-budget awareness and the adapter has no min_timestamp parameter reachable from the CLI, so it walks the sender's ENTIRE outgoing USDT history from account genesis, ascending, enriching (one extra request) every distinct transaction on every page, until the target event_reference is found or the cutoff is exceeded.",
+  "sender": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+  "query_params": {
+    "only_from": "true",
+    "only_confirmed": "true",
+    "contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "max_timestamp": 1786377595000,
+    "limit": 200,
+    "order_by": "block_timestamp,asc"
+  },
+  "rows_returned_page_1": 200,
+  "distinct_tx_hashes_page_1": 200,
+  "earliest_block_timestamp_ms": 1786346856000,
+  "latest_block_timestamp_ms_on_this_page": 1786353717000,
+  "target_tx_present_on_page_1": false,
+  "next_cursor_present": true,
+  "target_block_timestamp_ms": 1786377594000,
+  "observed_rate_seconds_per_tx": 34.3,
+  "estimated_additional_seconds_to_target": 23877.0,
+  "estimated_additional_pages_needed": 3.5,
+  "estimated_additional_transactions_at_observed_rate": 696,
+  "note_on_estimate": "This is a rough extrapolation from page 1's observed rate, not a precise count -- the true page count could differ if this address's activity rate is not uniform. It is offered only to show the order of magnitude (several hundred more transactions, each requiring its own enrichment request under the live run's default settings), not as an exact figure."
+}

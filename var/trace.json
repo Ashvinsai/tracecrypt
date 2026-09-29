@@ -1,0 +1,356 @@
+{
+  "seed": {
+    "address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+    "event_reference": "tron:tx_seed_multi:0",
+    "network_key": "tron",
+    "asset": {
+      "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+      "display_symbol": "USDT-SYN",
+      "decimals": 6
+    }
+  },
+  "scope": {
+    "data_mode": "SYNTHETIC",
+    "analysis_cutoff": "2027-01-01T00:00:00+00:00",
+    "started_at": "2026-09-21T11:40:51.899445+00:00",
+    "finished_at": "2026-09-21T11:40:51.901084+00:00",
+    "engine_version": "0.1.0",
+    "label_set_version": "0",
+    "coverage_status": "complete_within_scope",
+    "case_flow_linkage": "established",
+    "label_snapshot": {
+      "source": "synthetic_fixture",
+      "files": [
+        {
+          "name": "anchors.csv",
+          "sha256": "d93144366c2815496a8b29366c04685ff42c3c93fe15d44fe9fd29316f7bc52c",
+          "rows_loaded": 2,
+          "rows_withdrawn": 0
+        }
+      ],
+      "claims_loaded": 2,
+      "accepted_service_claims": 1
+    }
+  },
+  "seed_transfer": {
+    "event_reference": "tron:tx_seed_multi:0",
+    "tx_hash": "tx_seed_multi",
+    "from_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+    "to_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+    "amount_base_units": "100000000",
+    "amount_display": "100.000000",
+    "asset": {
+      "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+      "decimals": 6,
+      "display_symbol": "USDT-SYN"
+    },
+    "block_time": "2026-08-01T10:10:00+00:00",
+    "chain_sequence": "000071000010:000003:000000",
+    "ordering_ambiguous": false,
+    "execution_status": "success",
+    "confirmation_state": "confirmed",
+    "hop_depth": 0,
+    "acquisition_id": null
+  },
+  "observed_transfers": [
+    {
+      "event_reference": "tron:tx_ambiguous:unknown-index",
+      "tx_hash": "tx_ambiguous",
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "amount_base_units": "3000000",
+      "amount_display": "3.000000",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T10:20:00+00:00",
+      "chain_sequence": null,
+      "ordering_ambiguous": true,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 1,
+      "acquisition_id": null
+    },
+    {
+      "event_reference": "tron:tx_fan_a:0",
+      "tx_hash": "tx_fan_a",
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "THLEvxEkNUHb5bx3YsFDfePYjfYQEtAhJf",
+      "amount_base_units": "60000000",
+      "amount_display": "60.000000",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T10:20:00+00:00",
+      "chain_sequence": "000071000020:000001:000000",
+      "ordering_ambiguous": false,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 1,
+      "acquisition_id": null
+    },
+    {
+      "event_reference": "tron:tx_fan_b:0",
+      "tx_hash": "tx_fan_b",
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TLWMNpqoxFXwXUmVpdPHoYyjMEs2fEuxne",
+      "amount_base_units": "40000000",
+      "amount_display": "40.000000",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T10:20:00+00:00",
+      "chain_sequence": "000071000020:000002:000000",
+      "ordering_ambiguous": false,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 1,
+      "acquisition_id": null
+    },
+    {
+      "event_reference": "tron:tx_huge:0",
+      "tx_hash": "tx_huge",
+      "from_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "to_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "amount_base_units": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "amount_display": "115792089237316195423570985008687907853269984665640564039457584007913129.639935",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T11:20:00+00:00",
+      "chain_sequence": "000071000080:000001:000000",
+      "ordering_ambiguous": false,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 2,
+      "acquisition_id": null
+    },
+    {
+      "event_reference": "tron:tx_recon_a:0",
+      "tx_hash": "tx_recon_a",
+      "from_address": "THLEvxEkNUHb5bx3YsFDfePYjfYQEtAhJf",
+      "to_address": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+      "amount_base_units": "60000000",
+      "amount_display": "60.000000",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T10:30:00+00:00",
+      "chain_sequence": "000071000030:000001:000000",
+      "ordering_ambiguous": false,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 2,
+      "acquisition_id": null
+    },
+    {
+      "event_reference": "tron:tx_recon_b:0",
+      "tx_hash": "tx_recon_b",
+      "from_address": "TLWMNpqoxFXwXUmVpdPHoYyjMEs2fEuxne",
+      "to_address": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+      "amount_base_units": "40000000",
+      "amount_display": "40.000000",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T10:31:00+00:00",
+      "chain_sequence": "000071000031:000002:000000",
+      "ordering_ambiguous": false,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 2,
+      "acquisition_id": null
+    },
+    {
+      "event_reference": "tron:tx_to_candidate:0",
+      "tx_hash": "tx_to_candidate",
+      "from_address": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+      "to_address": "TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK",
+      "amount_base_units": "95000000",
+      "amount_display": "95.000000",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T10:40:00+00:00",
+      "chain_sequence": "000071000040:000001:000000",
+      "ordering_ambiguous": false,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 3,
+      "acquisition_id": null
+    },
+    {
+      "event_reference": "tron:tx_to_service:0",
+      "tx_hash": "tx_to_service",
+      "from_address": "TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK",
+      "to_address": "TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz",
+      "amount_base_units": "95000000",
+      "amount_display": "95.000000",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "block_time": "2026-08-01T10:50:00+00:00",
+      "chain_sequence": "000071000050:000001:000000",
+      "ordering_ambiguous": false,
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "hop_depth": 4,
+      "acquisition_id": null
+    }
+  ],
+  "branch_endings": [
+    {
+      "address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "endpoint_class": "unresolved",
+      "attribution_status": "unresolved",
+      "boundary_reason": "no_outgoing_activity",
+      "hop_depth": 2,
+      "branch_path": [
+        "tron:tx_seed_multi:0",
+        "tron:tx_ambiguous:unknown-index",
+        "tron:tx_huge:0"
+      ],
+      "arrival_event_reference": "tron:tx_huge:0",
+      "observed_amount_base_units": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "observed_amount_display": "115792089237316195423570985008687907853269984665640564039457584007913129.639935",
+      "case_amount_basis": "allocation_unknown",
+      "label": null,
+      "note": "No further observed transfer of this asset from this address within the analysed scope. An asset change, bridge, privacy mechanism, or opaque contract would also look like this; no continuation is assumed."
+    },
+    {
+      "address": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+      "endpoint_class": "unresolved",
+      "attribution_status": "unresolved",
+      "boundary_reason": null,
+      "hop_depth": 2,
+      "branch_path": [
+        "tron:tx_seed_multi:0",
+        "tron:tx_fan_b:0",
+        "tron:tx_recon_b:0"
+      ],
+      "arrival_event_reference": "tron:tx_recon_b:0",
+      "observed_amount_base_units": "40000000",
+      "observed_amount_display": "40.000000",
+      "case_amount_basis": "allocation_unknown",
+      "label": null,
+      "note": "Branch reconverged onto an already-explored path at tron:tx_to_candidate:0. The onward transfers are recorded once, on that path."
+    },
+    {
+      "address": "TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK",
+      "endpoint_class": "deposit_candidate",
+      "attribution_status": "candidate",
+      "boundary_reason": null,
+      "hop_depth": 3,
+      "branch_path": [
+        "tron:tx_seed_multi:0",
+        "tron:tx_fan_a:0",
+        "tron:tx_recon_a:0",
+        "tron:tx_to_candidate:0"
+      ],
+      "arrival_event_reference": "tron:tx_to_candidate:0",
+      "observed_amount_base_units": "95000000",
+      "observed_amount_display": "95.000000",
+      "case_amount_basis": "allocation_unknown",
+      "label": {
+        "entity_name": "Northwind Exchange (FICTIONAL)",
+        "entity_type": "exchange",
+        "assertion_type": "deposit_candidate",
+        "address_role": "deposit",
+        "review_state": "unreviewed",
+        "source_reference": "fixtures/tron_synthetic_case_alpha.json",
+        "retrieval_date": "2026-09-20T00:00:00+00:00",
+        "methodology": "Forwarding behaviour in the synthetic fixture only. A candidate, not an ownership claim; it does not terminate a trace.",
+        "reviewer": "synthetic fixture",
+        "valid_from": "2026-01-01T00:00:00+00:00",
+        "valid_to": null,
+        "last_verified_at": "2026-09-20T00:00:00+00:00",
+        "label_set_version": "synthetic-0",
+        "source_hash": null,
+        "source_file": null,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "label_source": null,
+        "original_reference": null,
+        "original_hash": null,
+        "original_member": null,
+        "original_row_locator": null,
+        "review_reference": null
+      },
+      "note": "Candidate only. Tracing continues; this is not a verified boundary."
+    },
+    {
+      "address": "TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz",
+      "endpoint_class": "known_service",
+      "attribution_status": "supported",
+      "boundary_reason": "service_boundary",
+      "hop_depth": 4,
+      "branch_path": [
+        "tron:tx_seed_multi:0",
+        "tron:tx_fan_a:0",
+        "tron:tx_recon_a:0",
+        "tron:tx_to_candidate:0",
+        "tron:tx_to_service:0"
+      ],
+      "arrival_event_reference": "tron:tx_to_service:0",
+      "observed_amount_base_units": "95000000",
+      "observed_amount_display": "95.000000",
+      "case_amount_basis": "allocation_unknown",
+      "label": {
+        "entity_name": "Northwind Exchange (FICTIONAL)",
+        "entity_type": "exchange",
+        "assertion_type": "service_control",
+        "address_role": "deposit",
+        "review_state": "accepted",
+        "source_reference": "fixtures/tron_synthetic_case_alpha.json",
+        "retrieval_date": "2026-09-20T00:00:00+00:00",
+        "methodology": "Invented for the synthetic demonstration fixture. This is not evidence about any real service and must never be imported into a production label set.",
+        "reviewer": "synthetic fixture",
+        "valid_from": "2026-01-01T00:00:00+00:00",
+        "valid_to": null,
+        "last_verified_at": "2026-09-20T00:00:00+00:00",
+        "label_set_version": "synthetic-0",
+        "source_hash": null,
+        "source_file": null,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "label_source": null,
+        "original_reference": null,
+        "original_hash": null,
+        "original_member": null,
+        "original_row_locator": null,
+        "review_reference": null
+      },
+      "note": null
+    }
+  ],
+  "limitations": [],
+  "budget_use": {
+    "hops_used": 4,
+    "events_examined": 15,
+    "traversal_requests": 8,
+    "elapsed_seconds": 0.002,
+    "hop_limit": 8,
+    "event_limit": 5000,
+    "traversal_request_limit": 400,
+    "wall_clock_limit_seconds": 300,
+    "note": "budgets are configuration targets, not measured performance"
+  },
+  "acquisitions": [],
+  "disclaimer": "An observed path establishes a sequence of transfers, not ownership of fungible units. Case-associated amounts default to allocation_unknown. This output does not identify a person, establish guilt, or authorise a freeze."
+}

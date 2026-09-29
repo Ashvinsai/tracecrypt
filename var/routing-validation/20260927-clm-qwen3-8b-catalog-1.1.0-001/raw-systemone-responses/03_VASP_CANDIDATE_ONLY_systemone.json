@@ -1,0 +1,11 @@
+{
+  "scenario_id": "03_VASP_CANDIDATE_ONLY",
+  "model": "clm-latest",
+  "choice": "REVIEW_VASP_CANDIDATE",
+  "probabilities": {
+    "REVIEW_VASP_CANDIDATE": 0.9944244161534888,
+    "REQUEST_HUMAN_REVIEW": 0.0025055210574984645,
+    "GENERATE_EVIDENCE_REPORT": 0.0030700627890127346
+  },
+  "input_hash": "aafddc7447b09341af586671be6045072a8f9c5e0eebff61e267e0757445453c"
+}

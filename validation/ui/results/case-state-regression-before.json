@@ -1,0 +1,185 @@
+{
+  "checks": [
+    {
+      "test": "SYNTHETIC test deployment; no live writes",
+      "pass": true
+    },
+    {
+      "test": "Overview opens by default",
+      "pass": true
+    },
+    {
+      "test": "Overview values come from actual selected evidence",
+      "pass": true
+    },
+    {
+      "test": "All graph links correspond to the API graph",
+      "pass": true
+    },
+    {
+      "test": "Dark theme updates its accessible control",
+      "pass": true
+    },
+    {
+      "test": "Light theme returns without replacing evidence",
+      "pass": true
+    },
+    {
+      "test": "Synthetic filter returns only synthetic evidence",
+      "pass": true
+    },
+    {
+      "test": "Recorded filter is separate from deployment mode",
+      "pass": true
+    },
+    {
+      "test": "View all expands the actual available library",
+      "pass": true
+    },
+    {
+      "test": "Command palette filters tools",
+      "pass": true
+    },
+    {
+      "test": "Keyboard command opens the intended workflow",
+      "pass": true
+    },
+    {
+      "test": "Signed-out private data is not shown",
+      "pass": true
+    },
+    {
+      "test": "Keyboard guide opens in a native dialog",
+      "pass": true
+    },
+    {
+      "test": "Overview node opens its exact evidence inspector",
+      "pass": true
+    },
+    {
+      "test": "Graph zoom changes the actual network camera",
+      "pass": true
+    },
+    {
+      "test": "Graph focus view expands without browser fullscreen access",
+      "pass": true
+    },
+    {
+      "test": "Escape closes graph focus view",
+      "pass": true
+    },
+    {
+      "test": "Evidence tabs support arrow-key navigation",
+      "pass": true
+    },
+    {
+      "test": "Ledger preserves exact transfer amounts and qualifiers",
+      "pass": true
+    },
+    {
+      "test": "Uint256-scale amount stays an exact string in the ledger",
+      "pass": true
+    },
+    {
+      "test": "JSON download contains the exact selected evidence",
+      "pass": true
+    },
+    {
+      "test": "Demo case-export controls are disabled instead of inventing a saved case",
+      "pass": true
+    },
+    {
+      "test": "Sign-in failure is visible inside the dialog",
+      "pass": true
+    },
+    {
+      "test": "Real local sign-in establishes an organization-scoped session",
+      "pass": true
+    },
+    {
+      "test": "Wallet quick-start carries the exact address and selected network",
+      "pass": true
+    },
+    {
+      "test": "Quick-start does not silently submit a trace",
+      "pass": true
+    },
+    {
+      "test": "Manual trace creates a real saved synthetic investigation",
+      "pass": true
+    },
+    {
+      "test": "Nearest-VASP panel uses the existing attribution summary",
+      "pass": true
+    },
+    {
+      "test": "Saved-case exports become available",
+      "pass": true
+    },
+    {
+      "test": "Report action targets an authorized saved HTML report",
+      "pass": true
+    },
+    {
+      "test": "Evidence bundle contains real PDF, CSV, JSON and manifest outputs",
+      "pass": true
+    },
+    {
+      "test": "Request action generates a review-only draft",
+      "pass": true
+    },
+    {
+      "test": "Cases view lists the case just created",
+      "pass": true
+    },
+    {
+      "test": "Saved run reopens by its actual case/run identifier",
+      "pass": true
+    },
+    {
+      "test": "Monitoring creates a watch on the selected case",
+      "pass": true
+    },
+    {
+      "test": "Watch polling reports a real source result",
+      "pass": true
+    },
+    {
+      "test": "Watch alerts expose exact event evidence",
+      "pass": true
+    },
+    {
+      "test": "Complaint intake creates a durable queued job",
+      "pass": true
+    },
+    {
+      "test": "Queue action processes a real synthetic investigation",
+      "pass": true
+    },
+    {
+      "test": "Live protocol checks stay disabled in synthetic mode",
+      "pass": true
+    },
+    {
+      "test": "Agency connections remain explicitly unconfigured",
+      "pass": true
+    },
+    {
+      "test": "Command search includes only authorized cases from the API",
+      "pass": true
+    },
+    {
+      "test": "Selecting another case cannot keep the previous case evidence on screen",
+      "pass": false
+    },
+    {
+      "test": "suite completion",
+      "pass": false,
+      "detail": "Selecting another case cannot keep the previous case evidence on screen"
+    }
+  ],
+  "passed": 42,
+  "failed": 2,
+  "browser_errors": [],
+  "scope": "local DOM harness with real SYNTHETIC FastAPI responses; browser network/cookie enforcement not tested"
+}

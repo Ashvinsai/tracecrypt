@@ -1,0 +1,45 @@
+{
+  "bundle_version": "1",
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that the attribution is correct.",
+  "configuration": {
+    "acquisition_max_requests": null,
+    "budgets": {
+      "max_events": 5000,
+      "max_hops": 2,
+      "max_provider_requests": 400
+    },
+    "ethereum_rpc_configured": true,
+    "evm_chain_id_expected": 1,
+    "evm_chain_id_observed": 1,
+    "label_dir": "/home/ash/Work/crypto-attribution/data",
+    "label_source": "reviewed_sets"
+  },
+  "data_mode": "RECORDED_PUBLIC",
+  "failure": null,
+  "files": {
+    "accepted-label-snapshot.json": "024530869cfd75a1e18bc3cd14879be15373574813896220efb4023be19767a6",
+    "normalized-transfers.json": "ad20bba0330e18315f2b1a74aa88098d018c8689c66f0f440f6e01c822c6a864",
+    "receipts.json": "0ee024716cd7ec6e6d337c5259473515ef4a21a44563e9c8882f4f51167fbe47",
+    "report.html": "9ea3e6afc600d1b23dfef3196ebb3465330cf0b30d5f37475cf94df17bf9f098",
+    "trace.json": "1a5811eca7c47e2c77f8a6657a0d5fe3ba89e16fce0d66a43804936cd6f4c583"
+  },
+  "finished_at": "2026-09-26T16:26:43.067131+00:00",
+  "mode": "replay",
+  "provider_exchanges": 99,
+  "query": {
+    "address": "0x4d68b530920d26c3b01c99fecc19e21011b72bbd",
+    "analysis_cutoff": "2026-09-26T15:08:11+00:00",
+    "analysis_start": "2026-09-26T14:58:11+00:00",
+    "network": "ethereum",
+    "seed_event_reference": "eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125",
+    "token_contract": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+  },
+  "run_id": "20260926-ethereum-usdt-replay-001",
+  "started_at": "2026-09-26T16:26:43.037039+00:00",
+  "status": "succeeded",
+  "versions": {
+    "engine": "0.1.0",
+    "label_set": "0",
+    "parser": "0.1.0"
+  }
+}

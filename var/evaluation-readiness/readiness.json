@@ -1,0 +1,56 @@
+{
+  "accepted_counts_by_category": {
+    "other_operational_confounder": 1
+  },
+  "accepted_independent_source_count": 1,
+  "accepted_materialized_distinct_wallet_count": 0,
+  "accepted_real_registry_record_count": 1,
+  "categories_with_zero_real_examples": [
+    "energy_rental_recipient",
+    "frequent_exchange_customer",
+    "payment_service"
+  ],
+  "counts_by_category": {
+    "other_operational_confounder": 1,
+    "self_custody": 1
+  },
+  "counts_by_data_mode": {
+    "RECORDED_PUBLIC": 2
+  },
+  "duplicate_rows_found": 0,
+  "feature_definition_version": "v1-2026-09-20",
+  "feature_missingness": {},
+  "generated_from_registry": "../data/evaluation_wallets.csv",
+  "independent_source_count_real": 2,
+  "leakage_check_detail": "duplicate-row and within-wallet time-leakage checks performed by the caller before calling this function; see app.services.feature_dataset.assert_no_within_wallet_time_leakage and dedupe_rows",
+  "leakage_check_passed": true,
+  "materialized_window_count_real": 0,
+  "materialized_window_count_synthetic": 0,
+  "missing_saved_evidence_bundle_count": 1,
+  "model_dataset_split_feasibility_reason": "only 0 distinct MATERIALIZED real wallet(s) on file; at least 2 are required for a train/eval split by wallet -- a materialized window is required, not merely a registry record",
+  "model_dataset_split_feasible": false,
+  "model_metrics_reported": false,
+  "no_model_trained_in_this_report": true,
+  "real_wallet_count": 2,
+  "registry_wallet_split_structurally_possible": true,
+  "related_wallet_grouping_is_hard_blocker": false,
+  "snapshot_hash_real": "cf0e6303c9571ffbe17692e50a8576410e35f40be8f9fc3c3a034da8cfb8ee0f",
+  "snapshot_hash_synthetic": "d49502fb31173f40f6e4242deecb5c0fcf2d6ccfd53d57ecf6591938d80f8577",
+  "split_feasibility_reason": "only 0 distinct MATERIALIZED real wallet(s) on file; at least 2 are required for a train/eval split by wallet -- a materialized window is required, not merely a registry record",
+  "split_feasible": false,
+  "status": "NOT_READY_FOR_REAL_EVALUATION",
+  "status_reasons": [
+    "2 real evaluation wallets on file",
+    "0 materialized real windows",
+    "0 distinct accepted materialized real wallet(s) available; a wallet-separated train/evaluation split requires at least 2, so it cannot yet be formed",
+    "1 registry record(s) missing a saved evidence bundle",
+    "categories with zero real examples (coverage info, not a scientific-adequacy threshold): energy_rental_recipient, frequent_exchange_customer, payment_service",
+    "no numeric minimum sample size is treated as sufficient by policy; readiness is reported on the actual count plus named structural gaps only",
+    "no related-wallet grouping data exists in this repository in a defensible form; split_by_wallet's optional group_of mapping is available but this report does not populate it with any fabricated grouping heuristic (documented limitation, not a hard blocker -- see DECISIONS.md 2026-09-21)"
+  ],
+  "synthetic_wallet_count": 0,
+  "unresolved_blockers": [
+    "no related-wallet grouping data exists in this repository in a defensible form; split_by_wallet's optional group_of mapping is available but this report does not populate it with any fabricated grouping heuristic (documented limitation, not a hard blocker -- see DECISIONS.md 2026-09-21)"
+  ],
+  "unreviewed_real_registry_record_count": 0
+}

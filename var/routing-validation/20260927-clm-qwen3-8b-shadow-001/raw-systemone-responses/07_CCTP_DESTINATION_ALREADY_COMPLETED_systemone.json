@@ -1,0 +1,11 @@
+{
+  "scenario_id": "07_CCTP_DESTINATION_ALREADY_COMPLETED",
+  "model": "clm-latest",
+  "choice": "CHECK_REVIEWED_VASP",
+  "probabilities": {
+    "CHECK_REVIEWED_VASP": 0.834599693334184,
+    "REQUEST_HUMAN_REVIEW": 0.07983283711690492,
+    "GENERATE_EVIDENCE_REPORT": 0.08556746954891102
+  },
+  "input_hash": "fb034062a21bb75370e77efbedcd7cb0be024f154cf780efea2772da52f4aaf9"
+}

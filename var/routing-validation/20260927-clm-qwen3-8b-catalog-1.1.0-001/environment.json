@@ -1,0 +1,12 @@
+{
+  "system": {
+    "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+    "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "executable": "/usr/bin/python3",
+    "timestamp": "2026-09-27T10:52:16.899040+00:00"
+  },
+  "torch_version": "2.10.0+cu128",
+  "torch_cuda": "12.8",
+  "crypto_attribution_commit": "fee062433bcabd7b547e36cbcbe811dfa4d52af2",
+  "clm_commit": "bb42c6c5bf914fd449bed2f6ca65be80602cb1f7"
+}

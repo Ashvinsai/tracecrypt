@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_06_VASP_CANDIDATE_ETH",
+  "model": "clm-latest",
+  "choice": "REVIEW_VASP_CANDIDATE",
+  "probabilities": {
+    "REVIEW_VASP_CANDIDATE": 0.9966511655889917,
+    "REQUEST_HUMAN_REVIEW": 0.001246174510945984,
+    "GENERATE_EVIDENCE_REPORT": 0.0021026599000622628
+  },
+  "input_hash": "28846fef4bca9334b888b2993523dcf0344493a1b7cf1f82d8ccc2fcede6ed17"
+}

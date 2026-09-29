@@ -1,0 +1,39 @@
+{
+  "body": {
+    "blockNumber": 85235403,
+    "blockTimeStamp": 1786377207000,
+    "contractResult": [
+      "0000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "contract_address": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+    "id": "a712f731106b94a722ca1fa678d98d92c16307a17c6ede1424f9453c60f25dae",
+    "log": [
+      {
+        "address": "a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+        "data": "000000000000000000000000000000000000000000000000000000005836daf0",
+        "topics": [
+          "ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "0000000000000000000000008db3c1ec8627478a619d6152d879a73a01ab6434",
+          "000000000000000000000000839a639eda38ba1e7cdd0008d4d43039d1e4fa1b"
+        ]
+      }
+    ],
+    "receipt": {
+      "energy_penalty_total": 100635,
+      "energy_usage": 130285,
+      "energy_usage_total": 130285,
+      "net_usage": 350,
+      "result": "SUCCESS"
+    }
+  },
+  "captured_at": "2026-09-26T10:37:34.627381+00:00",
+  "key": "0c3a3804392e233c44b8af8f9f7ea7636a0e11b436f9d35b29411389ed7a395c",
+  "method": "POST",
+  "params": {},
+  "path": "/walletsolidity/gettransactioninfobyid",
+  "payload": {
+    "value": "a712f731106b94a722ca1fa678d98d92c16307a17c6ede1424f9453c60f25dae"
+  },
+  "sequence": 69,
+  "status": 200
+}

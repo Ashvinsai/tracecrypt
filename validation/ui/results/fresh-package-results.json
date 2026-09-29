@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "test": "Fresh source archive starts in SYNTHETIC mode",
+      "pass": true
+    },
+    {
+      "test": "Serves original packaged bytes: index.html",
+      "pass": true
+    },
+    {
+      "test": "Serves original packaged bytes: style.css",
+      "pass": true
+    },
+    {
+      "test": "Serves original packaged bytes: app.js",
+      "pass": true
+    },
+    {
+      "test": "Serves original packaged bytes: operations.js",
+      "pass": true
+    },
+    {
+      "test": "Serves original packaged bytes: ui.js",
+      "pass": true
+    },
+    {
+      "test": "Serves original packaged bytes: favicon.svg",
+      "pass": true
+    },
+    {
+      "test": "Serves original packaged bytes: vendor/vis-network.min.js",
+      "pass": true
+    },
+    {
+      "test": "Fresh synthetic account authenticates",
+      "pass": true
+    },
+    {
+      "test": "Fresh installation accepts a synthetic complaint",
+      "pass": true
+    },
+    {
+      "test": "Companion worker automatically saves the queued investigation",
+      "pass": true
+    },
+    {
+      "test": "Fresh saved result passes the existing integrity verification",
+      "pass": true
+    },
+    {
+      "test": "Evidence bundle is exported with the worker running",
+      "pass": true
+    },
+    {
+      "test": "Bundle has valid ZIP members and report evidence",
+      "pass": true
+    }
+  ],
+  "passed": 14,
+  "scope": "Fresh extraction; existing Python dependencies; real loopback API and automatic companion worker; SYNTHETIC only."
+}

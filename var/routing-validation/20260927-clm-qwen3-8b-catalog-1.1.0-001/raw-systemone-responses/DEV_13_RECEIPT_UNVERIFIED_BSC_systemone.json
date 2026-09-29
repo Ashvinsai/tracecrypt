@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_13_RECEIPT_UNVERIFIED_BSC",
+  "model": "clm-latest",
+  "choice": "VERIFY_EXECUTION_RECEIPT",
+  "probabilities": {
+    "VERIFY_EXECUTION_RECEIPT": 0.9471412431477512,
+    "REQUEST_HUMAN_REVIEW": 0.023930802723250075,
+    "GENERATE_EVIDENCE_REPORT": 0.02892795412899868
+  },
+  "input_hash": "d4f9a94c5f03581fe93d4077b0ad30e9a5ccffec858bd3edd1c0620a735d7192"
+}

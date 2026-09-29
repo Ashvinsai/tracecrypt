@@ -1,0 +1,63 @@
+Stage 1 end-to-end LIVE trace -- stopped before running, budget infeasible
+
+Verified seed (fully established, not in question):
+  Transaction    84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997
+  Canonical event_reference  tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0
+    (event_index 0, resolved via the existing /v1/transactions/{id}/events
+    normalization path -- app.adapters.tron._resolve_event_indices -- and
+    reconciled: the resolved sender/recipient/amount decode to exactly
+    TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq -> TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir,
+    72140000 base units, matching receipt log position 0 given earlier.)
+  Sender         TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq
+  Recipient      TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir  (now accepted)
+  Contract       TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
+  Block/time     85235532 / 2026-08-10T15:59:54Z
+  Execution      SUCCESS, solidified, confirmed (already saved and reconciled
+                 in the prior discovery step; not re-verified here)
+
+Why the real validate_live.py LIVE command was not run:
+
+trace_service._find_seed_event(adapter, sender, ...) is what resolves
+--seed-event tron:<txid>:<index> against a live seed address: it calls
+adapter.fetch_transfers(direction=outgoing, ...) ascending from the
+account's very first activity (the adapter has no min_timestamp parameter,
+and none of validate_live.py's real CLI arguments expose one), paging with
+adapter's default enrich_events=True until the target event_reference is
+found or the cutoff is exceeded. It has no awareness of any external request
+budget -- it will keep paging (and enriching every distinct transaction it
+sees) until it either finds the target or exhausts the cursor.
+
+A bounded, un-enriched preview of the sender's outgoing USDT history (one
+request, params identical to what fetch_transfers would send) showed:
+  - page 1 alone already returns 200 distinct transactions, more available
+    (next_cursor present)
+  - the target transaction is NOT on page 1
+  - page 1 spans 2026-08-09T22:07:36Z - 2026-08-10T00:01:57Z-ish (raw ms
+    1786346856000 - 1786353717000), a rate of ~34.3 seconds/transaction
+  - the target is a further ~23,877 seconds later, extrapolating to roughly
+    3-4 more list pages and ~696 more distinct transactions (order-of-
+    magnitude estimate, not exact) before _find_seed_event would reach it
+  - under validate_live.py's actual default settings, EVERY one of those
+    ~696+ transactions would trigger its own separate enrichment request
+    (one call to /v1/transactions/{id}/events per distinct tx per page)
+
+This is far beyond the 10 requests authorized for this step, of which 2 were
+already used (the events-index resolution for the canonical seed-event ID,
+and this one preview page). 8 remain unused -- deliberately not spent
+attempting a run that would almost certainly need to be aborted mid-way,
+leaving a half-made, uncounted acquisition.
+
+This is not a code defect to fix in this step (no adapter change, no new
+--min-timestamp flag, no registry work was made) -- it is a real mismatch
+between this specific sender's very high on-chain transaction volume and a
+tightly bounded request budget. Widening that budget, or adding a bounded
+time-window parameter to the adapter's live seed-event search, would need a
+separate, explicitly authorized step.
+
+Sections 5 and 6 (evidence bundle, RECORDED replay) do not apply: there is
+no live trace bundle to save or replay, because the live command described
+above was never executed.
+
+Requests used this step: 2 of 10 authorized (both listed above). Request
+count from the earlier discovery step (4) is tracked separately and
+unaffected.

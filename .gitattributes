@@ -1,0 +1,5 @@
+# Saved evidence exports are pinned byte-for-byte by their manifest SHA-256
+# digests. Never normalize their line endings (the CSVs use RFC 4180 CRLF) or
+# whitespace-check them: either would make an intact bundle look tampered with.
+var/evidence-export/** -text -whitespace
+*.pdf binary

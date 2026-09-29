@@ -1,0 +1,48 @@
+{
+  "body": {
+    "id": 63,
+    "jsonrpc": "2.0",
+    "result": [
+      {
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "blockHash": "0xf0920ce52890c29143aea782d86bfe8b911dbc5bc14bece90a08f1ac14b08725",
+        "blockNumber": "0x18dae44",
+        "blockTimestamp": "0x6ab7df0f",
+        "data": "0x0000000000000000000000000000000000000000000000000000000001ace671",
+        "logIndex": "0x28",
+        "removed": false,
+        "topics": [
+          "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "0x000000000000000000000000bdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+          "0x0000000000000000000000007d4e22a6abbfe86f730b179d2b934c0981712f45"
+        ],
+        "transactionHash": "0xa2ce105a44426313c70819403c58b7427c50ceea8f818697a67147b593b8b17b",
+        "transactionIndex": "0x2"
+      }
+    ]
+  },
+  "captured_at": "2026-09-26T16:21:27.649183+00:00",
+  "key": "aa57e0e5af1479dc5d1638ca5fd87d54d6e3c6b249aaad0215422fed020ca639",
+  "method": "POST",
+  "params": {},
+  "path": "/",
+  "payload": {
+    "id": 63,
+    "jsonrpc": "2.0",
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "fromBlock": "0x18dae43",
+        "toBlock": "0x18dae48",
+        "topics": [
+          "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "0x000000000000000000000000bdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+          null
+        ]
+      }
+    ]
+  },
+  "sequence": 54,
+  "status": 200
+}

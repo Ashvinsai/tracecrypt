@@ -1,0 +1,41 @@
+{
+  "bundle_version": "1",
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that the attribution is correct.",
+  "configuration": {
+    "acquisition_max_requests": 8,
+    "budgets": {
+      "max_events": 5000,
+      "max_hops": 8,
+      "max_provider_requests": 400
+    },
+    "label_dir": "/home/ash/Work/crypto-attribution/data",
+    "label_source": "reviewed_sets",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "data_mode": "LIVE",
+  "failure": "TraceUnavailable: seed event 'tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0' was not found in the outgoing history of TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq, searched from 2026-08-10T15:59:53+00:00 up to 2026-08-10T15:59:55+00:00. Not restarting from account genesis or widening the window silently.",
+  "files": {
+    "raw/0001-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "92e997e3851de533150369b2abd22d11424c99a0a8c3b84ff1e277cee432695a",
+    "raw/0002-get-v1-transactions-84025aacbd098c91c8ea240481c6304d528807a84d35.json": "78ffd4c6d96aac71fad1879a195b5ebaf22e0c239709a78d84edc6627af8c176"
+  },
+  "finished_at": "2026-09-20T08:58:42.502207+00:00",
+  "mode": "live",
+  "provider_exchanges": 2,
+  "query": {
+    "address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "analysis_cutoff": "2026-08-10T15:59:55+00:00",
+    "analysis_start": "2026-08-10T15:59:53+00:00",
+    "network": "tron",
+    "seed_event_reference": "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0",
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  },
+  "run_id": "20260920T085840Z-141306",
+  "started_at": "2026-09-20T08:58:40.246811+00:00",
+  "status": "failed",
+  "versions": {
+    "engine": "0.1.0",
+    "label_set": "0",
+    "parser": "0.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": "DEV_08_REVIEWED_VASP_ETH",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.4248817217361627,
+    "GENERATE_EVIDENCE_REPORT": 0.5751182782638373
+  },
+  "input_hash": "aca25d8da005ca98dbea21058dbc26f9483434261d32c3364214273c24070e7b"
+}

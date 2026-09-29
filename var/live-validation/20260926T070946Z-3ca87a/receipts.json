@@ -1,0 +1,20 @@
+{
+  "failures": {},
+  "note": "Execution status comes from the receipt endpoints, not from the history endpoint, which documents none. Confirmation is separate: only a solidified receipt reports confirmed.",
+  "receipts": {
+    "84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997": {
+      "block_number": 85235532,
+      "block_time": "2026-08-10T15:59:54+00:00",
+      "confirmation_state": "confirmed",
+      "execution_status": "success",
+      "fee": null,
+      "note": "receipt read from a solidified block",
+      "receipt_result": "SUCCESS",
+      "solidified": true,
+      "source_path": "/walletsolidity/gettransactioninfobyid",
+      "tx_hash": "84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997"
+    }
+  },
+  "seed_transaction": "84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997",
+  "unverified": []
+}

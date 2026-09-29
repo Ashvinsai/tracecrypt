@@ -1,0 +1,62 @@
+{
+  "bundle_version": "1",
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that the attribution is correct.",
+  "data_mode": "LIVE",
+  "discovery": {
+    "candidate_logs_count": 1,
+    "contract": "0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+    "discovered_transaction": "0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421",
+    "expected_nonce": "0x03c1ce4cab19841c55bc11af0cd262e3fd5e20cf3a06ecb50c2874816fbb900d",
+    "from_block": 51826900,
+    "method": "bounded_eth_getLogs_scan",
+    "requests_count": 8,
+    "source_domain": 0,
+    "span": 5,
+    "to_block": 51826935,
+    "topic0": "0xff48c13eda96b1cceacc6b9edeedc9e9db9d6226afbc30146b720c19d3addb1c"
+  },
+  "files": {
+    "cross-chain-link.json": "9799bae5030edf68cab0b2802132080f1dc6c8ffcd30c120cbedcb84fc70f0d2",
+    "normalized-transfers.json": "64884cb895d920701039708415f837b35802f70b72c725dd30df6151136fa30b",
+    "raw/0001-post-base-rpc.json": "e27840157eaa8b0055af8e1837f156280c2c30acde0bd74a28b5a25a3786c7d0",
+    "raw/0002-post-ethereum-rpc.json": "8a95eecbf5e7361edea2ad0ca2d4a96d0aa927ae7e0c4029959e60ff6c361d00",
+    "raw/0003-post-ethereum-rpc.json": "f62e0b6394e29989dc370e4817211e5f0c06c43ebbec5cb26a2076c710cee5ce",
+    "raw/0004-post-ethereum-rpc.json": "fb4acab9b6b6c14fea0c5db52cbf5644300ef48b9e359323a3bde85471cf73b5",
+    "raw/0005-get-v2-messages-0.json": "38808469a7d8434d0a8e79cb39148d61c428dd1cdfeaddbdd5c0c4717711ab6b",
+    "raw/0006-post-base-rpc.json": "336f40034c95ef37d38afbb2a57bfd20b8847a5e853dc69b5bd29b91aec1785b",
+    "raw/0007-post-base-rpc.json": "230d7eca375fe5e2682c93cc5e492c91c2a8bff01b8ed5aafc2cfebb2b4b0287",
+    "raw/0008-post-base-rpc.json": "f500437de4fe92ee77cfaf0c7f77fc12a227c4fd20e6b5bb4fee42e50aec539b",
+    "raw/0009-post-base-rpc.json": "b8a81826fb3d7230e7fbf44983780ab00b7c45abb312cf57ddfafcefee8e0981",
+    "raw/0010-post-base-rpc.json": "1261730fccaeeb3e8408ad151c3c318eb63086a070feab8e205d9148c7bc0e5c",
+    "raw/0011-post-base-rpc.json": "c6da13205d42fae1445bb2d7ddd281682abde45a515347b8bd9bd86ff274e990",
+    "raw/0012-post-base-rpc.json": "9e97bb93e206edf2a126240461381738e97ca044ccb7ee16110ebdfee254418c",
+    "raw/0013-post-base-rpc.json": "97c7779fdc02d9d3d59068a70a73ae6212a6eb5061afe933d75bbfeeded03edf",
+    "raw/0014-post-base-rpc.json": "c5b3057d2e0c0ba1f69ec8273f18170f5ec6c16cae693cdab2564db81aeed6b2",
+    "raw/0015-post-base-rpc.json": "4692e4fef13d774a2966302afe3a7b076b673550393a18193ee006c508b69482",
+    "raw/0016-post-base-rpc.json": "0f7b70010e7ea9fb67c69f319c2508fb35fe95fedae2efb4559f6589b8470e48",
+    "receipts.json": "c04723d86641abaff8eaad4f249531f754e7b5dd14d043e1b81bf11ae848b55b",
+    "report.html": "09ba30e3c9d5fb13aa89aef8faa0770e7091ca8c541b5a6d1a1650d510c5d179",
+    "trace.json": "e87c421e62b7b2af244c59f7de8df0f0c5ff5dea1401012ea980e3be7e9a43aa"
+  },
+  "finished_at": "2026-09-26T21:08:52.720773+00:00",
+  "mode": "live",
+  "protocol": "circle_cctp_v2",
+  "provenance": {
+    "base_message_transmitter": "0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+    "base_token_messenger": "0x28b5a0e9c621a5badaa536219b3a228c8168cf5d",
+    "ethereum_message_transmitter": "0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+    "ethereum_token_messenger": "0x28b5a0e9c621a5badaa536219b3a228c8168cf5d",
+    "iris_api": "https://iris-api.circle.com"
+  },
+  "query": {
+    "destination_chain_id": 8453,
+    "destination_network": "base",
+    "destination_transaction": "0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421",
+    "source_chain_id": 1,
+    "source_network": "ethereum",
+    "source_transaction": "0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed"
+  },
+  "run_id": "20260927-cctp-v2-eth-base-live-001",
+  "started_at": "2026-09-26T21:08:52.720769+00:00",
+  "status": "succeeded"
+}

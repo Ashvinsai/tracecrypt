@@ -1,0 +1,113 @@
+{
+  "acquisitions": [],
+  "branch_endings": [
+    {
+      "address": "0xe7d52aa5bf9d1135d9e3714ea44e2589437bdf76",
+      "arrival_event_reference": "eip155:56:0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f:14",
+      "attribution_status": "unresolved",
+      "boundary_reason": "no_outgoing_activity",
+      "branch_path": [
+        "eip155:56:0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f:14"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "unresolved",
+      "hop_depth": 0,
+      "label": null,
+      "note": "No further observed transfer of this asset from this address within the analysed scope. An asset change, bridge, privacy mechanism, or opaque contract would also look like this; no continuation is assumed.",
+      "observed_amount_base_units": "3850000000000000000000",
+      "observed_amount_display": "3850.000000000000000000"
+    }
+  ],
+  "budget_use": {
+    "elapsed_seconds": 18.238,
+    "event_limit": 5000,
+    "events_examined": 0,
+    "hop_limit": 2,
+    "hops_used": 0,
+    "note": "budgets are configuration targets, not measured performance",
+    "traversal_request_limit": 400,
+    "traversal_requests": 1,
+    "wall_clock_limit_seconds": 300
+  },
+  "disclaimer": "An observed path establishes a sequence of transfers, not ownership of fungible units. Case-associated amounts default to allocation_unknown. This output does not identify a person, establish guilt, or authorise a freeze.",
+  "limitations": [
+    {
+      "address": null,
+      "code": "allocation_unknown",
+      "event_reference": null,
+      "message": "The observed amount is the transfer's own value, not an allocation to any specific case or claimant. An observed path is a sequence of transfers, not ownership of fungible units."
+    },
+    {
+      "address": null,
+      "code": "bounded_analysis_window",
+      "event_reference": null,
+      "message": "Analysed 2026-09-26T17:47:20+00:00 to 2026-09-26T17:47:40+00:00 only -- not the account's full history before or after it."
+    },
+    {
+      "address": null,
+      "code": "single_validation_case",
+      "event_reference": null,
+      "message": "One public-chain validation case, chosen to demonstrate the pipeline end to end. Not a general coverage claim about this address, this entity, or BNB Smart Chain Mainnet activity broadly."
+    }
+  ],
+  "observed_transfers": [],
+  "scope": {
+    "analysis_cutoff": "2026-09-26T17:47:40+00:00",
+    "case_flow_linkage": "established",
+    "coverage_status": "complete_within_scope",
+    "data_mode": "LIVE",
+    "engine_version": "0.1.0",
+    "finished_at": "2026-09-26T18:14:22.831198+00:00",
+    "label_set_version": "0",
+    "label_snapshot": {
+      "accepted_service_claims": 2,
+      "claims_loaded": 3,
+      "files": [
+        {
+          "name": "verified_anchors.csv",
+          "rows_loaded": 2,
+          "rows_withdrawn": 0,
+          "sha256": "c2018baa8f2ea17873877375c66a0ede0ed0e61a3ba920deec7f3968ef4644a9"
+        },
+        {
+          "name": "deposit_candidates.csv",
+          "rows_loaded": 1,
+          "rows_withdrawn": 0,
+          "sha256": "d133e906be0c66ee184a47983764c64869624d92faa9c6a606a931d9563bb3dd"
+        }
+      ],
+      "source": "reviewed_sets"
+    },
+    "started_at": "2026-09-26T18:14:04.593018+00:00"
+  },
+  "seed": {
+    "address": "0x1362b5c4e4de99267e4005eb8a918e16bb8098dc",
+    "asset": {
+      "decimals": 18,
+      "display_symbol": "USDT",
+      "token_contract": "0x55d398326f99059fF775485246999027B3197955"
+    },
+    "event_reference": "eip155:56:0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f:14",
+    "network_key": "bsc"
+  },
+  "seed_transfer": {
+    "acquisition_id": null,
+    "amount_base_units": "3850000000000000000000",
+    "amount_display": "3850.000000000000000000",
+    "asset": {
+      "decimals": 18,
+      "display_symbol": "USDT",
+      "token_contract": "0x55d398326f99059ff775485246999027b3197955"
+    },
+    "block_time": "2026-09-26T17:47:20+00:00",
+    "chain_sequence": "000124183377:000006:000014",
+    "confirmation_state": "confirmed",
+    "event_reference": "eip155:56:0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f:14",
+    "execution_status": "success",
+    "from_address": "0x1362b5c4e4de99267e4005eb8a918e16bb8098dc",
+    "hop_depth": 0,
+    "ordering_ambiguous": false,
+    "to_address": "0xe7d52aa5bf9d1135d9e3714ea44e2589437bdf76",
+    "tx_hash": "0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f"
+  }
+}

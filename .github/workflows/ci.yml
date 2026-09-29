@@ -1,0 +1,77 @@
+name: CI
+
+# Deterministic only: no live provider keys, no network calls to a chain, no
+# database service. The suite runs on SQLite, the same way it runs locally.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    env:
+      CFA_APP_ENV: test
+      CFA_DATA_MODE: SYNTHETIC
+      CFA_SECRET_KEY: ci-secret-key-long-enough-for-the-settings-validator
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - run: uv sync --all-groups
+        working-directory: api
+      - run: uv run ruff check .
+        working-directory: api
+      - run: uv run mypy app
+        working-directory: api
+      - run: uv run alembic upgrade head
+        working-directory: api
+      - run: uv run pytest -q
+        working-directory: api
+
+  # The same suite against PostgreSQL, so the dialect-aware column types (D012)
+  # stay honest on both.
+  api-postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: cfa
+          POSTGRES_PASSWORD: cfa
+          POSTGRES_DB: cfa
+        ports: ["5433:5432"]
+        options: >-
+          --health-cmd "pg_isready -U cfa -d cfa"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      CFA_APP_ENV: test
+      CFA_DATA_MODE: SYNTHETIC
+      CFA_SECRET_KEY: ci-secret-key-long-enough-for-the-settings-validator
+      CFA_DATABASE_URL: postgresql+psycopg://cfa:cfa@localhost:5433/cfa
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - run: uv sync --all-groups
+        working-directory: api
+      - run: uv run pytest -q
+        working-directory: api
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - run: npx tsc --noEmit
+        working-directory: frontend
+      - run: npm run build
+        working-directory: frontend

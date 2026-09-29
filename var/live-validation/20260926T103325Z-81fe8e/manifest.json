@@ -1,0 +1,59 @@
+{
+  "bundle_version": "1",
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that the attribution is correct.",
+  "configuration": {
+    "acquisition_max_requests": 20,
+    "budgets": {
+      "max_events": 5000,
+      "max_hops": 8,
+      "max_provider_requests": 400
+    },
+    "label_dir": "/home/ash/Work/crypto-attribution/data",
+    "label_source": "reviewed_sets",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "data_mode": "LIVE",
+  "failure": "LiveValidationError: the trace could not read onward activity for TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq; recording an incomplete walk rather than reporting it as complete",
+  "files": {
+    "raw/0001-get-v1-accounts-TMqgVELUb5BxvA8LgMJnsQQWMg33Psvfqz-transactions-.json": "05c7e4c330e08563cee8b4cd5f11c1311987eb0e9faef76c764d01d47edc1f52",
+    "raw/0002-get-v1-transactions-541fe0b42ce36b1258af4abb597caef6e0dedee1cf93.json": "c4dda089db89e5450466b845271bc80838662782459991f28edf966a97ca74ea",
+    "raw/0003-get-v1-accounts-TNRyJuZoY9p7x9aMGQ3PyvcSzo31XfTQZB-transactions-.json": "e5736486e73063accbf6f982ce3dc9295060b6dbda4878317351476d13c7e057",
+    "raw/0004-get-v1-transactions-5850d5e1f0e1a6931bc5ac8550a6dd580c04c1f94841.json": "131b36305719f80891b6bca1bad2fdabf255a676f80e9b8e3daa9faa666d59bf",
+    "raw/0005-get-v1-transactions-4a9e2739b624cc84e27ae096da91cf2f71fde38cb376.json": "bf6d892b0a7934e705c045563463b756dc251392ce085a8ebeb2193e02ca7fb1",
+    "raw/0006-get-v1-transactions-61cd4ba8fba1c3d3ee933c339abf67074c6157c043c8.json": "f07b0433c2d455d869d1ef262649620fe3f2835ac4611c59768685b260543e2f",
+    "raw/0007-get-v1-transactions-fd53c7bc5145ecced1250d982fdb98cece6e92b70b53.json": "1b6f71c625c302c21a888d51ce511ee1cb6bcc726605750ef40c8f38efa20017",
+    "raw/0008-get-v1-transactions-18ac6e52f65a8b957cbcb69cbb9f752f0ade8d45519c.json": "ac8350e26ee112411d90597f9342919a835b70f64a8f3b3f023a10d656452eb3",
+    "raw/0009-get-v1-transactions-db15be31cf3eabdd6c816a3345b0a5c666841bb32e39.json": "0667ebbb8de3e92d134b4e14a3f856d0c1074feccc0c357aaeb4f4344d9e5fcd",
+    "raw/0010-get-v1-transactions-3dc3ef5f088498d1e3d5a63698fee730850b090368cf.json": "0579d126b744826978868e1dc42ff78432f6243b8ab4c308d5dafda7e8e84ec7",
+    "raw/0011-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "f784d78313f7b0044ce867e0612576541d0b9cd8455e4ac0ec462d085e9ae0c5",
+    "raw/0012-get-v1-transactions-f390f5ed38207416046c2ec9556f7533d0c743dcc91b.json": "39af0052942094367c2483a65b6fde295c36a72ad871cd6b182641c43148273e",
+    "raw/0013-get-v1-transactions-865e8d2a08f0e51977b066c5e450f019c0bfa3123887.json": "c448b30fbc28168debc275e7e6b7bd41351d691ffabba9d46ec9cec40aa989bd",
+    "raw/0014-get-v1-transactions-e93d0e23050369dfa038891c6332136cf486d6000f11.json": "bd4933cad557f0114452a558fcdce187769ba1ee82c81513c70435d49b8a2c39",
+    "raw/0015-get-v1-transactions-9e931bf15d8f780d8e5f7ac910a009d03de358f4a23c.json": "b48f4c8ffa88bdd4a9e121a18b905c9cce65f1ab928e4ca590709759fdcc1a9e",
+    "raw/0016-get-v1-transactions-09d67e24a460c3e7da35295329211e25dc03c1a30ae9.json": "12887c00ef17ae586e460af1499c5e85638667106c4b838cd681680f5ea79d85",
+    "raw/0017-get-v1-transactions-a77ae49ea1d223cd15c6791dce0be7cf16b613d9287b.json": "853511661d175299ebea3c62c1332fed9f8a7fc292d4f3e357d629790d66ff23",
+    "raw/0018-get-v1-transactions-2cad4f2767a6f0547d8091a67eaaf7af8f473aea3a3d.json": "7ac99373a3d2c599178d9733df7c5e3959c588062e2c2120eefbd3d79621dfed",
+    "raw/0019-get-v1-transactions-3dcafdabb4da4496c9db20517ae02f0650f79ff9694b.json": "cc4c672aa23e54672df3eb321bd01b0ebde69ed22eea6f813b1b386c58fe5618",
+    "raw/0020-get-v1-transactions-770571e330d1128faed358660e03eec4cd7af4bdb23c.json": "f60c7823183ce0c0830203018718386efca3f604c64b827d990525cf83f2b09d"
+  },
+  "finished_at": "2026-09-26T10:33:35.738906+00:00",
+  "mode": "live",
+  "provider_exchanges": 20,
+  "query": {
+    "address": "TMqgVELUb5BxvA8LgMJnsQQWMg33Psvfqz",
+    "analysis_cutoff": "2026-08-10T15:59:54+00:00",
+    "analysis_start": "2026-08-10T15:41:27+00:00",
+    "network": "tron",
+    "seed_event_reference": "tron:541fe0b42ce36b1258af4abb597caef6e0dedee1cf93cebf595abc032f807744:0",
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  },
+  "run_id": "20260926T103325Z-81fe8e",
+  "started_at": "2026-09-26T10:33:25.391459+00:00",
+  "status": "failed",
+  "versions": {
+    "engine": "0.1.0",
+    "label_set": "0",
+    "parser": "0.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "scenario_id": "HELD_12_RETRY_RATE_LIMIT_BASE",
+  "model": "clm-latest",
+  "choice": "RETRY_PROVIDER",
+  "probabilities": {
+    "RETRY_PROVIDER": 0.5340764425912042,
+    "REQUEST_HUMAN_REVIEW": 0.14252629124943306,
+    "GENERATE_EVIDENCE_REPORT": 0.32339726615936276
+  },
+  "input_hash": "0085bc93fec388e3c2f8ec14895e5bb22f1864a9a7608546e6c71c9970b10e7d"
+}

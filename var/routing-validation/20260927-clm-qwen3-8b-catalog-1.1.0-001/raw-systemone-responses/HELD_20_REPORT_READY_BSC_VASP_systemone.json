@@ -1,0 +1,10 @@
+{
+  "scenario_id": "HELD_20_REPORT_READY_BSC_VASP",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.30371929840994183,
+    "GENERATE_EVIDENCE_REPORT": 0.6962807015900582
+  },
+  "input_hash": "96fae8b8ab962118491239b48ef568ad53990cc297610a6d51a3f75a24291ae0"
+}

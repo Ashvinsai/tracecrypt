@@ -1,0 +1,45 @@
+{
+  "claims_used": [
+    {
+      "address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+      "label": {
+        "address_role": "unknown",
+        "assertion_type": "service_control",
+        "entity_name": "OKX",
+        "entity_type": "exchange",
+        "label_set_version": "okx-por-2026081100-V6",
+        "label_source": "reviewed_sets",
+        "last_verified_at": "2026-09-20T07:51:29.489220+00:00",
+        "methodology": "Row 53373 of the address section of okx_por_2026081100_V6.csv, inside por_csv_2026081100_V6.zip (sha256 7db12d643664e0b84ff1e54ffdba339d47298a249afe494c7e770d63dc117462; original preserved unmodified at okx.com/por_csv_2026081100_V6.zip; official download URL https://static.okx.com/cdn/okx/por/chain/por_csv_2026081100_V6.zip). Selected as coin=USDT-TRC20 Network=TRON Type='Non Staking' at Snapshot Height 85235532 -- the same disclosure and snapshot height as TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv, a separate row. Discovered 2026-09-20 via a bounded on-chain search of block 85235532 itself (not a per-address history search): the block's full transaction list was read via one live read-only call to POST /wallet/gettransactioninfobyblocknum {num: 85235532} (685 transactions), cross-referenced against the 17,429 TRON/USDT-TRC20 addresses in this disclosure at this snapshot height. A genuine successful USDT-TRC20 Transfer event landed on this address inside that exact block: transaction 84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997, log index 0, from TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq, amount 72140000 base units (72.14 USDT), decoded from the raw Transfer(address,address,uint256) log topics/data (topic0 independently verified as keccak256('Transfer(address,address,uint256)') = ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef). Execution and finality independently reconciled via POST /walletsolidity/gettransactioninfobyid for that transaction: SUCCESS, solidified, confirmed, block_time 2026-08-10T15:59:54Z -- matching the snapshot instant exactly and matching the head-node receipt already embedded in the block-info response. The transaction's presence in this block was also cross-checked against the previously saved SolidityNode GetBlockByNum response for block 85235532 (offline, no new request): present, same 685-transaction count, same blockID. This on-chain match is evidence that this address received a genuine transfer during the snapshot block; it is not evidence of anything beyond that, and does not by itself establish OKX's control of the address -- that rests on the disclosure row and its signature alone, as below. Report date as displayed on https://www.okx.com/proof-of-reserves/download: 'Aug 11, 2026, 12:00 AM' under column 'Date (UTC+8)' -- source timezone UTC+8, normalized to 2026-08-10T16:00:00Z. This is OKX's report label, not the on-chain snapshot instant, and is not used as valid_from. valid_from is set to the resolved snapshot instant 2026-08-10T15:59:54+00:00 (block 85235532), independently established in an earlier step via /walletsolidity/getblockbynum (blockID 000000000514974cfa8275d3e82a92f014f20c5a2abf2b8116002bc058974c88; raw timestamp 1786377594000 ms) -- not re-fetched for this row. The row carries message 'I am an OKX address' with a 130-byte signature1 (0xd69eb1e8...7f31c). This signature is THIS row's own and was verified separately from any other address's: 2026-09-20, TIP-191 (keccak256(\"\\x19TRON Signed Message:\\n\" + len + message), secp256k1 ECDSA recovery), isolated version-pinned verifier (eth-keys 0.8.0 + pycryptodome 3.23.0 + base58 2.1.1, not an application dependency): the recovered address matches TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir exactly. This shows control of the signing key over this message; it does not show a signing date, continuous control, or a customer-deposit role. Proposed scope, for human review, mirrors the sibling claim: valid_from and valid_to both 2026-08-10T15:59:54+00:00 -- the scope of this reviewed snapshot disclosure, not an interval of continuing control. No forward-looking assumption is made or reviewer-approved. Role left unknown: a reserve attestation establishes dated control, not whether the address is cold storage, a hot wallet or a deposit address; the on-chain match above does not independently support a narrower role.",
+        "original_hash": "7db12d643664e0b84ff1e54ffdba339d47298a249afe494c7e770d63dc117462",
+        "original_member": "okx_por_2026081100_V6.csv",
+        "original_reference": "okx.com/por_csv_2026081100_V6.zip",
+        "original_row_locator": "section=address;section_header_absolute_line=25;absolute_line=53373;section_row=53348;snapshot_height=85235532",
+        "retrieval_date": "2026-09-20T07:42:18.041260+00:00",
+        "review_reference": "dd3ac9a359a4a140@2026-09-20T07:51:29.489220+00:00",
+        "review_state": "accepted",
+        "reviewed_at": "2026-09-20T07:51:29.489220+00:00",
+        "reviewed_by": "ash",
+        "reviewer": "prepared-for-review",
+        "source_file": "dd3ac9a359a4a140-selection-53373.csv",
+        "source_hash": "dd3ac9a359a4a140f00b2f0a13338c3edff5d08dd01d1fd4db6fe2971658142a",
+        "source_reference": "https://www.okx.com/proof-of-reserves/download",
+        "valid_from": "2026-08-10T15:59:54+00:00",
+        "valid_to": "2026-08-10T15:59:54+00:00"
+      }
+    }
+  ],
+  "registry": {
+    "accepted_service_claims": 2,
+    "claims_loaded": 2,
+    "files": [
+      {
+        "name": "verified_anchors.csv",
+        "rows_loaded": 2,
+        "rows_withdrawn": 0,
+        "sha256": "c2018baa8f2ea17873877375c66a0ede0ed0e61a3ba920deec7f3968ef4644a9"
+      }
+    ],
+    "source": "reviewed_sets"
+  }
+}

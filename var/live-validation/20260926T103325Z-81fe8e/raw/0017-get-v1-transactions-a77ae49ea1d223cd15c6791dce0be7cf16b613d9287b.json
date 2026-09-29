@@ -1,0 +1,42 @@
+{
+  "body": {
+    "data": [
+      {
+        "block_number": 85225460,
+        "block_timestamp": 1786347372000,
+        "caller_contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+        "contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+        "event": "Transfer(address indexed from, address indexed to, uint256 value)",
+        "event_index": 0,
+        "event_name": "Transfer",
+        "result": {
+          "0": "0x8db3c1ec8627478a619d6152d879a73a01ab6434",
+          "1": "0xb5da1c3d4743adfdc750855bdae2c8164162e425",
+          "2": "131840000",
+          "from": "0x8db3c1ec8627478a619d6152d879a73a01ab6434",
+          "to": "0xb5da1c3d4743adfdc750855bdae2c8164162e425",
+          "value": "131840000"
+        },
+        "result_type": {
+          "from": "address",
+          "to": "address",
+          "value": "uint256"
+        },
+        "transaction_id": "a77ae49ea1d223cd15c6791dce0be7cf16b613d9287b066c83c08bd2c0f15917"
+      }
+    ],
+    "meta": {
+      "at": 1790418814059,
+      "page_size": 1
+    },
+    "success": true
+  },
+  "captured_at": "2026-09-26T10:33:34.197299+00:00",
+  "key": "88292c7bcf4745a7cfb85ac5362773c80a6b09d14b33e1bb6ad245b83fa734f3",
+  "method": "GET",
+  "params": {},
+  "path": "/v1/transactions/a77ae49ea1d223cd15c6791dce0be7cf16b613d9287b066c83c08bd2c0f15917/events",
+  "payload": {},
+  "sequence": 17,
+  "status": 200
+}

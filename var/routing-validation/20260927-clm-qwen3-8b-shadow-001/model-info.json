@@ -1,0 +1,31 @@
+{
+  "configured_model": "clm-latest",
+  "response_model": "clm-latest",
+  "clm_repo_commit": "bb42c6c5bf914fd449bed2f6ca65be80602cb1f7",
+  "qwen_encoder_backbone": "Qwen/Qwen3-8B",
+  "vllm_version": "0.19.1",
+  "models_endpoint_response": {
+    "models": [
+      {
+        "name": "clm-latest",
+        "release_date": "2026-09-19",
+        "description": "Contrastive language model: Qwen3-8B encoder + trained projection heads"
+      },
+      {
+        "name": "clm-raw",
+        "release_date": "2026-09-19",
+        "description": "Ablation: cosine in the raw encoder embedding space, no projection head"
+      }
+    ]
+  },
+  "health_endpoint_response": {
+    "ok": true,
+    "embedder": true,
+    "models": [
+      "clm-latest",
+      "clm-raw"
+    ],
+    "cache": null
+  },
+  "notice": "clm-latest is an alias pointing to the default trained head and is not guaranteed to identify an immutable checkpoint."
+}

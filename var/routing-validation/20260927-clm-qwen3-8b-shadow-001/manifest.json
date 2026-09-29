@@ -1,0 +1,49 @@
+{
+  "artifact_class": "DECISION_SUPPORT_METADATA",
+  "validation_bundle_version": "1.0.0",
+  "evaluation_scope": "TASK_08B_REAL_CLM_SHADOW_BASELINE",
+  "caveat": "This is decision-support validation metadata, NOT blockchain evidence. It does not establish wallet attribution, service ownership, or fraud classification. Relative action scores are uncalibrated model preferences and did not control execution. Deterministic rules remained strictly authoritative with 0% unsafe execution.",
+  "metadata": {
+    "crypto_attribution_commit": "bb0060df067cb4b2daed94274391c0f102898239",
+    "clm_repo_commit": "bb42c6c5bf914fd449bed2f6ca65be80602cb1f7",
+    "qwen_encoder_backbone": "Qwen/Qwen3-8B",
+    "vllm_version": "0.19.1",
+    "torch_version": "2.10.0+cu128",
+    "cuda_version": "12.8",
+    "action_catalog_version": "1.0.0",
+    "state_schema_version": "1.0.0",
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "router_mode": "shadow_clm",
+    "execution_authoritative_source": "DeterministicRuleRouter",
+    "policy_guard": "ActionPolicyGuard"
+  },
+  "metrics_summary": {
+    "scenario_count": 10,
+    "clm_top1_agreement": 0.3,
+    "clm_top3_coverage": 0.8,
+    "rules_clm_agreement": 0.3,
+    "unsafe_action_execution_rate": 0.0,
+    "shadow_success_rate": 1.0,
+    "warm_clm_median_latency_ms": 76.03,
+    "warm_clm_p95_latency_ms": 80.52
+  },
+  "files": {
+    "README.md": "296a84e06d8fc50e8c3fcbf096420ab3d1470d4a134fef78f692effc285cfd6e",
+    "environment.json": "f05873c0f74c7d618eedf2fb84cbdc3fa9e62c8dfaeba5d1e7ae9e45e5557e65",
+    "latencies.json": "f2e0c811b6060693f71cac91ff9adb04a9ae7b9a56032d69bfbafb88573e7cbb",
+    "model-info.json": "0fadf939352dc4b8bf9bacd6eee9789731bf6a9af33222c1611c3ccb468b348b",
+    "raw-systemone-responses/01_SAME_CHAIN_CONTINUATION_systemone.json": "92aee1ccf019c949adbb20df6618779192433c271d03ecbbffd41b5d046166af",
+    "raw-systemone-responses/02_REVIEWED_VASP_REACHED_systemone.json": "cce813ae036ba7b46e6c57f49f7d1a85f96db7d9325fd91a94d41c309d208654",
+    "raw-systemone-responses/03_VASP_CANDIDATE_ONLY_systemone.json": "d6bba0d12cdf370eea02142d2468d01b7f0e21a5c2755bbc0766a1b1591a34a9",
+    "raw-systemone-responses/04_PROVIDER_FAILURE_RETRYABLE_systemone.json": "52f3e8177822b272d4dadf68968c65a4c1354931f82154e99219701e0ebf0c71",
+    "raw-systemone-responses/05_PROVIDER_FAILURE_EXHAUSTED_systemone.json": "f59cac6922fb33e7c42d505d29c3364490b57eed8640d9b4d5b41b20534bb2e4",
+    "raw-systemone-responses/06_CCTP_CONTINUATION_PENDING_systemone.json": "ebbbe8d9a86ab85b468c5443d246ce3356d0cd822660be7b4e5740b881ab6c38",
+    "raw-systemone-responses/07_CCTP_DESTINATION_ALREADY_COMPLETED_systemone.json": "f4c9ba4af6b85a5faa461a32fdaa025844204c279269de23df41556a78be7d61",
+    "raw-systemone-responses/08_RECEIPT_UNVERIFIED_systemone.json": "5f0bcc2749f23328dbcb3e1b2871749caa5b6759633307303d2ae9f7a69bc2ad",
+    "raw-systemone-responses/09_AMBIGUOUS_ORDERING_systemone.json": "bb221a0ca1168e0f1a1efc3801f2e4417cc5683f098ec45052ff968d68c82a74",
+    "raw-systemone-responses/10_REPORT_READY_systemone.json": "c675bc248a9db2e2151144bef51605176581f9a15418abfe7237f6fe47a104c1",
+    "scenario-results.json": "d9c5e2b742019689629c27c368abe17e72196c0b379aca6a9deede9c4db46e67",
+    "summary.json": "f3d217993d7b056b0f31cec45e30e371d6e9aad4ab0fd95dc094b4133563d8d2"
+  }
+}

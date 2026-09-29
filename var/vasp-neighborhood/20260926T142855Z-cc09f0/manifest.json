@@ -1,0 +1,44 @@
+{
+  "candidate_count": 1,
+  "caveat": "Candidate relationships are deterministic research leads only. They do not establish service ownership, customer-deposit role, common control, fraud, or unique fund ownership. SHA-256 hashes establish file consistency only.",
+  "configuration": {
+    "data_mode": "LIVE",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "coverage_complete": true,
+  "data_mode": "LIVE",
+  "files": {
+    "raw/0001-get-v1-accounts-TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir-transactions-.json": "d2ca58534955af54810bb89dba0ee090ac30e21725c3e2c37fc0cf9b75ec6517",
+    "raw/0002-get-v1-transactions-84025aacbd098c91c8ea240481c6304d528807a84d35.json": "abb99dfde999011475c0773e5b31af618d954f8d1751dc7a0d218a08751c640c",
+    "raw/0003-post-walletsolidity-gettransactioninfobyid.json": "c3c65e07584c192099c0304e09e6cca76bc795a8005c79b3b0e4075c4d75d442",
+    "raw/0004-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "be03290864f35de7195eb4ba805d88ffe691eb06b61a4d66ef868cb125fb6ef8",
+    "raw/0005-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "a8cbc38daf71132c1248127d57a045221dbe54238934d560e10a25e2e5734f23",
+    "raw/0006-get-v1-transactions-84025aacbd098c91c8ea240481c6304d528807a84d35.json": "0c5a0f7cb4f979f00a2c277c1fb421d5ba17ddcffd9d27debf3505125db92584",
+    "raw/0007-post-walletsolidity-gettransactioninfobyid.json": "39014f1e450f28e50e5d7f3d1403b601e1037657c0bf518de7810d1345d90c76",
+    "report.json": "722ca3821c275b8183897d58f0c3a643afb1437549d8e5f14776b82c3a57fb88"
+  },
+  "finished_at": "2026-09-26T14:28:57.973485+00:00",
+  "mode": "live",
+  "policy_version": "1",
+  "provider_requests": 7,
+  "query": {
+    "address_limit": 10,
+    "anchor_address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+    "enrich_events": true,
+    "event_limit": 200,
+    "max_requests": 20,
+    "network": "tron",
+    "page_limit": 2,
+    "pages_per_address": 1,
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "verify_execution": true,
+    "window_end": "2026-08-10T16:00:24+00:00",
+    "window_start": "2026-08-10T15:59:24+00:00"
+  },
+  "raw_exchange_count": 7,
+  "report_type": "vasp_candidate_neighborhood",
+  "run_id": "20260926T142855Z-cc09f0",
+  "started_at": "2026-09-26T14:28:55.239781+00:00",
+  "status": "succeeded"
+}

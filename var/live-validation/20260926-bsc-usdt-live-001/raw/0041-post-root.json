@@ -1,0 +1,31 @@
+{
+  "body": {
+    "id": 44,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "captured_at": "2026-09-26T18:10:33.997957+00:00",
+  "key": "1d9649787569a8698789aa512aaffaceda8549eede250e3a5f0a1bfeb07042ed",
+  "method": "POST",
+  "params": {},
+  "path": "/",
+  "payload": {
+    "id": 44,
+    "jsonrpc": "2.0",
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0x55d398326f99059fF775485246999027B3197955",
+        "fromBlock": "0x766e359",
+        "toBlock": "0x766e35e",
+        "topics": [
+          "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "0x0000000000000000000000001362b5c4e4de99267e4005eb8a918e16bb8098dc",
+          null
+        ]
+      }
+    ]
+  },
+  "sequence": 41,
+  "status": 200
+}

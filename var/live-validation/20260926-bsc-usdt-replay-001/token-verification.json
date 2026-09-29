@@ -1,0 +1,18 @@
+{
+  "block_tag": "latest",
+  "caip2": "eip155:56",
+  "chain_id": 56,
+  "code_present": true,
+  "code_sha256": "a5a6d887c581c25cba4104e4281a530044ba59d718e62cdaa80ef89900299d50",
+  "code_size_bytes": 4413,
+  "contract": "0x55d398326f99059ff775485246999027b3197955",
+  "decimals": 18,
+  "name": "Tether USD",
+  "network": "bsc",
+  "note": "Technical, read-only contract checks. They do not establish the token's issuer, backing, or provenance.",
+  "observed_chain_id": 56,
+  "replayed_from_recorded_exchanges": true,
+  "requested_decimals": 18,
+  "requested_display_symbol": "USDT",
+  "symbol": "USDT"
+}

@@ -1,0 +1,53 @@
+Stage 1 bounded live search -- result: no qualifying transfer found
+
+Accepted anchor:   TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv (tron, OKX, role=unknown)
+Required scope:    valid_from = valid_to = 2026-08-10T15:59:54Z (block 85235532)
+Token filter used: TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t (verified Mainnet USDT-TRC20 contract)
+
+Qualifying condition, as instructed: a transfer TO the accepted anchor whose
+verified block timestamp is EXACTLY 2026-08-10T15:59:54Z (1786377594000 ms).
+
+Requests made (all read-only, no signing/broadcasting):
+  1. GET /v1/accounts/{anchor}/transactions/trc20
+     only_to=true, contract_address=USDT, min_timestamp=max_timestamp=1786377594000
+     -> HTTP 200, 0 rows. A genuine empty successful response, not a provider error.
+  2. GET /v1/accounts/{anchor}/transactions/trc20
+     only_to=true, contract_address=USDT, min_timestamp=1786377294000, max_timestamp=1786377894000
+     (snapshot +/- 5 minutes, confirmatory only)
+     -> HTTP 200, 50 rows, all sharing one single block_timestamp,
+        1786377891000 ms (2026-08-10T16:04:51Z) -- 297 seconds AFTER the snapshot.
+        Real, dense incoming activity exists nearby (many distinct senders,
+        each ~1,000-1,300 USDT), confirming the search itself works. None of
+        it is at the required exact instant, so none of it qualifies.
+  3-4. Same two queries re-run to produce this saved JSON record (the first
+       exploration's process exited without persisting its raw output).
+
+Total requests used: 4 of the 10 authorized. 6 remain unused.
+
+Conclusion: No qualifying example found within the searched scope.
+
+This is not "no such transfer exists" -- it is a report about the specific,
+narrow search performed: nothing landed in the anchor's own snapshot block
+carrying an incoming USDT transfer. A balance snapshot in a PoR disclosure
+does not imply any transfer occurred in that literal block; it only records
+a balance reading at that height.
+
+No live trace was run: there is no verified seed transfer to seed it with,
+and inventing one (by widening the window and picking a nearby transfer, or
+by moving the label's valid_from/valid_to) is explicitly out of scope.
+
+What would make a usable example possible, without touching this accepted
+claim:
+  - A different, additionally reviewed and accepted claim for this or another
+    OKX address whose approved temporal scope is an interval (not a single
+    instant), backed by real source evidence of a control period -- so an
+    ordinary transfer landing anywhere in that interval could qualify. That
+    requires a new disclosure and a new review decision, not a change to this
+    one.
+  - Independent evidence (beyond this PoR row) that OKX controlled this exact
+    address across a wider, source-backed window, which could support a
+    reviewer decision to widen valid_to on this same claim -- not something
+    this session may originate.
+
+This candidate's acceptance, hashes, linkage, and scope are unchanged by this
+search.

@@ -1,0 +1,63 @@
+{
+  "caveat": "Repeated forwarding or high outgoing concentration recorded from this bundle is behavioral evidence only. It does not establish OKX ownership, customer-deposit status, service ownership, fraud, common control, or a strong inference of any kind.",
+  "configuration": {
+    "data_mode": "SYNTHETIC",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "direction_counts": {
+    "incoming": 0,
+    "outgoing": 0
+  },
+  "direction_errors": {},
+  "evaluation_wallet_registry_snapshot": {
+    "address": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+    "control_category": "other_operational_confounder",
+    "data_mode": "RECORDED_PUBLIC",
+    "evidence_type": "first-party disclosure: the energy-marketplace operator's own blog post, on its own domain, naming this address as belonging to TronBid.com and carrying the TronScan public tag TronBid_Energy_MarketPlace",
+    "network": "tron",
+    "review_state": "accepted",
+    "reviewer": "reviewer@tracecrypt.local",
+    "source_reference": "https://tronbid.com/en/blog/tronscan-tronbid-com-and-energy (TronBid.com official blog, published 2026-06-18, updated 2026-09-07)",
+    "upstream_source_id": "tronbid-blog-tronscan-address-page-2026-06-18"
+  },
+  "excluded_failed_or_reverted_count": 0,
+  "excluded_non_transfer_count": 0,
+  "files": {
+    "evidence.json": "961d438b018336663cdb48b3106fa40a7eac164d22603198d0417e92ea53e439",
+    "raw/0001-get-v1-accounts-TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM-transactions-.json": "e676fe1653b7008b28091b9e1dfcc13b0be430e81742175109499e914c320216",
+    "raw/0002-get-v1-accounts-TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM-transactions-.json": "b965f9a77f2bd85960962d647cd2839ce8e61256ef3056bdd26d630323bcf8e5"
+  },
+  "provenance": {
+    "artifact_created_at": "2026-09-20T20:11:41.216844+00:00",
+    "backfilled": false,
+    "run_finished_at": "2026-09-20T20:11:41.216155+00:00",
+    "run_started_at": "2026-09-20T20:11:40.281006+00:00"
+  },
+  "query": {
+    "analysis_cutoff": "2026-09-21T00:00:00+00:00",
+    "analysis_start": "2026-09-14T00:00:00+00:00",
+    "candidate_address": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+    "enrich_events": false,
+    "event_limit": 500,
+    "max_requests": 20,
+    "network": "tron",
+    "page_limit": 5,
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "verify_execution": false
+  },
+  "requests_used": 2,
+  "rows_found": 0,
+  "run_id": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+  "subject_kind": "evaluation_wallet",
+  "truncated_by_event_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_page_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_request_budget": false,
+  "written": false
+}

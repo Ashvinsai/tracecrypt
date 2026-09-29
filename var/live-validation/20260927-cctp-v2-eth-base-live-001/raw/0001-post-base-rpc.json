@@ -1,0 +1,20 @@
+{
+  "body": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "0x2105"
+  },
+  "captured_at": "2026-09-26T21:08:17.556233+00:00",
+  "key": "4e0f7558c5eac47eeb258b8a68726efaa924ca4bac71667b3ec9145a805c207d",
+  "method": "POST",
+  "params": {},
+  "path": "/base/rpc",
+  "payload": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "eth_chainId",
+    "params": []
+  },
+  "sequence": 1,
+  "status": 200
+}

@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_10_RETRY_TIMEOUT_ETH",
+  "model": "clm-latest",
+  "choice": "RETRY_PROVIDER",
+  "probabilities": {
+    "RETRY_PROVIDER": 0.6177343389922448,
+    "REQUEST_HUMAN_REVIEW": 0.12055376809054769,
+    "GENERATE_EVIDENCE_REPORT": 0.2617118929172075
+  },
+  "input_hash": "5809703bfe3f309da477e4b67ccdac1428602a8c3bf1fb54e37ee816f01a2fb7"
+}

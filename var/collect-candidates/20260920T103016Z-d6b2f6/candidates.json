@@ -1,0 +1,24 @@
+{
+  "anchor_address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+  "anchor_entity_name": "OKX",
+  "anchor_valid_from": "2026-08-10T15:59:54+00:00",
+  "anchor_valid_to": "2026-08-10T15:59:54+00:00",
+  "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+  "analysis_start": "2026-08-10T15:59:53+00:00",
+  "analysis_cutoff": "2026-08-10T15:59:55+00:00",
+  "candidate_limit": 10,
+  "max_requests": 5,
+  "requests_used": 1,
+  "truncated_by_candidate_limit": false,
+  "truncated_by_request_budget": false,
+  "candidates": [
+    {
+      "tx_hash": "84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997",
+      "event_reference": "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:unindexed:48a8bac33a55e803",
+      "amount_base_units": 72140000,
+      "block_time": "2026-08-10T15:59:54+00:00",
+      "candidate_address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq"
+    }
+  ],
+  "ineligible_events": []
+}

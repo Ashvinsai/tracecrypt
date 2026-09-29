@@ -1,0 +1,739 @@
+{
+  "artifact_class": "DERIVED_COMPARISON",
+  "notice": "DECISION SUPPORT METADATA - NOT BLOCKCHAIN EVIDENCE",
+  "authoritative_crypto_commit": "86db954bc4f855fc431c6808afee5b3cef1fd3e3",
+  "stages": {
+    "08B": {
+      "total_scenarios": 10,
+      "top1_agreement_count": 3,
+      "top1_agreement_rate": 0.3,
+      "top3_coverage_count": 10,
+      "top3_coverage_rate": 1.0,
+      "source_hashes": {
+        "scenario-results.json": "d9c5e2b742019689629c27c368abe17e72196c0b379aca6a9deede9c4db46e67",
+        "summary.json": "f3d217993d7b056b0f31cec45e30e371d6e9aad4ab0fd95dc094b4133563d8d2",
+        "latencies.json": "f2e0c811b6060693f71cac91ff9adb04a9ae7b9a56032d69bfbafb88573e7cbb"
+      }
+    },
+    "08C-B": {
+      "total_scenarios": 10,
+      "top1_agreement_count": 4,
+      "top1_agreement_rate": 0.4,
+      "top3_coverage_count": 10,
+      "top3_coverage_rate": 1.0,
+      "source_hashes": {
+        "scenario-results.json": "d5752b6de2bedff260a86ea89227e8747610aa8b40266e9b0d0c9b23316b3a5f",
+        "summary.json": "abc15b02033fd31313d4f429e165ed00f84ae495cd3817c796b12f412776789d",
+        "latencies.json": "0e0ab519d7b33bdd61f5de72b0af1f82c5c410c8f0ea64cbc56dbf4385537703"
+      }
+    },
+    "08C-B2": {
+      "total_scenarios": 10,
+      "top1_agreement_count": 7,
+      "top1_agreement_rate": 0.7,
+      "top3_coverage_count": 10,
+      "top3_coverage_rate": 1.0,
+      "source_hashes": {
+        "scenario-results.json": "67d7243b06051035cc63c2a78a63fba88f1f12ff66adbe193494633996558a1c",
+        "summary.json": "bbe0d1014ad660f4a438fc353992822b1f676e646f3080e2d5ca7f37ecfcb517",
+        "latencies.json": "3700c93030ad53e0981fd6a1e03fc889c22d0ba2f2dd610ab8529d1dc689ab5d"
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": "01_SAME_CHAIN_CONTINUATION",
+      "stages": {
+        "08B": {
+          "rule_choice": "CONTINUE_SAME_CHAIN",
+          "clm_choice": "STOP_COVERAGE_GAP",
+          "candidates": [
+            "CONTINUE_SAME_CHAIN",
+            "CHECK_REVIEWED_VASP",
+            "RETRY_PROVIDER",
+            "STOP_COVERAGE_GAP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CONTINUE_SAME_CHAIN": 0.003994649691798075,
+            "CHECK_REVIEWED_VASP": 0.26659408494669834,
+            "RETRY_PROVIDER": 0.08163681597186959,
+            "STOP_COVERAGE_GAP": 0.5662763708480666,
+            "REQUEST_HUMAN_REVIEW": 0.03879015255266367,
+            "GENERATE_EVIDENCE_REPORT": 0.042707925988903786
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "STOP_COVERAGE_GAP",
+            "CHECK_REVIEWED_VASP",
+            "RETRY_PROVIDER"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "CONTINUE_SAME_CHAIN",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "CONTINUE_SAME_CHAIN",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CONTINUE_SAME_CHAIN": 0.011488838392479854,
+            "CHECK_REVIEWED_VASP": 0.7570729667599805,
+            "REQUEST_HUMAN_REVIEW": 0.11015614198637912,
+            "GENERATE_EVIDENCE_REPORT": 0.12128205286116049
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "no_match",
+          "rule_choice": "CONTINUE_SAME_CHAIN",
+          "clm_choice": "REQUEST_HUMAN_REVIEW",
+          "candidates": [
+            "CONTINUE_SAME_CHAIN",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CONTINUE_SAME_CHAIN": 0.053641487346521355,
+            "REQUEST_HUMAN_REVIEW": 0.49818141425846835,
+            "GENERATE_EVIDENCE_REPORT": 0.4481770983950102
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT",
+            "CONTINUE_SAME_CHAIN"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 588.2220080000025
+        }
+      }
+    },
+    {
+      "scenario_id": "02_REVIEWED_VASP_REACHED",
+      "stages": {
+        "08B": {
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "STOP_COVERAGE_GAP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "STOP_COVERAGE_GAP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.244553532773643,
+            "STOP_COVERAGE_GAP": 0.672741317741469,
+            "REQUEST_HUMAN_REVIEW": 0.03660672204946199,
+            "GENERATE_EVIDENCE_REPORT": 0.04609842743542603
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "STOP_COVERAGE_GAP",
+            "CHECK_REVIEWED_VASP",
+            "GENERATE_EVIDENCE_REPORT"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "GENERATE_EVIDENCE_REPORT",
+          "candidates": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "REQUEST_HUMAN_REVIEW": 0.4426181454528068,
+            "GENERATE_EVIDENCE_REPORT": 0.5573818545471932
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "match_found",
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "GENERATE_EVIDENCE_REPORT",
+          "candidates": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "REQUEST_HUMAN_REVIEW": 0.47027140766111175,
+            "GENERATE_EVIDENCE_REPORT": 0.5297285923388882
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 202.78854899993348
+        }
+      }
+    },
+    {
+      "scenario_id": "03_VASP_CANDIDATE_ONLY",
+      "stages": {
+        "08B": {
+          "rule_choice": "REVIEW_VASP_CANDIDATE",
+          "clm_choice": "REVIEW_VASP_CANDIDATE",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "REVIEW_VASP_CANDIDATE",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.012808579111180668,
+            "REVIEW_VASP_CANDIDATE": 0.9824772567104995,
+            "REQUEST_HUMAN_REVIEW": 0.0028057506881957596,
+            "GENERATE_EVIDENCE_REPORT": 0.0019084134901242028
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "REVIEW_VASP_CANDIDATE",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "REVIEW_VASP_CANDIDATE",
+          "clm_choice": "REVIEW_VASP_CANDIDATE",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "REVIEW_VASP_CANDIDATE",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.012808579111180668,
+            "REVIEW_VASP_CANDIDATE": 0.9824772567104995,
+            "REQUEST_HUMAN_REVIEW": 0.0028057506881957596,
+            "GENERATE_EVIDENCE_REPORT": 0.0019084134901242028
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "REVIEW_VASP_CANDIDATE",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "no_match",
+          "rule_choice": "REVIEW_VASP_CANDIDATE",
+          "clm_choice": "REVIEW_VASP_CANDIDATE",
+          "candidates": [
+            "REVIEW_VASP_CANDIDATE",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "REVIEW_VASP_CANDIDATE": 0.9966747797913155,
+            "REQUEST_HUMAN_REVIEW": 0.0019326304292471566,
+            "GENERATE_EVIDENCE_REPORT": 0.0013925897794374092
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "REVIEW_VASP_CANDIDATE",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 253.5034560000895
+        }
+      }
+    },
+    {
+      "scenario_id": "04_PROVIDER_FAILURE_RETRYABLE",
+      "stages": {
+        "08B": {
+          "rule_choice": "RETRY_PROVIDER",
+          "clm_choice": "STOP_COVERAGE_GAP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "RETRY_PROVIDER",
+            "STOP_COVERAGE_GAP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.1887759633383801,
+            "RETRY_PROVIDER": 0.14972366638469536,
+            "STOP_COVERAGE_GAP": 0.6444858420359465,
+            "REQUEST_HUMAN_REVIEW": 0.010448464413380288,
+            "GENERATE_EVIDENCE_REPORT": 0.006566063827597747
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "STOP_COVERAGE_GAP",
+            "CHECK_REVIEWED_VASP",
+            "RETRY_PROVIDER"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "RETRY_PROVIDER",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "RETRY_PROVIDER",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.530994239637321,
+            "RETRY_PROVIDER": 0.42114686097586224,
+            "REQUEST_HUMAN_REVIEW": 0.029389729065323708,
+            "GENERATE_EVIDENCE_REPORT": 0.018469170321493082
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "RETRY_PROVIDER",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "no_match",
+          "rule_choice": "RETRY_PROVIDER",
+          "clm_choice": "RETRY_PROVIDER",
+          "candidates": [
+            "RETRY_PROVIDER",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "RETRY_PROVIDER": 0.8958613553485423,
+            "REQUEST_HUMAN_REVIEW": 0.0635826601277599,
+            "GENERATE_EVIDENCE_REPORT": 0.040555984523697915
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "RETRY_PROVIDER",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 252.7935419999494
+        }
+      }
+    },
+    {
+      "scenario_id": "05_PROVIDER_FAILURE_EXHAUSTED",
+      "stages": {
+        "08B": {
+          "rule_choice": "STOP_COVERAGE_GAP",
+          "clm_choice": "STOP_COVERAGE_GAP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "STOP_COVERAGE_GAP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.23025028280268522,
+            "STOP_COVERAGE_GAP": 0.690601671040038,
+            "REQUEST_HUMAN_REVIEW": 0.04152894771173157,
+            "GENERATE_EVIDENCE_REPORT": 0.037619098445545215
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "STOP_COVERAGE_GAP",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "STOP_COVERAGE_GAP",
+          "clm_choice": "STOP_COVERAGE_GAP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "STOP_COVERAGE_GAP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.23074007963048235,
+            "STOP_COVERAGE_GAP": 0.6899435075919601,
+            "REQUEST_HUMAN_REVIEW": 0.041617289609093715,
+            "GENERATE_EVIDENCE_REPORT": 0.03769912316846382
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "STOP_COVERAGE_GAP",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "no_match",
+          "rule_choice": "STOP_COVERAGE_GAP",
+          "clm_choice": "STOP_COVERAGE_GAP",
+          "candidates": [
+            "STOP_COVERAGE_GAP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "STOP_COVERAGE_GAP": 0.9198963607987807,
+            "REQUEST_HUMAN_REVIEW": 0.04209165031877251,
+            "GENERATE_EVIDENCE_REPORT": 0.038011988882446904
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "STOP_COVERAGE_GAP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 243.57431199996427
+        }
+      }
+    },
+    {
+      "scenario_id": "06_CCTP_CONTINUATION_PENDING",
+      "stages": {
+        "08B": {
+          "rule_choice": "FOLLOW_CROSS_CHAIN_LINK",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "FOLLOW_CROSS_CHAIN_LINK",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "FOLLOW_CROSS_CHAIN_LINK": 0.05610328603995155,
+            "CHECK_REVIEWED_VASP": 0.8125919308534296,
+            "REQUEST_HUMAN_REVIEW": 0.06432985051643741,
+            "GENERATE_EVIDENCE_REPORT": 0.06697493259018142
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "FOLLOW_CROSS_CHAIN_LINK",
+          "clm_choice": "GENERATE_EVIDENCE_REPORT",
+          "candidates": [
+            "FOLLOW_CROSS_CHAIN_LINK",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "FOLLOW_CROSS_CHAIN_LINK": 0.29936469522932757,
+            "REQUEST_HUMAN_REVIEW": 0.34325997619211596,
+            "GENERATE_EVIDENCE_REPORT": 0.35737532857855636
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW",
+            "FOLLOW_CROSS_CHAIN_LINK"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "no_match",
+          "rule_choice": "FOLLOW_CROSS_CHAIN_LINK",
+          "clm_choice": "GENERATE_EVIDENCE_REPORT",
+          "candidates": [
+            "FOLLOW_CROSS_CHAIN_LINK",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "FOLLOW_CROSS_CHAIN_LINK": 0.3011606779926034,
+            "REQUEST_HUMAN_REVIEW": 0.3225840750667457,
+            "GENERATE_EVIDENCE_REPORT": 0.37625524694065104
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW",
+            "FOLLOW_CROSS_CHAIN_LINK"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 263.4912670000631
+        }
+      }
+    },
+    {
+      "scenario_id": "07_CCTP_DESTINATION_ALREADY_COMPLETED",
+      "stages": {
+        "08B": {
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.834599693334184,
+            "REQUEST_HUMAN_REVIEW": 0.07983283711690492,
+            "GENERATE_EVIDENCE_REPORT": 0.08556746954891102
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.834599693334184,
+            "REQUEST_HUMAN_REVIEW": 0.07983283711690492,
+            "GENERATE_EVIDENCE_REPORT": 0.08556746954891102
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "no_match",
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "GENERATE_EVIDENCE_REPORT",
+          "candidates": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "REQUEST_HUMAN_REVIEW": 0.4495880304891813,
+            "GENERATE_EVIDENCE_REPORT": 0.5504119695108187
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "GENERATE_EVIDENCE_REPORT",
+            "REQUEST_HUMAN_REVIEW"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 166.26334000000043
+        }
+      }
+    },
+    {
+      "scenario_id": "08_RECEIPT_UNVERIFIED",
+      "stages": {
+        "08B": {
+          "rule_choice": "VERIFY_EXECUTION_RECEIPT",
+          "clm_choice": "VERIFY_EXECUTION_RECEIPT",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "VERIFY_EXECUTION_RECEIPT",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.11937376075522023,
+            "VERIFY_EXECUTION_RECEIPT": 0.8462595280347176,
+            "REQUEST_HUMAN_REVIEW": 0.019686351647165774,
+            "GENERATE_EVIDENCE_REPORT": 0.014680359562896329
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "VERIFY_EXECUTION_RECEIPT",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "VERIFY_EXECUTION_RECEIPT",
+          "clm_choice": "VERIFY_EXECUTION_RECEIPT",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "VERIFY_EXECUTION_RECEIPT",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.11937376075522023,
+            "VERIFY_EXECUTION_RECEIPT": 0.8462595280347176,
+            "REQUEST_HUMAN_REVIEW": 0.019686351647165774,
+            "GENERATE_EVIDENCE_REPORT": 0.014680359562896329
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "VERIFY_EXECUTION_RECEIPT",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "not_checked",
+          "rule_choice": "VERIFY_EXECUTION_RECEIPT",
+          "clm_choice": "VERIFY_EXECUTION_RECEIPT",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "VERIFY_EXECUTION_RECEIPT",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.2016834638276751,
+            "VERIFY_EXECUTION_RECEIPT": 0.768365731998783,
+            "REQUEST_HUMAN_REVIEW": 0.015476700796225058,
+            "GENERATE_EVIDENCE_REPORT": 0.014474103377316864
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "VERIFY_EXECUTION_RECEIPT",
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 251.124118000007
+        }
+      }
+    },
+    {
+      "scenario_id": "09_AMBIGUOUS_ORDERING",
+      "stages": {
+        "08B": {
+          "rule_choice": "REQUEST_HUMAN_REVIEW",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.7769895453035116,
+            "REQUEST_HUMAN_REVIEW": 0.1354835981141868,
+            "GENERATE_EVIDENCE_REPORT": 0.08752685658230151
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "REQUEST_HUMAN_REVIEW",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.7769895453035116,
+            "REQUEST_HUMAN_REVIEW": 0.1354835981141868,
+            "GENERATE_EVIDENCE_REPORT": 0.08752685658230151
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "no_match",
+          "rule_choice": "REQUEST_HUMAN_REVIEW",
+          "clm_choice": "REQUEST_HUMAN_REVIEW",
+          "candidates": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "REQUEST_HUMAN_REVIEW": 0.6066395595613188,
+            "GENERATE_EVIDENCE_REPORT": 0.3933604404386811
+          },
+          "shadow_agreement": true,
+          "top3": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 141.42179100008434
+        }
+      }
+    },
+    {
+      "scenario_id": "10_REPORT_READY",
+      "stages": {
+        "08B": {
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "CHECK_REVIEWED_VASP",
+          "candidates": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "CHECK_REVIEWED_VASP": 0.8973048468098933,
+            "REQUEST_HUMAN_REVIEW": 0.06381679782009755,
+            "GENERATE_EVIDENCE_REPORT": 0.0388783553700091
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "CHECK_REVIEWED_VASP",
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ]
+        },
+        "08C-B": {
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "REQUEST_HUMAN_REVIEW",
+          "candidates": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "REQUEST_HUMAN_REVIEW": 0.6214188661823055,
+            "GENERATE_EVIDENCE_REPORT": 0.3785811338176945
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ]
+        },
+        "08C-B2": {
+          "service_lookup_status": "match_found",
+          "rule_choice": "GENERATE_EVIDENCE_REPORT",
+          "clm_choice": "REQUEST_HUMAN_REVIEW",
+          "candidates": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "probabilities": {
+            "REQUEST_HUMAN_REVIEW": 0.5795649436751795,
+            "GENERATE_EVIDENCE_REPORT": 0.4204350563248206
+          },
+          "shadow_agreement": false,
+          "top3": [
+            "REQUEST_HUMAN_REVIEW",
+            "GENERATE_EVIDENCE_REPORT"
+          ],
+          "clm_latency_ms": null,
+          "total_routing_latency_ms": 218.27564000000166
+        }
+      }
+    }
+  ]
+}

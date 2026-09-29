@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_20_PROVIDER_RETRY_TRANSIENT_503",
+  "model": "clm-latest",
+  "choice": "RETRY_PROVIDER",
+  "probabilities": {
+    "RETRY_PROVIDER": 0.5049728622716674,
+    "REQUEST_HUMAN_REVIEW": 0.19776605632043862,
+    "GENERATE_EVIDENCE_REPORT": 0.297261081407894
+  },
+  "input_hash": "81211803024afedbacb4a8214af04ea54f32dd4581996446e6812373fab9aee9"
+}

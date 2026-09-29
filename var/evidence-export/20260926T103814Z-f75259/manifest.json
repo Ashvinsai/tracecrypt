@@ -1,0 +1,31 @@
+{
+  "analysis_cutoff": "2026-08-10T15:59:54+00:00",
+  "case_flow_linkage": "established",
+  "caveat": "A hash establishes that these files have not changed since this bundle was generated. It does not establish that the attribution is correct, and this bundle is not a legal instrument.",
+  "coverage_status": "complete_within_scope",
+  "data_mode": "RECORDED_PUBLIC",
+  "engine_version": "0.1.0",
+  "export_format_version": "1",
+  "files": {
+    "branch_endings.csv": "a5d22b31851e49386fb118d08cd1b948443105574b7d958341314dbcae3cdc0a",
+    "evidence.html": "e80ca11fb71e03fde2fcddd8f5b67089bbd32e7fbbc9d35859ad61dd6d623665",
+    "evidence.json": "86a0e348a5e2777bde9819d96b6e32c7ac1a6f794794ccf41e20ff951ad6cff1",
+    "evidence.pdf": "f96352191afe8a89c82e4f0f4a7d66eacb8cde81cce09047524cc48be6e3d1d9",
+    "labels.csv": "c5abd854870f36724ffb259a94e81a7e174ad2e5ad1d1b15b6ca0ac2f05dba81",
+    "limitations.csv": "bfd03c1069bfb51bd0124a97f86eebcf0dd464217302e75cf96d1cd9a26d85ee",
+    "transfers.csv": "20ed890624694f898bd3434413a14101dd63ca0a3a6b3c1a779ec0a2b6b73b12"
+  },
+  "generated_at": "2026-09-26T10:38:14.263550+00:00",
+  "label_set_version": "0",
+  "request_id": "recorded-tron-multihop",
+  "seed": {
+    "address": "TMqgVELUb5BxvA8LgMJnsQQWMg33Psvfqz",
+    "asset": {
+      "decimals": 6,
+      "display_symbol": "USDT",
+      "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+    },
+    "event_reference": "tron:541fe0b42ce36b1258af4abb597caef6e0dedee1cf93cebf595abc032f807744:0",
+    "network_key": "tron"
+  }
+}

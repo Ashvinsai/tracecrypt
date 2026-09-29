@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_09_RETRY_RATE_LIMIT_TRON",
+  "model": "clm-latest",
+  "choice": "RETRY_PROVIDER",
+  "probabilities": {
+    "RETRY_PROVIDER": 0.6753827262785997,
+    "REQUEST_HUMAN_REVIEW": 0.14884970105252024,
+    "GENERATE_EVIDENCE_REPORT": 0.17576757266888007
+  },
+  "input_hash": "1fb18d6e6d5399a12947aa8f24ce850abce8f25397c0188f4113126fb53fe22e"
+}

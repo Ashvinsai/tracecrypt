@@ -1,0 +1,6 @@
+code,message,address,event_reference
+snapshot_only_label,"OKX's claim over TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir is scoped to a single instant (2026-08-10T15:59:54+00:00), not a period of continuing control.",TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir,
+address_role_unknown,"TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir's role under OKX is not established beyond service control -- not confirmed as a customer deposit address, hot wallet, or cold reserve.",TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir,
+allocation_unknown,"The observed amount is the transfer's own value, not an allocation to any specific case or claimant. An observed path is a sequence of transfers, not ownership of fungible units.",,
+bounded_analysis_window,Analysed 2026-08-10T15:41:27+00:00 to 2026-08-10T15:59:54+00:00 only -- not the account's full history before or after it.,,
+single_validation_case,"One public-chain validation case, chosen to demonstrate the pipeline end to end. Not a general coverage claim about this address, this entity, or TRON activity broadly.",,

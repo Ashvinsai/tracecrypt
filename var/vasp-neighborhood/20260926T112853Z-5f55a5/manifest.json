@@ -1,0 +1,41 @@
+{
+  "candidate_count": 1,
+  "caveat": "Candidate relationships are deterministic research leads only. They do not establish service ownership, customer-deposit role, common control, fraud, or unique fund ownership. SHA-256 hashes establish file consistency only.",
+  "configuration": {
+    "data_mode": "LIVE",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "coverage_complete": false,
+  "data_mode": "LIVE",
+  "files": {
+    "raw/0001-get-v1-accounts-TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir-transactions-.json": "c8dc17adab21152af2edbde78401339a481a74c4ad92e1d0988813d491ef751f",
+    "raw/0002-get-v1-transactions-84025aacbd098c91c8ea240481c6304d528807a84d35.json": "64e753579f61ee96c68d5895249c9c0f501ae269a6cda02aa34c7fac7b82db60",
+    "raw/0003-post-walletsolidity-gettransactioninfobyid.json": "358bb74d97f3169ffc680ae21202ee52b98a7b52693128401d41f610e2733690",
+    "raw/0004-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "e9826024bcff7fe355429c0b5ef17dab31a853a9f174cbcafa5d8f6981613d07",
+    "raw/0005-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "ad3eb6ec7d4ba904fdcb87ba814d986d274bdb1ef104d01f535b994d016f7fbd",
+    "report.json": "0c16dc2c217bcfc7540a988f00f57d0b1796b108f05fdbe4f72ba2cba5a5c3d4"
+  },
+  "finished_at": "2026-09-26T11:28:57.201495+00:00",
+  "mode": "live",
+  "policy_version": "1",
+  "provider_requests": 5,
+  "query": {
+    "address_limit": 10,
+    "anchor_address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+    "enrich_events": true,
+    "event_limit": 200,
+    "max_requests": 5,
+    "network": "tron",
+    "page_limit": 2,
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "verify_execution": true,
+    "window_end": "2026-08-10T16:00:24+00:00",
+    "window_start": "2026-08-10T15:59:24+00:00"
+  },
+  "raw_exchange_count": 5,
+  "report_type": "vasp_candidate_neighborhood",
+  "run_id": "20260926T112853Z-5f55a5",
+  "started_at": null,
+  "status": "partial"
+}

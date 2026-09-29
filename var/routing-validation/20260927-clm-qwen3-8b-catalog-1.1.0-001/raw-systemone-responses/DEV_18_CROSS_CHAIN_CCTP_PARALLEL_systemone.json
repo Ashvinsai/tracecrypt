@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_18_CROSS_CHAIN_CCTP_PARALLEL",
+  "model": "clm-latest",
+  "choice": "FOLLOW_CROSS_CHAIN_LINK",
+  "probabilities": {
+    "FOLLOW_CROSS_CHAIN_LINK": 0.5412527977849663,
+    "REQUEST_HUMAN_REVIEW": 0.155707557822053,
+    "GENERATE_EVIDENCE_REPORT": 0.3030396443929807
+  },
+  "input_hash": "90a89d1551a7bddcd208b6d6dd5ddf4d1f7d564b3afc8dc1d58918b61d3ee9e9"
+}

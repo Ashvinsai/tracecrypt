@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_02_SAME_CHAIN_TRON_USDT",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "CONTINUE_SAME_CHAIN": 0.008037077174870252,
+    "REQUEST_HUMAN_REVIEW": 0.4621414337302943,
+    "GENERATE_EVIDENCE_REPORT": 0.5298214890948354
+  },
+  "input_hash": "05e18b3b4d683f625c114b9b955894debea20e6fffb5a8ca30a1de92d22d122f"
+}

@@ -1,0 +1,26 @@
+Fresh archive extracted. No dependency install attempted.
+PREPARE 1
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 9902ff974344, initial schema
+INFO  [alembic.runtime.migration] Running upgrade 9902ff974344 -> 4c0696953d8d, Stage 4 monitoring: watch checkpoint, alert identity/state, poll-run audit (D029).
+INFO  [alembic.runtime.migration] Running upgrade 4c0696953d8d -> a091unified01, Combined workspace: immutable case-scoped investigation snapshots.
+INFO  [alembic.runtime.migration] Running upgrade a091unified01 -> a092operations02, Durable complaint intake, job leases, indexed observations and signals.
+INFO  [alembic.runtime.migration] Running upgrade a092operations02 -> a093crosschain03, Case-scoped checked protocol reviews.
+seeded SYNTHETIC demo: 18 events, 11 addresses, 2 assets
+login: investigator@example.test / demo-password-change-me
+PREPARE 2
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+Synthetic fixture event set already present; retained without overwriting.
+seeded SYNTHETIC demo: 0 events, 0 addresses, 0 assets
+login: investigator@example.test / demo-password-change-me
+Both first and repeated preparation succeeded.
+HTTP readiness: 200; primary workspace: 200
+Actual gateway admin + standard-library sender: accepted; repeat idempotent; no tokens logged.
+Companion worker completed fresh queued synthetic job: succeeded
+Nearest receiving VASP: FICTIONAL fixture; verified observed transfer hops = 5
+Saved evidence export: HTTP 200; all file hashes match; worker remained active.
+Indexed saved-run event observations: 9
+FRESH PACKAGE STARTUP AND END-TO-END CHECK: PASSED
+Scope: installed current environment dependencies, SQLite, synthetic fixtures. Not clean pip install, live providers, native browser transport or production validation.

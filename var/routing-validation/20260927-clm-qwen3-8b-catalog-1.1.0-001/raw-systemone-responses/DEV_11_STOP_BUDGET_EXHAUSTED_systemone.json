@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_11_STOP_BUDGET_EXHAUSTED",
+  "model": "clm-latest",
+  "choice": "STOP_COVERAGE_GAP",
+  "probabilities": {
+    "STOP_COVERAGE_GAP": 0.7165133945188454,
+    "REQUEST_HUMAN_REVIEW": 0.08848733778318849,
+    "GENERATE_EVIDENCE_REPORT": 0.19499926769796608
+  },
+  "input_hash": "265e65b9af70409f0cf3641571e3ec77404435e5f8481948d9d119f9dc7cfb84"
+}

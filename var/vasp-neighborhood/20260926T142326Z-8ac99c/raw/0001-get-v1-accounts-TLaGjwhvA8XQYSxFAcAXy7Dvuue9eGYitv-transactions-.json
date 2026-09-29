@@ -1,0 +1,26 @@
+{
+  "body": {
+    "data": [],
+    "meta": {
+      "at": 1790432606919,
+      "page_size": 0
+    },
+    "success": true
+  },
+  "captured_at": "2026-09-26T14:23:27.064336+00:00",
+  "key": "3e67c95f8985e4a2c9dfe5069813b71bbf2316134d8d2aeb41c30f82563d9579",
+  "method": "GET",
+  "params": {
+    "contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "limit": 200,
+    "max_timestamp": 1786377624000,
+    "min_timestamp": 1786377564000,
+    "only_confirmed": "true",
+    "only_to": "true",
+    "order_by": "block_timestamp,asc"
+  },
+  "path": "/v1/accounts/TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv/transactions/trc20",
+  "payload": {},
+  "sequence": 1,
+  "status": 200
+}

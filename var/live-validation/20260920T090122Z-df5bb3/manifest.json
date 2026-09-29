@@ -1,0 +1,47 @@
+{
+  "bundle_version": "1",
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that the attribution is correct.",
+  "configuration": {
+    "acquisition_max_requests": 8,
+    "budgets": {
+      "max_events": 5000,
+      "max_hops": 8,
+      "max_provider_requests": 400
+    },
+    "label_dir": "/home/ash/Work/crypto-attribution/data",
+    "label_source": "reviewed_sets",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "data_mode": "LIVE",
+  "failure": null,
+  "files": {
+    "accepted-label-snapshot.json": "12c435d29b5e4a05430568f9641ae2553ded2da20d69c3cf38a7578d2c764da8",
+    "normalized-transfers.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "raw/0001-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "c6f7051800bd2533d339580b8544e7fc292e133a969fa07f018bda07182c7ede",
+    "raw/0002-get-v1-transactions-84025aacbd098c91c8ea240481c6304d528807a84d35.json": "9bc28be1ff6696562968812b4fcb16c02a1251b34f6fa20950ce77eb6f0c82ac",
+    "raw/0003-post-walletsolidity-gettransactioninfobyid.json": "2b3539f8d6918638a8710f012169760eedd7c7a11214be7cd8e61278f9904681",
+    "receipts.json": "12238c8fd723b101c00468d64500d6ab9405dee1257a4e36991dfc8d38066d79",
+    "report.html": "b39e18c3ccea1e89478869413f92aeec21dd425ede34e58369a89bc59b71db9c",
+    "trace.json": "ff9a9eb32ad5322449350773db65b4c2f8396bab71eb01d9d5963d1f6be337f0"
+  },
+  "finished_at": "2026-09-20T09:01:27.685678+00:00",
+  "mode": "live",
+  "provider_exchanges": 3,
+  "query": {
+    "address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "analysis_cutoff": "2026-08-10T15:59:55+00:00",
+    "analysis_start": "2026-08-10T15:59:53+00:00",
+    "network": "tron",
+    "seed_event_reference": "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0",
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  },
+  "run_id": "20260920T090122Z-df5bb3",
+  "started_at": "2026-09-20T09:01:22.184118+00:00",
+  "status": "succeeded",
+  "versions": {
+    "engine": "0.1.0",
+    "label_set": "0",
+    "parser": "0.1.0"
+  }
+}

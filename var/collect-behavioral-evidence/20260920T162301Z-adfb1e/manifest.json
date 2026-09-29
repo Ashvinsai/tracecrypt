@@ -1,0 +1,51 @@
+{
+  "caveat": "Repeated forwarding or high outgoing concentration recorded from this bundle is behavioral evidence only. It does not establish OKX ownership, customer-deposit status, service ownership, fraud, common control, or a strong inference of any kind.",
+  "configuration": {
+    "data_mode": "LIVE",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "direction_counts": {
+    "incoming": 1,
+    "outgoing": 200
+  },
+  "direction_errors": {},
+  "excluded_failed_or_reverted_count": 0,
+  "excluded_non_transfer_count": 0,
+  "files": {
+    "evidence.json": "cbda90fc9965bf542fac5bb0f6f77a80b8a9a963c2faf0b688f12c1b1c48dd11",
+    "raw/0001-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "9c4a0bff19b45d8e3228c9a8746d9f1223b82d6d76b997d8642038ca6fce40cf",
+    "raw/0002-get-v1-accounts-TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq-transactions-.json": "0a77e902e666b24fa14c00082051c75a087316084d1208093fd5abf54995ebf9"
+  },
+  "provenance": {
+    "artifact_created_at": "2026-09-20T16:23:03.055396+00:00",
+    "backfilled": false,
+    "run_finished_at": "2026-09-20T16:23:03.051300+00:00",
+    "run_started_at": "2026-09-20T16:23:01.679585+00:00"
+  },
+  "query": {
+    "analysis_cutoff": "2026-08-10T16:59:54+00:00",
+    "analysis_start": "2026-08-10T13:59:54+00:00",
+    "candidate_address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "enrich_events": false,
+    "event_limit": 200,
+    "max_requests": 10,
+    "network": "tron",
+    "page_limit": 5,
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "verify_execution": false
+  },
+  "requests_used": 2,
+  "rows_found": 201,
+  "run_id": "20260920T162301Z-adfb1e",
+  "truncated_by_event_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_page_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_request_budget": false,
+  "written": true
+}

@@ -1,0 +1,11 @@
+{
+  "scenario_id": "09_AMBIGUOUS_ORDERING",
+  "model": "clm-latest",
+  "choice": "CHECK_REVIEWED_VASP",
+  "probabilities": {
+    "CHECK_REVIEWED_VASP": 0.7769895453035116,
+    "REQUEST_HUMAN_REVIEW": 0.1354835981141868,
+    "GENERATE_EVIDENCE_REPORT": 0.08752685658230151
+  },
+  "input_hash": "39f315ddb9e1763df2d2d549fa5105d542c9b85faade4b6348fef715538738a8"
+}

@@ -1,0 +1,37 @@
+{
+  "candidate_count": 0,
+  "caveat": "Candidate relationships are deterministic research leads only. They do not establish service ownership, customer-deposit role, common control, fraud, or unique fund ownership. SHA-256 hashes establish file consistency only.",
+  "configuration": {
+    "data_mode": "LIVE",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "coverage_complete": true,
+  "data_mode": "LIVE",
+  "files": {
+    "raw/0001-get-v1-accounts-TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv-transactions-.json": "6a27eb81064122576f486760c6dd72905aa08a388c8319d45d7fdd816192921e",
+    "report.json": "b53465a1332b68a6464b1e99503c4aa3599894792ad4490c3cb72ad299697382"
+  },
+  "finished_at": "2026-09-26T14:23:27.066416+00:00",
+  "mode": "live",
+  "policy_version": "1",
+  "provider_requests": 1,
+  "query": {
+    "address_limit": 10,
+    "anchor_address": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+    "enrich_events": true,
+    "event_limit": 200,
+    "max_requests": 10,
+    "network": "tron",
+    "page_limit": 2,
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "verify_execution": true,
+    "window_end": "2026-08-10T16:00:24+00:00",
+    "window_start": "2026-08-10T15:59:24+00:00"
+  },
+  "raw_exchange_count": 1,
+  "report_type": "vasp_candidate_neighborhood",
+  "run_id": "20260926T142326Z-8ac99c",
+  "started_at": null,
+  "status": "succeeded"
+}

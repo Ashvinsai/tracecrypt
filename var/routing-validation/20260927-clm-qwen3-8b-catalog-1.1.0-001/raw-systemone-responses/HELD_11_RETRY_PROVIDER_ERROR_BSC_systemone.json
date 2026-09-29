@@ -1,0 +1,11 @@
+{
+  "scenario_id": "HELD_11_RETRY_PROVIDER_ERROR_BSC",
+  "model": "clm-latest",
+  "choice": "RETRY_PROVIDER",
+  "probabilities": {
+    "RETRY_PROVIDER": 0.4772564811450573,
+    "REQUEST_HUMAN_REVIEW": 0.14207451818434225,
+    "GENERATE_EVIDENCE_REPORT": 0.38066900067060044
+  },
+  "input_hash": "6c7fb24a9a356002bd308b6141d65f433de9ba8a0872b7866284bda676774911"
+}

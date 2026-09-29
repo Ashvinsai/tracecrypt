@@ -1,0 +1,14 @@
+[
+  {
+    "test": "ordering-ambiguous transfers stay visually qualified",
+    "pass": true
+  },
+  {
+    "test": "opening recorded evidence does not change the deployment mode badge",
+    "pass": true
+  },
+  {
+    "test": "mobile overview has no document-level horizontal overflow",
+    "pass": true
+  }
+]

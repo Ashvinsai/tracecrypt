@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "initial_results_visible": true,
+      "notice": "Opened saved evidence; no blockchain provider was called.",
+      "graph_canvas_count": 1
+    },
+    {
+      "saved_notice": "Investigation saved. Its evidence hash will be checked again when opened or exported.",
+      "saved_title": "Saved investigation f9d60d73-ff4\u2026de7cfb40",
+      "export_enabled": true,
+      "service_cards": "REVIEWED SERVICE\nNorthwind Exchange (FICTIONAL)\nTBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz\n\nHop 4 \u00b7 Role: deposit\n\nDeposit role is supported by the retained label.\n\nSender ownership: not inferred. Allocation: allocation unknown.\n\nAttribution source & path\nPrepare request draft"
+    },
+    {
+      "browser_export_files": 10,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "page": "cases",
+      "visible": true,
+      "notice": "Exported the saved evidence, intelligence, CSV tables, PDF and checksum manifest."
+    },
+    {
+      "page": "monitor",
+      "visible": true,
+      "notice": "Exported the saved evidence, intelligence, CSV tables, PDF and checksum manifest."
+    },
+    {
+      "page": "correlations",
+      "visible": true,
+      "notice": "Exported the saved evidence, intelligence, CSV tables, PDF and checksum manifest."
+    },
+    {
+      "page": "crosschain",
+      "visible": true,
+      "notice": "Exported the saved evidence, intelligence, CSV tables, PDF and checksum manifest."
+    },
+    {
+      "page": "decisions",
+      "visible": true,
+      "notice": "Exported the saved evidence, intelligence, CSV tables, PDF and checksum manifest."
+    },
+    {
+      "page": "system",
+      "visible": true,
+      "notice": "Exported the saved evidence, intelligence, CSV tables, PDF and checksum manifest."
+    }
+  ],
+  "page_errors": [],
+  "transport": "Playwright inline page + real local HTTP API bridge. Direct Chromium localhost navigation blocked by container policy.",
+  "mobile_widths": {
+    "viewport": 390,
+    "document": 390
+  }
+}

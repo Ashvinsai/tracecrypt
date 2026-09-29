@@ -1,0 +1,23 @@
+{
+  "body": {
+    "delegatedResource": [
+      {
+        "from": "TLvg8p7dE6txHh3MBZW6zhfEHVeo99kor5",
+        "frozen_balance_for_energy": 15235000000,
+        "to": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq"
+      }
+    ]
+  },
+  "captured_at": "2026-09-20T11:07:58.878018+00:00",
+  "key": "ce397be6751d7337913747148e79af98f7ffdd8a82c4ec426ee11b5bd435b675",
+  "method": "POST",
+  "params": {},
+  "path": "/wallet/getdelegatedresourcev2",
+  "payload": {
+    "fromAddress": "TLvg8p7dE6txHh3MBZW6zhfEHVeo99kor5",
+    "toAddress": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "visible": true
+  },
+  "sequence": 3,
+  "status": 200
+}

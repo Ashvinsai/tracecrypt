@@ -1,0 +1,90 @@
+{
+  "acquisition_completeness": "complete_within_scope",
+  "budgets": {
+    "event_limit": 100,
+    "max_requests": 40,
+    "page_limit": 5,
+    "requests_used": 8
+  },
+  "capture_completed_at": "2026-09-26T07:12:10.986086+00:00",
+  "capture_started_at": "2026-09-26T07:12:07.110919+00:00",
+  "caveat": "Repeated forwarding or high outgoing concentration recorded from this bundle is behavioral evidence only. It does not establish OKX ownership, customer-deposit status, service ownership, fraud, common control, or a strong inference of any kind.",
+  "configuration": {
+    "data_mode": "LIVE",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "direction_counts": {
+    "incoming": 1,
+    "outgoing": 2
+  },
+  "direction_errors": {},
+  "evaluation_wallet_registry_snapshot": {
+    "address": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+    "control_category": "other_operational_confounder",
+    "data_mode": "RECORDED_PUBLIC",
+    "evidence_type": "first-party disclosure: the energy-marketplace operator's own blog post, on its own domain, naming this address as belonging to TronBid.com and carrying the TronScan public tag TronBid_Energy_MarketPlace",
+    "network": "tron",
+    "review_state": "accepted",
+    "reviewer": "reviewer@tracecrypt.local",
+    "source_reference": "https://tronbid.com/en/blog/tronscan-tronbid-com-and-energy (TronBid.com official blog, published 2026-06-18, updated 2026-09-07)",
+    "upstream_source_id": "tronbid-blog-tronscan-address-page-2026-06-18"
+  },
+  "excluded_failed_or_reverted_count": 0,
+  "excluded_non_transfer_count": 0,
+  "files": {
+    "evidence.json": "ec4bee408400e9d05d84e0aefca949c88b9729f69203cb06399f647e257d04fb",
+    "raw/0001-get-v1-accounts-TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM-transactions-.json": "9aa3ef04e1ff8b4fe75dc9c020d1d4e8d37d7fd97af663eef7192e6ec3cedf88",
+    "raw/0002-get-v1-transactions-28072dee0039827f08733a8e815a98b5ae43d11ebe86.json": "aa3299056b3d600421239b22571c14d09e042b22713380e6033fa9c6315b099f",
+    "raw/0003-get-v1-accounts-TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM-transactions-.json": "f48aad9e9f3c7cae782a471424832bdc55298ce402765670f22c37004003daaf",
+    "raw/0004-get-v1-transactions-2a6a4ac3649de580d5a89e8b88f221986000bb33dbc4.json": "eff0f04b763e72264709559dbd64c8ad13a425f39ef0a3893ee5efc7db3dd8fd",
+    "raw/0005-get-v1-transactions-70657a1c9532440e0e54a50b005ee852e4550fdc9fca.json": "98cf643d756f13d997904ce14521ea0b1f8add39e60536670a610e71fa754479",
+    "raw/0006-post-walletsolidity-gettransactioninfobyid.json": "7b7996fa568bc8e871f59214a0b64de4f562114ba288bca4ce46e47959addf6b",
+    "raw/0007-post-walletsolidity-gettransactioninfobyid.json": "bb2969747fc7812e95f8db27270b6aa3906a7beb6645a5b3aa8b10a09ad26bd5",
+    "raw/0008-post-walletsolidity-gettransactioninfobyid.json": "2f4d3c9708c0fd302db3148f18543ead35eab8e2bd20b1a43c565fd68f56e239"
+  },
+  "provenance": {
+    "artifact_created_at": "2026-09-26T07:12:10.986831+00:00",
+    "backfilled": false,
+    "run_finished_at": "2026-09-26T07:12:10.986086+00:00",
+    "run_started_at": "2026-09-26T07:12:07.110919+00:00"
+  },
+  "query": {
+    "analysis_cutoff": "2026-09-26T00:00:00+00:00",
+    "analysis_start": "2026-09-01T00:00:00+00:00",
+    "candidate_address": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+    "enrich_events": true,
+    "event_limit": 100,
+    "max_requests": 40,
+    "network": "tron",
+    "page_limit": 5,
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "verify_execution": true
+  },
+  "requests_used": 8,
+  "rows_found": 3,
+  "run_id": "20260926T071207Z-1d803e",
+  "run_status": "complete",
+  "subject_kind": "evaluation_wallet",
+  "truncated_by_event_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_page_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_request_budget": false,
+  "window_selection": {
+    "capture_run_id": "20260926T071207Z-1d803e",
+    "caveat": "requested_window_* describe the requested scope only. Observed acquisition completeness and truncation are reported separately by the collector's truncated_by_* fields and are authoritative: a requested window does not imply complete observation.",
+    "evaluation_window_policy": "accepted-source-date-bounded-2026-09",
+    "evaluation_window_rationale": "Bounded public-history window selected after the accepted first-party TronBid address disclosure; used to capture an operational confounder for evaluation, not to label counterparties.",
+    "requested_window_cutoff": "2026-09-26T00:00:00+00:00",
+    "requested_window_duration_seconds": 2160000,
+    "requested_window_start": "2026-09-01T00:00:00+00:00",
+    "wallet_id": "b221876a7ee035df",
+    "window_selected_by": "human_supplied"
+  },
+  "written": false
+}

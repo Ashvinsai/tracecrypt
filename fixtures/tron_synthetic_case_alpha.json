@@ -1,0 +1,415 @@
+{
+  "fixture_version": "0.1.0",
+  "data_mode": "SYNTHETIC",
+  "network": "tron",
+  "note": "Deliberately fictional addresses and service names. Never import into a production label database and never send to a live provider.",
+  "assets": {
+    "supported": {
+      "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+      "decimals": 6,
+      "display_symbol": "USDT-SYN"
+    },
+    "spoof": {
+      "token_contract": "TUJmRrUmPrJZgqhRGjGKwbAzqZx3EHpoW2",
+      "decimals": 6,
+      "display_symbol": "USDT-SYN"
+    }
+  },
+  "addresses": {
+    "victim": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+    "hop1": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+    "hop2": "TRTqwgSLfUVziqWCyN6ZMThBkMgRvSaYtE",
+    "fanA": "THLEvxEkNUHb5bx3YsFDfePYjfYQEtAhJf",
+    "fanB": "TLWMNpqoxFXwXUmVpdPHoYyjMEs2fEuxne",
+    "reconverge": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+    "candidate": "TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK",
+    "svc_deposit": "TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz",
+    "unknown": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+    "failure": "TRhdfnc7u5pXTZmm2vWnjQu8C7sYgZ2U9P",
+    "benign": "TVKETvBHFWbXLBZGbbhAzmbZyRrrNCMPi7"
+  },
+  "provider_failures": {
+    "TRhdfnc7u5pXTZmm2vWnjQu8C7sYgZ2U9P": "quota"
+  },
+  "events": [
+    {
+      "event_reference": "tron:tx_seed_multi:0",
+      "tx_hash": "tx_seed_multi",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "to_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "amount_base_units": "100000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000010,
+      "block_hash": "0000blk71000010",
+      "parent_block_hash": "0000blk71000009",
+      "block_time": "2026-08-01T10:10:00Z",
+      "index_in_block": 3,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_seed_multi:1",
+      "tx_hash": "tx_seed_multi",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "to_address": "TVKETvBHFWbXLBZGbbhAzmbZyRrrNCMPi7",
+      "amount_base_units": "7000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000010,
+      "block_hash": "0000blk71000010",
+      "parent_block_hash": "0000blk71000009",
+      "block_time": "2026-08-01T10:10:00Z",
+      "index_in_block": 3,
+      "event_index": 1
+    },
+    {
+      "event_reference": "tron:tx_approval:0",
+      "tx_hash": "tx_approval",
+      "event_kind": "approval",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "to_address": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+      "amount_base_units": "0",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000011,
+      "block_hash": "0000blk71000011",
+      "parent_block_hash": "0000blk71000010",
+      "block_time": "2026-08-01T10:11:00Z",
+      "index_in_block": 4,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_failed:0",
+      "tx_hash": "tx_failed",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "amount_base_units": "100000000",
+      "execution_status": "failed",
+      "confirmation_state": "confirmed",
+      "block_height": 71000012,
+      "block_hash": "0000blk71000012",
+      "parent_block_hash": "0000blk71000011",
+      "block_time": "2026-08-01T10:12:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_zero:0",
+      "tx_hash": "tx_zero",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "amount_base_units": "0",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000013,
+      "block_hash": "0000blk71000013",
+      "parent_block_hash": "0000blk71000012",
+      "block_time": "2026-08-01T10:13:00Z",
+      "index_in_block": 2,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_fan_a:0",
+      "tx_hash": "tx_fan_a",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "THLEvxEkNUHb5bx3YsFDfePYjfYQEtAhJf",
+      "amount_base_units": "60000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000020,
+      "block_hash": "0000blk71000020",
+      "parent_block_hash": "0000blk71000019",
+      "block_time": "2026-08-01T10:20:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_fan_b:0",
+      "tx_hash": "tx_fan_b",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TLWMNpqoxFXwXUmVpdPHoYyjMEs2fEuxne",
+      "amount_base_units": "40000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000020,
+      "block_hash": "0000blk71000020",
+      "parent_block_hash": "0000blk71000019",
+      "block_time": "2026-08-01T10:20:00Z",
+      "index_in_block": 2,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_recon_a:0",
+      "tx_hash": "tx_recon_a",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "THLEvxEkNUHb5bx3YsFDfePYjfYQEtAhJf",
+      "to_address": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+      "amount_base_units": "60000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000030,
+      "block_hash": "0000blk71000030",
+      "parent_block_hash": "0000blk71000029",
+      "block_time": "2026-08-01T10:30:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_recon_b:0",
+      "tx_hash": "tx_recon_b",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TLWMNpqoxFXwXUmVpdPHoYyjMEs2fEuxne",
+      "to_address": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+      "amount_base_units": "40000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000031,
+      "block_hash": "0000blk71000031",
+      "parent_block_hash": "0000blk71000030",
+      "block_time": "2026-08-01T10:31:00Z",
+      "index_in_block": 2,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_to_candidate:0",
+      "tx_hash": "tx_to_candidate",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5",
+      "to_address": "TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK",
+      "amount_base_units": "95000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000040,
+      "block_hash": "0000blk71000040",
+      "parent_block_hash": "0000blk71000039",
+      "block_time": "2026-08-01T10:40:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_to_service:0",
+      "tx_hash": "tx_to_service",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK",
+      "to_address": "TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz",
+      "amount_base_units": "95000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000050,
+      "block_hash": "0000blk71000050",
+      "parent_block_hash": "0000blk71000049",
+      "block_time": "2026-08-01T10:50:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_prefund:0",
+      "tx_hash": "tx_prefund",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "to_address": "TRTqwgSLfUVziqWCyN6ZMThBkMgRvSaYtE",
+      "amount_base_units": "900000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000005,
+      "block_hash": "0000blk71000005",
+      "parent_block_hash": "0000blk71000004",
+      "block_time": "2026-08-01T10:05:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_victim_in:0",
+      "tx_hash": "tx_victim_in",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "to_address": "TRTqwgSLfUVziqWCyN6ZMThBkMgRvSaYtE",
+      "amount_base_units": "100000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000015,
+      "block_hash": "0000blk71000015",
+      "parent_block_hash": "0000blk71000014",
+      "block_time": "2026-08-01T10:15:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_mixed_out:0",
+      "tx_hash": "tx_mixed_out",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TRTqwgSLfUVziqWCyN6ZMThBkMgRvSaYtE",
+      "to_address": "TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz",
+      "amount_base_units": "500000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000025,
+      "block_hash": "0000blk71000025",
+      "parent_block_hash": "0000blk71000024",
+      "block_time": "2026-08-01T10:25:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_ambiguous:unknown-index",
+      "tx_hash": "tx_ambiguous",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "amount_base_units": "3000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000020,
+      "block_hash": "0000blk71000020",
+      "parent_block_hash": "0000blk71000019",
+      "block_time": "2026-08-01T10:20:00Z",
+      "index_in_block": 3,
+      "event_index": null,
+      "ordering_ambiguous": true
+    },
+    {
+      "event_reference": "tron:tx_spoof:0",
+      "tx_hash": "tx_spoof",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TUJmRrUmPrJZgqhRGjGKwbAzqZx3EHpoW2",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "to_address": "TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz",
+      "amount_base_units": "1000000000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000060,
+      "block_hash": "0000blk71000060",
+      "parent_block_hash": "0000blk71000059",
+      "block_time": "2026-08-01T11:00:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_reorged:0",
+      "tx_hash": "tx_reorged",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "amount_base_units": "12000000",
+      "execution_status": "success",
+      "confirmation_state": "removed",
+      "block_height": 71000070,
+      "block_hash": "0000blk71000070",
+      "parent_block_hash": "0000blk71000069",
+      "block_time": "2026-08-01T11:10:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    },
+    {
+      "event_reference": "tron:tx_huge:0",
+      "tx_hash": "tx_huge",
+      "event_kind": "transfer",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "decimals": 6,
+        "display_symbol": "USDT-SYN"
+      },
+      "from_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "to_address": "TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6",
+      "amount_base_units": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000080,
+      "block_hash": "0000blk71000080",
+      "parent_block_hash": "0000blk71000079",
+      "block_time": "2026-08-01T11:20:00Z",
+      "index_in_block": 1,
+      "event_index": 0
+    }
+  ]
+}

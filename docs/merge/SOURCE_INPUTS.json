@@ -1,0 +1,14 @@
+{
+  "crypto-attribution-full-20260927.zip": {
+    "bytes": 51102573,
+    "sha256": "69c1c950a4ccbff33f5425d6893cb561277d4ae3aedb8a3098977e4e3a5bf8d9"
+  },
+  "tracecrypt.zip": {
+    "bytes": 3270498,
+    "sha256": "721b5da4149da8cb7d6107ec7c0b33b678666b22dd0b78d462c3473d83abc8af"
+  },
+  "clm_investigation_router.zip": {
+    "bytes": 75607,
+    "sha256": "78aa1a3e3633bf668730c82cacde397bcd311819e57e884f9d23d23d29a8f684"
+  }
+}

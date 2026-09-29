@@ -1,0 +1,78 @@
+[
+  {
+    "module": "tests/test_bounded_seed_search.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_cctp_protocol.py",
+    "reason": "pycryptodome unavailable"
+  },
+  {
+    "module": "tests/test_cctp_replay.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_collect_behavioral_evidence.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_collect_behavioral_evidence_cli.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_collect_behavioral_evidence_evaluation_wallet.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_collect_candidates.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_collect_resource_evidence.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_evaluation_bundle_layout.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_evaluation_capture_lifecycle.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_evaluation_window_capture.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_evm_adapter.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_evm_networks.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_evm_replay.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_execution_verification.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_live_validation.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_monitoring.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_tron_adapter.py",
+    "reason": "respx unavailable"
+  },
+  {
+    "module": "tests/test_vasp_neighborhood_cli.py",
+    "reason": "respx unavailable"
+  }
+]

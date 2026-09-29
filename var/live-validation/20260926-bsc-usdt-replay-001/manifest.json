@@ -1,0 +1,55 @@
+{
+  "acquisition_stats": {
+    "incomplete_log_ranges": [],
+    "log_range_splits": 15,
+    "provider_requests_issued": 75
+  },
+  "bundle_version": "1",
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that the attribution is correct.",
+  "configuration": {
+    "acquisition_max_requests": 250,
+    "bsc_rpc_configured": true,
+    "budgets": {
+      "max_events": 5000,
+      "max_hops": 2,
+      "max_provider_requests": 400
+    },
+    "caip2": "eip155:56",
+    "evm_block_resolution_policy": "start-strictly-before-v2",
+    "expected_chain_id": 56,
+    "finality_note": "'finalized'/'safe' block tags as returned by the configured provider. BSC fast finality (BEP-126) is why the tags are consulted; their availability and meaning are observed per provider, not assumed. No confirmation-count fallback: an unsupported tag yields finality 'unknown'.",
+    "label_dir": "/home/ash/Work/crypto-attribution/data",
+    "label_source": "reviewed_sets",
+    "network": "bsc",
+    "observed_chain_id": 56
+  },
+  "data_mode": "RECORDED_PUBLIC",
+  "failure": null,
+  "files": {
+    "accepted-label-snapshot.json": "024530869cfd75a1e18bc3cd14879be15373574813896220efb4023be19767a6",
+    "normalized-transfers.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "receipts.json": "7b790696aae29ee7c93c217d859f9993471c1a38c06b791e042409bd842b536c",
+    "report.html": "619e77a68c1e76a072d5e6df1bdbf1b95f0bb835edf63e77a6b36d9b8aa88e34",
+    "token-verification.json": "ddf4dac074f579f112f132a8dbaba4a288ec2d655f59a0eef56bfe792864a94c",
+    "trace.json": "3270e4e57a6a23ef2d2ffcb9880b1a967b200c7d98b14d013301a601f0155e07"
+  },
+  "finished_at": "2026-09-26T18:16:31.792125+00:00",
+  "mode": "replay",
+  "provider_exchanges": 60,
+  "query": {
+    "address": "0x1362b5c4e4de99267e4005eb8a918e16bb8098dc",
+    "analysis_cutoff": "2026-09-26T17:47:40+00:00",
+    "analysis_start": "2026-09-26T17:47:20+00:00",
+    "network": "bsc",
+    "seed_event_reference": "eip155:56:0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f:14",
+    "token_contract": "0x55d398326f99059fF775485246999027B3197955"
+  },
+  "run_id": "20260926-bsc-usdt-replay-001",
+  "started_at": "2026-09-26T18:16:31.780342+00:00",
+  "status": "succeeded",
+  "versions": {
+    "engine": "0.1.0",
+    "label_set": "0",
+    "parser": "0.1.0"
+  }
+}

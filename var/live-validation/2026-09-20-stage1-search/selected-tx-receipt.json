@@ -1,0 +1,12 @@
+{
+  "tx_hash": "84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997",
+  "execution_status": "success",
+  "confirmation_state": "confirmed",
+  "solidified": true,
+  "source_path": "/walletsolidity/gettransactioninfobyid",
+  "note": "receipt read from a solidified block",
+  "receipt_result": "SUCCESS",
+  "block_number": 85235532,
+  "block_time": "2026-08-10T15:59:54+00:00",
+  "fee": null
+}

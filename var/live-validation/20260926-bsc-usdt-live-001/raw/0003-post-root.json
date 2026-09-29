@@ -1,0 +1,26 @@
+{
+  "body": {
+    "id": 3,
+    "jsonrpc": "2.0",
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+  },
+  "captured_at": "2026-09-26T18:10:09.912260+00:00",
+  "key": "e0ab5350d954ae2e0d0ba80bef73a32c8244e698afec0c93b2456b770e5331c5",
+  "method": "POST",
+  "params": {},
+  "path": "/",
+  "payload": {
+    "id": 3,
+    "jsonrpc": "2.0",
+    "method": "eth_call",
+    "params": [
+      {
+        "data": "0x313ce567",
+        "to": "0x55d398326f99059ff775485246999027b3197955"
+      },
+      "latest"
+    ]
+  },
+  "sequence": 3,
+  "status": 200
+}

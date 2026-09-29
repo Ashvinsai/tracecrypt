@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "external_reference": "SYNTHETIC-GATEWAY-001",
+  "title": "Synthetic automated investigation",
+  "allegation_type": "investment_scam",
+  "incident_start": "2026-08-01T00:00:00Z",
+  "analysis_cutoff": "2027-01-01T00:00:00Z",
+  "wallets": [
+    {
+      "network_key": "tron",
+      "address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+      "seed_event_reference": "tron:tx_seed_multi:0"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": "HELD_10_TERMINAL_REPORT_MULTI_HOP",
+  "model": "clm-latest",
+  "choice": "REQUEST_HUMAN_REVIEW",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.5021238199295308,
+    "GENERATE_EVIDENCE_REPORT": 0.4978761800704692
+  },
+  "input_hash": "23f5a34484bab1a3d6dc379e63f0ccd622a675d469968adcdded47b5b61feada"
+}

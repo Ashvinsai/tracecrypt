@@ -1,0 +1,11 @@
+{
+  "scenario_id": "HELD_13_STOP_EXHAUSTED_BSC",
+  "model": "clm-latest",
+  "choice": "STOP_COVERAGE_GAP",
+  "probabilities": {
+    "STOP_COVERAGE_GAP": 0.5632493551967804,
+    "REQUEST_HUMAN_REVIEW": 0.09671210378766029,
+    "GENERATE_EVIDENCE_REPORT": 0.3400385410155592
+  },
+  "input_hash": "0d13a249e3ffba868dc08fdcf9022b01d4356757ca14d9efc5926326532cc4b7"
+}

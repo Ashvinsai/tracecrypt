@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Trace evidence — 0x4d68b530920d26c3b01c99fecc19e21011b72bbd</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { font: 13px/1.5 ui-monospace, "SFMono-Regular", Menlo, monospace;
+       color: #1b1d21; background: #fff; margin: 0; padding: 24px; }
+h1 { font-size: 17px; margin: 0 0 2px; }
+h2 { font-size: 13px; margin: 26px 0 8px; text-transform: uppercase;
+     letter-spacing: .08em; border-bottom: 1px solid #1b1d21; padding-bottom: 4px; }
+.mode { display: inline-block; padding: 3px 9px; margin-bottom: 14px;
+        border: 1px solid #6a5c3f; background: #eeeae1; color: #6a5c3f;
+        font-weight: 700; letter-spacing: .05em; }
+.mode.live { border-color: #3f5747; background: #e9edea; color: #3f5747; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0 2px; }
+th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #d6d8dc;
+         vertical-align: top; word-break: break-all; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: #5a5e66; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 18px; margin: 0; }
+dt { color: #5a5e66; }
+dd { margin: 0; word-break: break-all; }
+.tag { display: inline-block; padding: 1px 6px; border: 1px solid currentColor;
+       font-size: 11px; letter-spacing: .04em; }
+.supported { color: #3f5747; }
+.candidate { color: #6a5c3f; }
+.unresolved, .boundary { color: #5a5e66; }
+.flag { color: #7c4444; }
+.note { color: #5a5e66; font-size: 12px; margin: 4px 0 0; }
+.caveat { border: 1px solid #1b1d21; padding: 10px 12px; margin-top: 26px; font-size: 12px; }
+.empty { color: #5a5e66; font-style: italic; padding: 6px 0; }
+@media print { body { padding: 0; } h2 { break-after: avoid; } tr { break-inside: avoid; } }
+</style></head><body>
+<div class="mode live">LIVE</div>
+<h1>Transfer trace evidence</h1>
+<p class="note">Generated 2026-09-26T16:21:40.474840+00:00 ·
+request 20260926-ethereum-usdt-live-001 · engine 0.1.0 ·
+label set 0</p>
+
+<h2>Subject</h2>
+<dl>
+<dt>Network</dt><dd>ethereum</dd>
+<dt>Seed address</dt><dd>0x4d68b530920d26c3b01c99fecc19e21011b72bbd</dd>
+<dt>Seed event</dt><dd>eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125</dd>
+<dt>Asset</dt><dd>USDT
+ (contract 0xdAC17F958D2ee523a2206206994597C13D831ec7,
+ 6 decimals)</dd>
+<dt>Case-flow linkage</dt><dd>established</dd>
+</dl>
+
+<h2>Analysis scope</h2>
+<dl>
+<dt>Data mode</dt><dd>LIVE</dd>
+<dt>Analysis cutoff</dt><dd>2026-09-26T15:08:11+00:00</dd>
+<dt>Run window</dt><dd>2026-09-26T16:21:26.121899+00:00 → 2026-09-26T16:21:36.288802+00:00</dd>
+<dt>Coverage</dt><dd>partial</dd>
+ <dt>Budget use</dt><dd>2/2 hops ·
+ 26/5000 events ·
+ 6/400 traversal requests ·
+ 10.167s</dd>
+</dl>
+<p class="note">Traversal requests count only the tracer's own forward-walk
+pages, not the seed-event search, enrichment, or receipt verification a live
+run also performs — see the bundle manifest's <code>provider_exchanges</code>
+for the total acquisition count.</p>
+<p class="note">Coverage is complete <em>within the declared scope</em> — this network,
+this asset, this time window, these budgets. It never means complete knowledge of
+the blockchain.</p>
+
+<h2>Observed transfers</h2>
+<table><thead><tr><th>Hop</th><th>Block time (UTC)</th><th>From</th><th>To</th><th>Amount</th><th>Event reference</th><th>Status</th></tr></thead><tbody><tr><td class='num'>0</td><td>2026-09-26T15:03:11+00:00</td><td>0x4d68b530920d26c3b01c99fecc19e21011b72bbd</td><td>0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6</td><td class='num'>898.228643 USDT</td><td>eip155:1:0x1ff6d8d495060ee5bdc9c789f40271bf6050c4fff31fdb4fc4ddfc0025cb9cc0:125</td><td>success / confirmed</td></tr><tr><td class='num'>1</td><td>2026-09-26T15:03:59+00:00</td><td>0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td class='num'>673.713920 USDT</td><td>eip155:1:0xb4883bf861f67f7d23fb0ab35536ef7f91fd136ef10bf9b3ae44013c2e778960:96</td><td>success / confirmed</td></tr><tr><td class='num'>1</td><td>2026-09-26T15:04:47+00:00</td><td>0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6</td><td>0x7d4e22a6abbfe86f730b179d2b934c0981712f45</td><td class='num'>28.108401 USDT</td><td>eip155:1:0xa2ce105a44426313c70819403c58b7427c50ceea8f818697a67147b593b8b17b:40</td><td>success / confirmed</td></tr><tr><td class='num'>1</td><td>2026-09-26T15:07:47+00:00</td><td>0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td class='num'>2841.642601 USDT</td><td>eip155:1:0xa16fc0b5236f0d3f4d7711fc2b3ac5d9c20e2f6277aff003cbf44fa005a76707:865</td><td>success / confirmed</td></tr><tr><td class='num'>1</td><td>2026-09-26T15:08:11+00:00</td><td>0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td class='num'>1389.381678 USDT</td><td>eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:11</td><td>success / confirmed</td></tr><tr><td class='num'>1</td><td>2026-09-26T15:08:11+00:00</td><td>0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6</td><td>0x7d4e22a6abbfe86f730b179d2b934c0981712f45</td><td class='num'>23.227902 USDT</td><td>eip155:1:0xf9f7addef0b0a2d6c6547e48787cca6279493b0f237f66faec57ac8a527c5101:14</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:04:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x8feab81d36e7576107d5de0758c1b839be31b4f6</td><td class='num'>13.006532 USDT</td><td>eip155:1:0xe9f1b422628e93173e31f5a5de61f1875fbf80d28aae24604a134f76ddfc052a:627</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:04:59+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x8f10b468b06c6fd214b65f87778827f7d113f996</td><td class='num'>259.923684 USDT</td><td>eip155:1:0xa9288fbef1194ce996c4c69f2af536006212350f2e7b06227baead41e6ca93e5:265</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:05:11+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02</td><td class='num'>5.110098 USDT</td><td>eip155:1:0x1b561f223b294c7b6ae751d2e01e03fdccdb979fb3bf1902cc9ecdd7639b0c5d:115</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:05:11+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0xae3921825fec520cada98eb0790bc91a61d4286b</td><td class='num'>8.749442 USDT</td><td>eip155:1:0x155684319195ba96871643c69aef1b4120649e8f412c2fff2c05eed7e60875cc:405</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:05:23+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x74de5d4fcbf63e00296fd95d33236b9794016631</td><td class='num'>5.972616 USDT</td><td>eip155:1:0xb6b1662ff0f6379eff3160cbb33ab680d166ee7ed78ef039707840606d1d3f32:381</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:05:35+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02</td><td class='num'>4.841413 USDT</td><td>eip155:1:0xc2493c87453e075cb6e09c53b5b59ffc53025b4f959aad00960332de86eb641d:58</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:05:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x666fedd4cdd4e890a5ad20e7b60975409435a64a</td><td class='num'>636.536503 USDT</td><td>eip155:1:0x89544e34914b8ffeba49ff4bbe500c32165c87fa2339b6ffe255d6dbb0a509f6:53</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:05:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x4c82d1fbfe28c977cbb58d8c7ff8fcf9f70a2cca</td><td class='num'>299.989149 USDT</td><td>eip155:1:0x2e05caf8d5ab3577baae5d74b2795e7384e7f58bdfa7c6520a686f140823fcbe:965</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:06:35+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x00000000f7952bd96dfa8c26e401df929a30b1ad</td><td class='num'>2.598811 USDT</td><td>eip155:1:0xd80c6e3b61bd5786c6724ac8562e5be804faad82a266014065e5aacd091231ce:159</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:06:35+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x666fedd4cdd4e890a5ad20e7b60975409435a64a</td><td class='num'>580.493154 USDT</td><td>eip155:1:0xcaff23cedf4a948d195967db4e10bb1aa6bc5e2341e5dfa46b71d40ebdad6d5c:226</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:06:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x666fedd4cdd4e890a5ad20e7b60975409435a64a</td><td class='num'>803.333264 USDT</td><td>eip155:1:0x197895b9b88314913d03897da9b9590c1b407b6e592853d94fb75ac46ddf9cb0:478</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:06:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x23617e59a5925b2a4bf75d73ff6711cd0b29de85</td><td class='num'>213.290621 USDT</td><td>eip155:1:0x60a36dd42f390b26aa2be740060a59bfdf107353948c25f94fe9e658e86333f8:656</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:07:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x410144dec85bb1929057829d54fb3b8d3f0ea4a3</td><td class='num'>24029.899987 USDT</td><td>eip155:1:0x218158e52e6fef9b4851e6e72f661c4263fab639b9ebcb0a304b19676371a1db:0</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:07:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x720cf4927e79956c8b6cdf164e88b75442e22fe8</td><td class='num'>4089.339657 USDT</td><td>eip155:1:0xf84e60bc33325a18908c1145d16d739839b30297aeea77972c523443096fcef9:8</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:07:47+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0x410144dec85bb1929057829d54fb3b8d3f0ea4a3</td><td class='num'>665.683699 USDT</td><td>eip155:1:0x40e878f9301619c2f332e307df7e9b351a1015b135688f16162b1387c8c9b3ae:21</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-09-26T15:07:59+00:00</td><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td>0xb300000b72deaeb607a12d5f54773d1c19c7028d</td><td class='num'>1391.983681 USDT</td><td>eip155:1:0x1f05c93b1aac2601c1af9dcf8799bc1948b72c8b45d79ba361be8a7e1bf99714:29</td><td>success / confirmed</td></tr></tbody></table>
+<p class="note">Hop 0 is the seed transfer that links the case to the path; it is
+shown from the run's own saved event, not re-derived. Later rows are onward
+transfers observed within the analysed scope.</p>
+
+<h2>Branch endings</h2>
+<table><thead><tr><th>Address</th><th>Endpoint</th><th>Entity</th><th>Observed amount</th><th>Case amount</th><th>Boundary</th><th>Hop</th></tr></thead><tbody><tr><td>0x7d4e22a6abbfe86f730b179d2b934c0981712f45</td><td><span class='tag unresolved'>unresolved</span></td><td><span class='note'>no label</span></td><td class='num'>28.108401</td><td>allocation_unknown</td><td>no_outgoing_activity</td><td class='num'>1</td></tr><tr><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td><span class='tag unresolved'>unresolved</span></td><td><span class='note'>no label</span></td><td class='num'>2841.642601</td><td>allocation_unknown</td><td>—</td><td class='num'>1</td></tr><tr><td>0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b</td><td><span class='tag unresolved'>unresolved</span></td><td><span class='note'>no label</span></td><td class='num'>1389.381678</td><td>allocation_unknown</td><td>no_outgoing_activity</td><td class='num'>1</td></tr><tr><td>0x7d4e22a6abbfe86f730b179d2b934c0981712f45</td><td><span class='tag unresolved'>unresolved</span></td><td><span class='note'>no label</span></td><td class='num'>23.227902</td><td>allocation_unknown</td><td>no_outgoing_activity</td><td class='num'>1</td></tr><tr><td>0x8feab81d36e7576107d5de0758c1b839be31b4f6</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>13.006532</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x8f10b468b06c6fd214b65f87778827f7d113f996</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>259.923684</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>5.110098</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0xae3921825fec520cada98eb0790bc91a61d4286b</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>8.749442</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x74de5d4fcbf63e00296fd95d33236b9794016631</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>5.972616</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x28bf6006d87de7f44445905aa4f5cb8c0d8cba02</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>4.841413</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x666fedd4cdd4e890a5ad20e7b60975409435a64a</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>636.536503</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x4c82d1fbfe28c977cbb58d8c7ff8fcf9f70a2cca</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>299.989149</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x00000000f7952bd96dfa8c26e401df929a30b1ad</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>2.598811</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x666fedd4cdd4e890a5ad20e7b60975409435a64a</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>580.493154</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x666fedd4cdd4e890a5ad20e7b60975409435a64a</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>803.333264</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x23617e59a5925b2a4bf75d73ff6711cd0b29de85</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>213.290621</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x410144dec85bb1929057829d54fb3b8d3f0ea4a3</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>24029.899987</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x720cf4927e79956c8b6cdf164e88b75442e22fe8</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>4089.339657</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0x410144dec85bb1929057829d54fb3b8d3f0ea4a3</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>665.683699</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr><tr><td>0xb300000b72deaeb607a12d5f54773d1c19c7028d</td><td><span class='tag boundary'>boundary</span></td><td><span class='note'>no label</span></td><td class='num'>1391.983681</td><td>allocation_unknown</td><td>hop_limit</td><td class='num'>2</td></tr></tbody></table>
+<p class="note">A <strong>known_service</strong> ending is supported by a reviewed,
+in-date service-control assertion. A <strong>deposit_candidate</strong> is a lead:
+it is shown, and tracing continues past it. Neither identifies a person.</p>
+
+<h2>Label provenance</h2>
+<p class="empty">No entity attribution was made.</p>
+<p class="note">Every claim above is reproduced from the label set as it stood at
+2026-09-26T16:21:26.121899+00:00, not read from today's files. The source hash identifies the
+document the claim came from; the accepting reviewer and the decision date identify the
+row in <code>review_log.csv</code>.</p>
+
+<h3>Label sets read</h3>
+<table><thead><tr><th>File</th><th>Claims loaded</th><th>Withdrawn by review</th><th>SHA-256</th></tr></thead><tbody><tr><td>verified_anchors.csv</td><td class='num'>2</td><td class='num'>0</td><td><span class='note'>c2018baa8f2ea17873877375c66a0ede0ed0e61a3ba920deec7f3968ef4644a9</span></td></tr><tr><td>deposit_candidates.csv</td><td class='num'>1</td><td class='num'>0</td><td><span class='note'>d133e906be0c66ee184a47983764c64869624d92faa9c6a606a931d9563bb3dd</span></td></tr></tbody></table>
+<p class="note">Label source <strong>reviewed_sets</strong>,
+2 accepted service claim(s) available to this
+run. A withdrawn row is one a reviewer rejected or quarantined; it was not loaded.</p>
+
+<h2>Limitations and unresolved items</h2>
+<table><thead><tr><th>Code</th><th>Detail</th><th>Address</th><th>Event</th></tr></thead><tbody><tr><td>allocation_unknown</td><td>The observed amount is the transfer&#x27;s own value, not an allocation to any specific case or claimant. An observed path is a sequence of transfers, not ownership of fungible units.</td><td>—</td><td>—</td></tr><tr><td>bounded_analysis_window</td><td>Analysed 2026-09-26T14:58:11+00:00 to 2026-09-26T15:08:11+00:00 only -- not the account&#x27;s full history before or after it.</td><td>—</td><td>—</td></tr><tr><td>single_validation_case</td><td>One public-chain validation case, chosen to demonstrate the pipeline end to end. Not a general coverage claim about this address, this entity, or TRON activity broadly.</td><td>—</td><td>—</td></tr></tbody></table>
+
+<div class="caveat">
+<strong>Read this before relying on the page above.</strong><br>
+An observed path establishes a sequence of transfers, not ownership of fungible units. Case-associated amounts default to allocation_unknown. This output does not identify a person, establish guilt, or authorise a freeze.<br><br>
+Observed transfer amounts are what the chain shows. A case-associated amount is a
+separate question and defaults to <code>allocation_unknown</code>: an address holding
+pre-existing funds mixes them, and a later outgoing transfer cannot be assumed to
+consist of the funds under investigation.<br><br>
+This document is investigative material for human review. It is not a legal
+instrument, it establishes no authority to restrict any account, and it has not
+been checked by anyone merely because it was generated.
+</div>
+</body></html>

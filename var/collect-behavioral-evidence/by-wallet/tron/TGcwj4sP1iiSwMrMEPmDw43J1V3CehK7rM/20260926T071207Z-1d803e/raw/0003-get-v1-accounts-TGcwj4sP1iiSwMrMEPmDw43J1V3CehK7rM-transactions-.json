@@ -1,0 +1,55 @@
+{
+  "body": {
+    "data": [
+      {
+        "block_timestamp": 1788257817000,
+        "from": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+        "to": "TBC5x3QepcfjjUuozefdmXESN9fCArrmVA",
+        "token_info": {
+          "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+          "decimals": 6,
+          "name": "Tether USD",
+          "symbol": "USDT"
+        },
+        "transaction_id": "2a6a4ac3649de580d5a89e8b88f221986000bb33dbc49b78c5e9affb3bbab6de",
+        "type": "Transfer",
+        "value": "6403597347"
+      },
+      {
+        "block_timestamp": 1789983723000,
+        "from": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+        "to": "TU2c8TidSigYGbSEWzvXdbgGMdo7777777",
+        "token_info": {
+          "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+          "decimals": 6,
+          "name": "Tether USD",
+          "symbol": "USDT"
+        },
+        "transaction_id": "70657a1c9532440e0e54a50b005ee852e4550fdc9fca98738fc38cd3f1d5dc1b",
+        "type": "Transfer",
+        "value": "1000000000"
+      }
+    ],
+    "meta": {
+      "at": 1790406728503,
+      "page_size": 2
+    },
+    "success": true
+  },
+  "captured_at": "2026-09-26T07:12:08.647895+00:00",
+  "key": "823a7c903e820bb156b7efde3924a1d49269538a9d79da359450ca5d10bc6cbc",
+  "method": "GET",
+  "params": {
+    "contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "limit": 200,
+    "max_timestamp": 1790380800000,
+    "min_timestamp": 1788220800000,
+    "only_confirmed": "true",
+    "only_from": "true",
+    "order_by": "block_timestamp,asc"
+  },
+  "path": "/v1/accounts/TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM/transactions/trc20",
+  "payload": {},
+  "sequence": 3,
+  "status": 200
+}

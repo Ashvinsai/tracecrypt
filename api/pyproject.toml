@@ -1,0 +1,62 @@
+[project]
+name = "cfa-api"
+version = "0.1.0"
+description = "Crypto fraud attribution triage — API and worker"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic-settings",
+    "sqlalchemy",
+    "alembic",
+    "psycopg[binary]",
+    "argon2-cffi",
+    "itsdangerous",
+    "structlog",
+    "httpx",
+    "arq",
+    "base58",
+    "scikit-learn>=1.8,<2",
+    "xhtml2pdf>=0.2.17,<0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+    "mypy",
+    "respx",
+    "pycryptodome>=3.23.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# Alembic writes these; hand-formatting generated DDL causes churn on every
+# autogenerate. migrations/env.py is ours and stays linted.
+extend-exclude = ["migrations/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "S"]
+ignore = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+filterwarnings = ["error::DeprecationWarning:app.*"]
+markers = [
+    "live: reaches a real provider; never collected by default (see addopts)",
+]
+#: The default run is offline. A configured key in api/.env must not be able to
+#: turn an ordinary `make test` into a network run, so live tests are deselected
+#: here and have to be asked for by marker: `pytest -m live`.
+addopts = ["-m", "not live"]
+
+[tool.mypy]
+python_version = "3.12"
+plugins = []
+ignore_missing_imports = true
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S105", "S106", "S107"]  # test credentials are literals by design

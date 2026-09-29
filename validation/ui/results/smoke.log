@@ -1,0 +1,101 @@
+PASS SYNTHETIC test deployment; no live writes
+PASS Overview opens by default
+PASS Overview values come from actual selected evidence
+PASS All graph links correspond to the API graph
+PASS Dark theme updates its accessible control
+PASS Light theme returns without replacing evidence
+PASS Synthetic filter returns only synthetic evidence
+PASS Recorded filter is separate from deployment mode
+PASS View all expands the actual available library
+PASS Command palette filters tools
+PASS Keyboard command opens the intended workflow
+PASS Signed-out private data is not shown
+PASS Keyboard guide opens in a native dialog
+PASS Overview node opens its exact evidence inspector
+PASS Graph zoom changes the actual network camera
+PASS Graph focus view expands without browser fullscreen access
+PASS Escape closes graph focus view
+PASS Evidence tabs support arrow-key navigation
+PASS Ledger preserves exact transfer amounts and qualifiers
+PASS Uint256-scale amount stays an exact string in the ledger
+PASS JSON download contains the exact selected evidence
+PASS Demo case-export controls are disabled instead of inventing a saved case
+PASS Sign-in failure is visible inside the dialog
+PASS Real local sign-in establishes an organization-scoped session
+PASS Wallet quick-start carries the exact address and selected network
+PASS Quick-start does not silently submit a trace
+PASS Manual trace creates a real saved synthetic investigation
+PASS Nearest-VASP panel uses the existing attribution summary
+PASS Saved-case exports become available
+PASS Report action targets an authorized saved HTML report
+PASS Evidence bundle contains real PDF, CSV, JSON and manifest outputs
+PASS Request action generates a review-only draft
+PASS Cases view lists the case just created
+PASS Saved run reopens by its actual case/run identifier
+PASS Monitoring creates a watch on the selected case
+PASS Watch polling reports a real source result
+PASS Watch alerts expose exact event evidence
+PASS Complaint intake creates a durable queued job
+PASS Queue action processes a real synthetic investigation
+PASS Live protocol checks stay disabled in synthetic mode
+PASS Agency connections remain explicitly unconfigured
+PASS Command search includes only authorized cases from the API
+PASS Selecting another case cannot keep the previous case evidence on screen
+PASS Logout removes private case results and cached case rows
+PASS Logout erases hidden private evidence and disables saved export actions
+PASS overview fits 1920px viewport without page overflow
+PASS investigate fits 1920px viewport without page overflow
+PASS operations fits 1920px viewport without page overflow
+PASS cases fits 1920px viewport without page overflow
+PASS monitor fits 1920px viewport without page overflow
+PASS correlations fits 1920px viewport without page overflow
+PASS crosschain fits 1920px viewport without page overflow
+PASS decisions fits 1920px viewport without page overflow
+PASS system fits 1920px viewport without page overflow
+PASS overview fits 1440px viewport without page overflow
+PASS investigate fits 1440px viewport without page overflow
+PASS operations fits 1440px viewport without page overflow
+PASS cases fits 1440px viewport without page overflow
+PASS monitor fits 1440px viewport without page overflow
+PASS correlations fits 1440px viewport without page overflow
+PASS crosschain fits 1440px viewport without page overflow
+PASS decisions fits 1440px viewport without page overflow
+PASS system fits 1440px viewport without page overflow
+PASS overview fits 1280px viewport without page overflow
+PASS investigate fits 1280px viewport without page overflow
+PASS operations fits 1280px viewport without page overflow
+PASS cases fits 1280px viewport without page overflow
+PASS monitor fits 1280px viewport without page overflow
+PASS correlations fits 1280px viewport without page overflow
+PASS crosschain fits 1280px viewport without page overflow
+PASS decisions fits 1280px viewport without page overflow
+PASS system fits 1280px viewport without page overflow
+PASS overview fits 1024px viewport without page overflow
+PASS investigate fits 1024px viewport without page overflow
+PASS operations fits 1024px viewport without page overflow
+PASS cases fits 1024px viewport without page overflow
+PASS monitor fits 1024px viewport without page overflow
+PASS correlations fits 1024px viewport without page overflow
+PASS crosschain fits 1024px viewport without page overflow
+PASS decisions fits 1024px viewport without page overflow
+PASS system fits 1024px viewport without page overflow
+PASS overview fits 768px viewport without page overflow
+PASS investigate fits 768px viewport without page overflow
+PASS operations fits 768px viewport without page overflow
+PASS cases fits 768px viewport without page overflow
+PASS monitor fits 768px viewport without page overflow
+PASS correlations fits 768px viewport without page overflow
+PASS crosschain fits 768px viewport without page overflow
+PASS decisions fits 768px viewport without page overflow
+PASS system fits 768px viewport without page overflow
+PASS overview fits 390px viewport without page overflow
+PASS investigate fits 390px viewport without page overflow
+PASS operations fits 390px viewport without page overflow
+PASS cases fits 390px viewport without page overflow
+PASS monitor fits 390px viewport without page overflow
+PASS correlations fits 390px viewport without page overflow
+PASS crosschain fits 390px viewport without page overflow
+PASS decisions fits 390px viewport without page overflow
+PASS system fits 390px viewport without page overflow
+PASS No JavaScript runtime errors across exercised workflows
+Completed 100 UI checks. Results: /mnt/data/tracecrypt_ui_smoke.json

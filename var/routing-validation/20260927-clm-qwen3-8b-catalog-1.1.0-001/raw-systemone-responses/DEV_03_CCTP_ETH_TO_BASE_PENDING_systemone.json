@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_03_CCTP_ETH_TO_BASE_PENDING",
+  "model": "clm-latest",
+  "choice": "FOLLOW_CROSS_CHAIN_LINK",
+  "probabilities": {
+    "FOLLOW_CROSS_CHAIN_LINK": 0.5516811372055394,
+    "REQUEST_HUMAN_REVIEW": 0.16105657585252459,
+    "GENERATE_EVIDENCE_REPORT": 0.287262286941936
+  },
+  "input_hash": "bacdc55f89b8bf9507124c06f034d086b59d04d6ac7c8bd8fa3af900b933fccb"
+}

@@ -1,0 +1,26 @@
+{
+  "candidate_address": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
+  "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+  "analysis_start": "2026-09-14T00:00:00+00:00",
+  "analysis_cutoff": "2026-09-21T00:00:00+00:00",
+  "page_limit": 5,
+  "event_limit": 500,
+  "max_requests": 20,
+  "verify_execution": false,
+  "enrich_events": false,
+  "requests_used": 2,
+  "truncated_by_page_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_event_limit": {
+    "incoming": false,
+    "outgoing": false
+  },
+  "truncated_by_request_budget": false,
+  "direction_errors": {},
+  "excluded_non_transfer_count": 0,
+  "excluded_failed_or_reverted_count": 0,
+  "execution_verification_unverified": [],
+  "rows": []
+}

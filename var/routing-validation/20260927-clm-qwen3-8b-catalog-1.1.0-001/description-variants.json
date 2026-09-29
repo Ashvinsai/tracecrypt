@@ -1,0 +1,20 @@
+{
+  "notice": "DECISION SUPPORT METADATA - NOT BLOCKCHAIN EVIDENCE",
+  "catalog_version_under_test": "1.1.0-candidates",
+  "baseline_descriptions": {
+    "CONTINUE_SAME_CHAIN": "Continue forward chronological tracing on the current blockchain network.",
+    "FOLLOW_CROSS_CHAIN_LINK": "Continue tracing through a verified protocol-specific cross-chain link to its destination network."
+  },
+  "candidate_variants": {
+    "CONTINUE_SAME_CHAIN": {
+      "Variant_A": "Continue automated chronological tracing on the current blockchain while unresolved outgoing branches remain available for investigation.",
+      "Variant_B": "Trace the next valid same-chain transfers when unresolved branches remain and provider coverage allows continued traversal.",
+      "Variant_C": "Continue the active fund-flow investigation on the current network by following unresolved chronological transfer branches."
+    },
+    "FOLLOW_CROSS_CHAIN_LINK": {
+      "Variant_A": "Continue fund-flow tracing on the destination blockchain through an already verified cross-chain transfer when destination tracing remains pending.",
+      "Variant_B": "Follow the verified cross-chain relay to the destination network and continue the investigation there.",
+      "Variant_C": "Continue the investigation on the destination chain after the cross-chain link has been verified but destination tracing is not yet complete."
+    }
+  }
+}

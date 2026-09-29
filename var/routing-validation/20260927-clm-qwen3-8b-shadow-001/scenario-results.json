@@ -1,0 +1,852 @@
+[
+  {
+    "scenario_id": "01_SAME_CHAIN_CONTINUATION",
+    "scenario_source": "RECORDED_DERIVED",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=20\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=partial\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=2\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=ethereum\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=true\nREPORT_READY=false\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=4",
+    "serialized_state_hash": "c0e9b0f186d0a851fd7e9323419552a04b9147b56a72b82375ee90f3068f3142",
+    "candidate_action_set_hash": "618b7e832f800797dbb82ab979e9448156e558b85f6f35a54a5f24fba224e604",
+    "routing_input_hash": "6403b125b07e4f2d7d67436a5fbed1dc21214004efde923b6c75b5e9e4e11756",
+    "eligible_candidate_actions": [
+      "CONTINUE_SAME_CHAIN",
+      "CHECK_REVIEWED_VASP",
+      "RETRY_PROVIDER",
+      "STOP_COVERAGE_GAP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "CONTINUE_SAME_CHAIN",
+        "score": 0.8,
+        "reason": "Unresolved branch exists with budget available on same chain."
+      },
+      {
+        "action": "STOP_COVERAGE_GAP",
+        "score": 0.78,
+        "reason": "Tracing stopped due to coverage gap or budget exhaustion."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.4,
+        "reason": "Compile current evidence state."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      },
+      {
+        "action": "RETRY_PROVIDER",
+        "score": 0.05,
+        "reason": "Retry provider request."
+      }
+    ],
+    "actual_selected_action": "CONTINUE_SAME_CHAIN",
+    "expected_curated_action": "CONTINUE_SAME_CHAIN",
+    "clm_choice": "STOP_COVERAGE_GAP",
+    "clm_relative_action_probabilities": {
+      "CONTINUE_SAME_CHAIN": 0.003994649691798075,
+      "CHECK_REVIEWED_VASP": 0.26659408494669834,
+      "RETRY_PROVIDER": 0.08163681597186959,
+      "STOP_COVERAGE_GAP": 0.5662763708480666,
+      "REQUEST_HUMAN_REVIEW": 0.03879015255266367,
+      "GENERATE_EVIDENCE_REPORT": 0.042707925988903786
+    },
+    "clm_top1": "STOP_COVERAGE_GAP",
+    "clm_top3": [
+      "STOP_COVERAGE_GAP",
+      "CHECK_REVIEWED_VASP",
+      "RETRY_PROVIDER"
+    ],
+    "shadow_agreement": false,
+    "guard_results": {
+      "CONTINUE_SAME_CHAIN": {
+        "action_key": "CONTINUE_SAME_CHAIN",
+        "decision": "ALLOWED",
+        "reason": "Unresolved branches exist and request budget remains on same chain.",
+        "prerequisites_satisfied": true
+      },
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "RETRY_PROVIDER": {
+        "action_key": "RETRY_PROVIDER",
+        "decision": "ALLOWED",
+        "reason": "Provider acquisition failed and request budget remains.",
+        "prerequisites_satisfied": true
+      },
+      "STOP_COVERAGE_GAP": {
+        "action_key": "STOP_COVERAGE_GAP",
+        "decision": "ALLOWED",
+        "reason": "Coverage is incomplete/failed or request budget is exhausted.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 449.9311659999421
+  },
+  {
+    "scenario_id": "02_REVIEWED_VASP_REACHED",
+    "scenario_source": "RECORDED_DERIVED",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=24\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=complete_within_scope\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=true\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=3\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=tron\nNO_ATTRIBUTION_EVIDENCE=false\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=true\nREPORT_READY=true\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=true\nUNRESOLVED_BRANCH_COUNT=23",
+    "serialized_state_hash": "815e10ffc2abf5da36a25841cf403692c1c3aad87d4e4f4a184f934ea08ea240",
+    "candidate_action_set_hash": "692169955fede68b3cbfc306e2a398928d204ee5269f9c30f4d458df0346363e",
+    "routing_input_hash": "1a9e022fead5ad165623a9fed9d21307d9cf4b0684099595288b70d78683a4d5",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "STOP_COVERAGE_GAP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.88,
+        "reason": "Case trace complete or terminal boundary reached; evidence report ready."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.85,
+        "reason": "Terminal address reaches verified anchor."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      },
+      {
+        "action": "STOP_COVERAGE_GAP",
+        "score": 0.15,
+        "reason": "Halt tracing on coverage gap."
+      }
+    ],
+    "actual_selected_action": "GENERATE_EVIDENCE_REPORT",
+    "expected_curated_action": "GENERATE_EVIDENCE_REPORT",
+    "clm_choice": "STOP_COVERAGE_GAP",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.244553532773643,
+      "STOP_COVERAGE_GAP": 0.672741317741469,
+      "REQUEST_HUMAN_REVIEW": 0.03660672204946199,
+      "GENERATE_EVIDENCE_REPORT": 0.04609842743542603
+    },
+    "clm_top1": "STOP_COVERAGE_GAP",
+    "clm_top3": [
+      "STOP_COVERAGE_GAP",
+      "CHECK_REVIEWED_VASP",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "shadow_agreement": false,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "STOP_COVERAGE_GAP": {
+        "action_key": "STOP_COVERAGE_GAP",
+        "decision": "ALLOWED",
+        "reason": "Coverage is incomplete/failed or request budget is exhausted.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 171.72897900013595
+  },
+  {
+    "scenario_id": "03_VASP_CANDIDATE_ONLY",
+    "scenario_source": "RECORDED_DERIVED",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=1\nCANDIDATE_ONLY=true\nCOVERAGE_STATUS=complete_within_scope\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=true\nHOP_DEPTH=1\nHUMAN_REVIEW_REQUIRED=true\nNETWORK=tron\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=true\nREPORT_READY=false\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "ea5230c3c771a190838b48bfc76700f83d3393f151109ff1e311a03d0cb2d5d9",
+    "candidate_action_set_hash": "c9bb7f7e25b717e407a7ab80e43960e41f7121b3d4e798d32745c67dd5b6e42a",
+    "routing_input_hash": "90f651cd36e18505830a9e6cb4bb317e9cc92f519bed0df891067df68c3d8381",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "REVIEW_VASP_CANDIDATE",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "REVIEW_VASP_CANDIDATE",
+        "score": 0.84,
+        "reason": "Unreviewed VASP candidate requires investigator review."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.75,
+        "reason": "Case state requires human review."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.4,
+        "reason": "Compile current evidence state."
+      }
+    ],
+    "actual_selected_action": "REVIEW_VASP_CANDIDATE",
+    "expected_curated_action": "REVIEW_VASP_CANDIDATE",
+    "clm_choice": "REVIEW_VASP_CANDIDATE",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.012808579111180668,
+      "REVIEW_VASP_CANDIDATE": 0.9824772567104995,
+      "REQUEST_HUMAN_REVIEW": 0.0028057506881957596,
+      "GENERATE_EVIDENCE_REPORT": 0.0019084134901242028
+    },
+    "clm_top1": "REVIEW_VASP_CANDIDATE",
+    "clm_top3": [
+      "REVIEW_VASP_CANDIDATE",
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW"
+    ],
+    "shadow_agreement": true,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "REVIEW_VASP_CANDIDATE": {
+        "action_key": "REVIEW_VASP_CANDIDATE",
+        "decision": "ALLOWED",
+        "reason": "Unreviewed VASP candidate relationship present for investigator review.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 232.75620599997637
+  },
+  {
+    "scenario_id": "04_PROVIDER_FAILURE_RETRYABLE",
+    "scenario_source": "SYNTHETIC_ROUTING_STATE",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=1\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=partial\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=1\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=tron\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=rate_limited\nRECEIPT_VERIFIED=true\nREPORT_READY=false\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "a6c5d1a50e24431872cb80c673179cdd6360b3cc720e6f0fd97b2b9669cb6ec8",
+    "candidate_action_set_hash": "fbf4da6030eb74576115d85dd8464ab2de856219cd8c7a316cfbbb8292c492d1",
+    "routing_input_hash": "f37e722f21882e8286e011117cd525a2364b2576587bb069c074e174b29ab5ba",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "RETRY_PROVIDER",
+      "STOP_COVERAGE_GAP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "RETRY_PROVIDER",
+        "score": 0.92,
+        "reason": "Provider failed with rate_limited and budget remains."
+      },
+      {
+        "action": "STOP_COVERAGE_GAP",
+        "score": 0.78,
+        "reason": "Tracing stopped due to coverage gap or budget exhaustion."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.4,
+        "reason": "Compile current evidence state."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      }
+    ],
+    "actual_selected_action": "RETRY_PROVIDER",
+    "expected_curated_action": "RETRY_PROVIDER",
+    "clm_choice": "STOP_COVERAGE_GAP",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.1887759633383801,
+      "RETRY_PROVIDER": 0.14972366638469536,
+      "STOP_COVERAGE_GAP": 0.6444858420359465,
+      "REQUEST_HUMAN_REVIEW": 0.010448464413380288,
+      "GENERATE_EVIDENCE_REPORT": 0.006566063827597747
+    },
+    "clm_top1": "STOP_COVERAGE_GAP",
+    "clm_top3": [
+      "STOP_COVERAGE_GAP",
+      "CHECK_REVIEWED_VASP",
+      "RETRY_PROVIDER"
+    ],
+    "shadow_agreement": false,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "RETRY_PROVIDER": {
+        "action_key": "RETRY_PROVIDER",
+        "decision": "ALLOWED",
+        "reason": "Provider acquisition failed and request budget remains.",
+        "prerequisites_satisfied": true
+      },
+      "STOP_COVERAGE_GAP": {
+        "action_key": "STOP_COVERAGE_GAP",
+        "decision": "ALLOWED",
+        "reason": "Coverage is incomplete/failed or request budget is exhausted.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 173.42689400015843
+  },
+  {
+    "scenario_id": "05_PROVIDER_FAILURE_EXHAUSTED",
+    "scenario_source": "SYNTHETIC_ROUTING_STATE",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=1\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=failed\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=1\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=tron\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=timeout\nRECEIPT_VERIFIED=true\nREPORT_READY=false\nREQUEST_BUDGET_REMAINING=false\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "4685cdb31ec3e1959c6147e14ab91917b56e5446898311d6b1f8b10e72ffee08",
+    "candidate_action_set_hash": "692169955fede68b3cbfc306e2a398928d204ee5269f9c30f4d458df0346363e",
+    "routing_input_hash": "b137f426ee9dec1ca3d0b35f22210a009edf04634e34809420a52bce5cefff3e",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "STOP_COVERAGE_GAP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "STOP_COVERAGE_GAP",
+        "score": 0.78,
+        "reason": "Tracing stopped due to coverage gap or budget exhaustion."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.4,
+        "reason": "Compile current evidence state."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      }
+    ],
+    "actual_selected_action": "STOP_COVERAGE_GAP",
+    "expected_curated_action": "STOP_COVERAGE_GAP",
+    "clm_choice": "STOP_COVERAGE_GAP",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.23025028280268522,
+      "STOP_COVERAGE_GAP": 0.690601671040038,
+      "REQUEST_HUMAN_REVIEW": 0.04152894771173157,
+      "GENERATE_EVIDENCE_REPORT": 0.037619098445545215
+    },
+    "clm_top1": "STOP_COVERAGE_GAP",
+    "clm_top3": [
+      "STOP_COVERAGE_GAP",
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW"
+    ],
+    "shadow_agreement": true,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "STOP_COVERAGE_GAP": {
+        "action_key": "STOP_COVERAGE_GAP",
+        "decision": "ALLOWED",
+        "reason": "Coverage is incomplete/failed or request budget is exhausted.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 193.03348999983427
+  },
+  {
+    "scenario_id": "06_CCTP_CONTINUATION_PENDING",
+    "scenario_source": "RECORDED_DERIVED",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDC\nBRANCH_COUNT=1\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=complete_within_scope\nCROSS_CHAIN_CONTINUATION_PENDING=true\nCROSS_CHAIN_LINK_AVAILABLE=true\nCROSS_CHAIN_PROTOCOL=circle_cctp_v2\nCROSS_CHAIN_STATUS=COMPLETE\nDESTINATION_EXECUTION_VERIFIED=true\nDESTINATION_NETWORK=base\nDESTINATION_NETWORK_KNOWN=true\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=1\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=ethereum\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=true\nREPORT_READY=false\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "c8aa1c43ca34141e0363d3b36521bc644c548480a43c2afb480f0ef1be3fd42e",
+    "candidate_action_set_hash": "16714dc78b590139097bceb2b28d316a1861744fd7459fba3ff53b3ffae454eb",
+    "routing_input_hash": "c505cf645ba4117a055a24f3143631da14f45a0b4e559a45a31f0733c05ce709",
+    "eligible_candidate_actions": [
+      "FOLLOW_CROSS_CHAIN_LINK",
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "FOLLOW_CROSS_CHAIN_LINK",
+        "score": 0.9,
+        "reason": "Cross-chain transfer (circle_cctp_v2) linkage verified and pending."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.4,
+        "reason": "Compile current evidence state."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      }
+    ],
+    "actual_selected_action": "FOLLOW_CROSS_CHAIN_LINK",
+    "expected_curated_action": "FOLLOW_CROSS_CHAIN_LINK",
+    "clm_choice": "CHECK_REVIEWED_VASP",
+    "clm_relative_action_probabilities": {
+      "FOLLOW_CROSS_CHAIN_LINK": 0.05610328603995155,
+      "CHECK_REVIEWED_VASP": 0.8125919308534296,
+      "REQUEST_HUMAN_REVIEW": 0.06432985051643741,
+      "GENERATE_EVIDENCE_REPORT": 0.06697493259018142
+    },
+    "clm_top1": "CHECK_REVIEWED_VASP",
+    "clm_top3": [
+      "CHECK_REVIEWED_VASP",
+      "GENERATE_EVIDENCE_REPORT",
+      "REQUEST_HUMAN_REVIEW"
+    ],
+    "shadow_agreement": false,
+    "guard_results": {
+      "FOLLOW_CROSS_CHAIN_LINK": {
+        "action_key": "FOLLOW_CROSS_CHAIN_LINK",
+        "decision": "ALLOWED",
+        "reason": "Cross-chain protocol detected with verified destination and continuation pending.",
+        "prerequisites_satisfied": true
+      },
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 239.8935280000387
+  },
+  {
+    "scenario_id": "07_CCTP_DESTINATION_ALREADY_COMPLETED",
+    "scenario_source": "RECORDED_DERIVED",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDC\nBRANCH_COUNT=1\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=complete_within_scope\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=true\nCROSS_CHAIN_PROTOCOL=circle_cctp_v2\nCROSS_CHAIN_STATUS=COMPLETE\nDESTINATION_EXECUTION_VERIFIED=true\nDESTINATION_NETWORK=base\nDESTINATION_NETWORK_KNOWN=true\nDESTINATION_TRACE_COMPLETE=true\nDESTINATION_TRACE_STARTED=true\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=1\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=ethereum\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=true\nREPORT_READY=true\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "93ed5785d28f9a72e6e36194433891547caf9fafa7de4c3543bf64beb17b14cb",
+    "candidate_action_set_hash": "34867a5ee7d7495441a00c40fb9f411b40ebd907e4b39ccdf220991e5347abfc",
+    "routing_input_hash": "fb034062a21bb75370e77efbedcd7cb0be024f154cf780efea2772da52f4aaf9",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.88,
+        "reason": "Case trace complete or terminal boundary reached; evidence report ready."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      }
+    ],
+    "actual_selected_action": "GENERATE_EVIDENCE_REPORT",
+    "expected_curated_action": "GENERATE_EVIDENCE_REPORT",
+    "clm_choice": "CHECK_REVIEWED_VASP",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.834599693334184,
+      "REQUEST_HUMAN_REVIEW": 0.07983283711690492,
+      "GENERATE_EVIDENCE_REPORT": 0.08556746954891102
+    },
+    "clm_top1": "CHECK_REVIEWED_VASP",
+    "clm_top3": [
+      "CHECK_REVIEWED_VASP",
+      "GENERATE_EVIDENCE_REPORT",
+      "REQUEST_HUMAN_REVIEW"
+    ],
+    "shadow_agreement": false,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 190.06654200006778
+  },
+  {
+    "scenario_id": "08_RECEIPT_UNVERIFIED",
+    "scenario_source": "RECORDED_DERIVED",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=1\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=complete_within_scope\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=unknown\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=1\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=bsc\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=false\nREPORT_READY=false\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "779f2c9d1d0b3d07997b1c6f1c1a78b3c35cad893b7c455ef09a958427a3391b",
+    "candidate_action_set_hash": "85df0e7e747e7aeb4c2e2ed5f00886c4261b97abb342ea74188bbb6a68ed72a2",
+    "routing_input_hash": "f203c7d1395801ccaface576fa32727ed2aff6890f48a0349570b8171cbfea94",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "VERIFY_EXECUTION_RECEIPT",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "VERIFY_EXECUTION_RECEIPT",
+        "score": 0.95,
+        "reason": "Consensus receipt or finality is unverified."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.4,
+        "reason": "Compile current evidence state."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      }
+    ],
+    "actual_selected_action": "VERIFY_EXECUTION_RECEIPT",
+    "expected_curated_action": "VERIFY_EXECUTION_RECEIPT",
+    "clm_choice": "VERIFY_EXECUTION_RECEIPT",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.11937376075522023,
+      "VERIFY_EXECUTION_RECEIPT": 0.8462595280347176,
+      "REQUEST_HUMAN_REVIEW": 0.019686351647165774,
+      "GENERATE_EVIDENCE_REPORT": 0.014680359562896329
+    },
+    "clm_top1": "VERIFY_EXECUTION_RECEIPT",
+    "clm_top3": [
+      "VERIFY_EXECUTION_RECEIPT",
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW"
+    ],
+    "shadow_agreement": true,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "VERIFY_EXECUTION_RECEIPT": {
+        "action_key": "VERIFY_EXECUTION_RECEIPT",
+        "decision": "ALLOWED",
+        "reason": "Receipt is unverified or finality state is provisional/unknown.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 253.06580999995276
+  },
+  {
+    "scenario_id": "09_AMBIGUOUS_ORDERING",
+    "scenario_source": "SYNTHETIC_ROUTING_STATE",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=1\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=complete_within_scope\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=false\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=1\nHUMAN_REVIEW_REQUIRED=true\nNETWORK=tron\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=true\nREPORT_READY=false\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=false\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "21282bc03c2fadf1035832851872f5ffeffbc8a5c9c67f2e4ba088e009beaf45",
+    "candidate_action_set_hash": "34867a5ee7d7495441a00c40fb9f411b40ebd907e4b39ccdf220991e5347abfc",
+    "routing_input_hash": "39f315ddb9e1763df2d2d549fa5105d542c9b85faade4b6348fef715538738a8",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.75,
+        "reason": "Case state requires human review."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.5,
+        "reason": "Default check for reviewed VASP status."
+      },
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.4,
+        "reason": "Compile current evidence state."
+      }
+    ],
+    "actual_selected_action": "REQUEST_HUMAN_REVIEW",
+    "expected_curated_action": "REQUEST_HUMAN_REVIEW",
+    "clm_choice": "CHECK_REVIEWED_VASP",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.7769895453035116,
+      "REQUEST_HUMAN_REVIEW": 0.1354835981141868,
+      "GENERATE_EVIDENCE_REPORT": 0.08752685658230151
+    },
+    "clm_top1": "CHECK_REVIEWED_VASP",
+    "clm_top3": [
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "shadow_agreement": false,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 162.6032670001223
+  },
+  {
+    "scenario_id": "10_REPORT_READY",
+    "scenario_source": "SYNTHETIC_ROUTING_STATE",
+    "state_schema_version": "1.0.0",
+    "action_catalog_version": "1.0.0",
+    "serialized_model_state": "ASSET_SYMBOL=USDT\nBRANCH_COUNT=2\nCANDIDATE_ONLY=false\nCOVERAGE_STATUS=complete_within_scope\nCROSS_CHAIN_CONTINUATION_PENDING=false\nCROSS_CHAIN_LINK_AVAILABLE=false\nCROSS_CHAIN_PROTOCOL=none\nCROSS_CHAIN_STATUS=NONE\nDESTINATION_EXECUTION_VERIFIED=false\nDESTINATION_NETWORK=none\nDESTINATION_NETWORK_KNOWN=false\nDESTINATION_TRACE_COMPLETE=false\nDESTINATION_TRACE_STARTED=false\nFINALITY_STATE=confirmed\nHAS_BRIDGE_BOUNDARY=false\nHAS_SUPPORTED_VASP_BOUNDARY=true\nHAS_VASP_CANDIDATE=false\nHOP_DEPTH=3\nHUMAN_REVIEW_REQUIRED=false\nNETWORK=tron\nNO_ATTRIBUTION_EVIDENCE=true\nPROVIDER_ERROR_CLASS=none\nRECEIPT_VERIFIED=true\nREPORT_READY=true\nREQUEST_BUDGET_REMAINING=true\nREVIEWED_SERVICE_CONTROL_AVAILABLE=true\nUNRESOLVED_BRANCH_COUNT=0",
+    "serialized_state_hash": "589d7716a1c9b4ad9edfbf245b5a30e499654874392a0d983423749f849ad29c",
+    "candidate_action_set_hash": "34867a5ee7d7495441a00c40fb9f411b40ebd907e4b39ccdf220991e5347abfc",
+    "routing_input_hash": "f62c6deda2ecaeabe299422094668abd4275c2713c76eaa4e0e7ff82a662a140",
+    "eligible_candidate_actions": [
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "rule_ranked_actions": [
+      {
+        "action": "GENERATE_EVIDENCE_REPORT",
+        "score": 0.88,
+        "reason": "Case trace complete or terminal boundary reached; evidence report ready."
+      },
+      {
+        "action": "CHECK_REVIEWED_VASP",
+        "score": 0.85,
+        "reason": "Terminal address reaches verified anchor."
+      },
+      {
+        "action": "REQUEST_HUMAN_REVIEW",
+        "score": 0.3,
+        "reason": "Request human review as safe fallback."
+      }
+    ],
+    "actual_selected_action": "GENERATE_EVIDENCE_REPORT",
+    "expected_curated_action": "GENERATE_EVIDENCE_REPORT",
+    "clm_choice": "CHECK_REVIEWED_VASP",
+    "clm_relative_action_probabilities": {
+      "CHECK_REVIEWED_VASP": 0.8973048468098933,
+      "REQUEST_HUMAN_REVIEW": 0.06381679782009755,
+      "GENERATE_EVIDENCE_REPORT": 0.0388783553700091
+    },
+    "clm_top1": "CHECK_REVIEWED_VASP",
+    "clm_top3": [
+      "CHECK_REVIEWED_VASP",
+      "REQUEST_HUMAN_REVIEW",
+      "GENERATE_EVIDENCE_REPORT"
+    ],
+    "shadow_agreement": false,
+    "guard_results": {
+      "CHECK_REVIEWED_VASP": {
+        "action_key": "CHECK_REVIEWED_VASP",
+        "decision": "ALLOWED",
+        "reason": "Target address and network context present for registry check.",
+        "prerequisites_satisfied": true
+      },
+      "REQUEST_HUMAN_REVIEW": {
+        "action_key": "REQUEST_HUMAN_REVIEW",
+        "decision": "ALLOWED",
+        "reason": "Human investigator review is always permitted.",
+        "prerequisites_satisfied": true
+      },
+      "GENERATE_EVIDENCE_REPORT": {
+        "action_key": "GENERATE_EVIDENCE_REPORT",
+        "decision": "ALLOWED",
+        "reason": "Trace evidence artifacts are available for report compilation.",
+        "prerequisites_satisfied": true
+      }
+    },
+    "configured_model": "clm-latest",
+    "response_model": "clm-latest",
+    "shadow_status": "success",
+    "shadow_failure_reason": null,
+    "total_routing_latency_ms": 204.84378299988748
+  }
+]

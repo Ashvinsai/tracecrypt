@@ -1,0 +1,11 @@
+{
+  "scenario_id": "DEV_12_STOP_FAILED_COVERAGE",
+  "model": "clm-latest",
+  "choice": "STOP_COVERAGE_GAP",
+  "probabilities": {
+    "STOP_COVERAGE_GAP": 0.6812400648180651,
+    "REQUEST_HUMAN_REVIEW": 0.11088087916509835,
+    "GENERATE_EVIDENCE_REPORT": 0.20787905601683662
+  },
+  "input_hash": "dc215d5e1b2d9ae806f8715937356b6912a16cf051de588099374052ffc1e490"
+}

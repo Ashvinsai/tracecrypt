@@ -1,0 +1,10 @@
+{
+  "scenario_id": "DEV_19_REPORT_READY_CLEAN_CLOSE",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.4003394754144123,
+    "GENERATE_EVIDENCE_REPORT": 0.5996605245855876
+  },
+  "input_hash": "9fb2e0e699301a2e90a5b0758c1d6e95bb1b7fea3ac5c6b6e2f5a865cc05a25b"
+}

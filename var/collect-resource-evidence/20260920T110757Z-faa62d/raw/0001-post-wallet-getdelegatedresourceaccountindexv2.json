@@ -1,0 +1,20 @@
+{
+  "body": {
+    "account": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "fromAccounts": [
+      "TTz9gYGZnAuDpqaQ77VFoBYt937bReAQo4",
+      "TLvg8p7dE6txHh3MBZW6zhfEHVeo99kor5"
+    ]
+  },
+  "captured_at": "2026-09-20T11:07:57.702784+00:00",
+  "key": "882626fce889a7e48c32113466e8ea7b2c27e1bcbeb293a8e63df14d99f5eddf",
+  "method": "POST",
+  "params": {},
+  "path": "/wallet/getdelegatedresourceaccountindexv2",
+  "payload": {
+    "value": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "visible": true
+  },
+  "sequence": 1,
+  "status": 200
+}

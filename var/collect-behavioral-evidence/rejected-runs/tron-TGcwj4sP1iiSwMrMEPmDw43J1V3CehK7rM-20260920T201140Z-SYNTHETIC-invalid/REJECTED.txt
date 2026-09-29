@@ -1,0 +1,16 @@
+This bundle was moved out of the by-wallet/ preferred-run path on 2026-09-21.
+
+Reason: its manifest.json records data_mode=SYNTHETIC, not LIVE, even though
+the captured raw response (raw/0001-...json) shows a real-shaped TronGrid
+request to https://api.trongrid.io. This run's provenance is not trustworthy
+as a real evaluation acquisition: it is unclear whether CFA_DATA_MODE was
+left unset (defaulting to SYNTHETIC) during an accidental real call, or
+whether this was an intentional dry run that happened to hit a live-shaped
+endpoint. Per operator decision (2026-09-21), it is archived here, unmodified,
+rather than deleted or silently relabeled, and must never be picked up by
+materialize_evaluation_dataset.py (which only reads
+var/collect-behavioral-evidence/by-wallet/<network>/<address>/).
+
+A real LIVE acquisition for TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM has not yet
+been performed. rows_found in this rejected run was 0 -- this is NOT to be
+read as an established "no activity" finding.

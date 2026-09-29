@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "notice": "DECISION SUPPORT METADATA - NOT BLOCKCHAIN EVIDENCE",
+    "crypto_commit": "fee062433bcabd7b547e36cbcbe811dfa4d52af2",
+    "clm_commit": "bb42c6c5bf914fd449bed2f6ca65be80602cb1f7",
+    "state_schema_version": "1.2.0",
+    "action_catalog_version": "1.1.0",
+    "routing_policy_version": "1.2.0"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "01_SAME_CHAIN_CONTINUATION",
+      "rule_selected_action": "CONTINUE_SAME_CHAIN",
+      "service_lookup_status": "no_match",
+      "eligible_candidates_b2": [
+        "CONTINUE_SAME_CHAIN",
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "GENERATE_EVIDENCE_REPORT",
+      "clm_probabilities_b2": {
+        "CONTINUE_SAME_CHAIN": 0.0171564986276247,
+        "REQUEST_HUMAN_REVIEW": 0.43925976539002864,
+        "GENERATE_EVIDENCE_REPORT": 0.5435837359823465
+      },
+      "top1_agreement_b2": false
+    },
+    {
+      "scenario_id": "02_REVIEWED_VASP_REACHED",
+      "rule_selected_action": "GENERATE_EVIDENCE_REPORT",
+      "service_lookup_status": "match_found",
+      "eligible_candidates_b2": [
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "GENERATE_EVIDENCE_REPORT",
+      "clm_probabilities_b2": {
+        "REQUEST_HUMAN_REVIEW": 0.3198055899326652,
+        "GENERATE_EVIDENCE_REPORT": 0.6801944100673348
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "03_VASP_CANDIDATE_ONLY",
+      "rule_selected_action": "REVIEW_VASP_CANDIDATE",
+      "service_lookup_status": "no_match",
+      "eligible_candidates_b2": [
+        "REVIEW_VASP_CANDIDATE",
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "REVIEW_VASP_CANDIDATE",
+      "clm_probabilities_b2": {
+        "REVIEW_VASP_CANDIDATE": 0.9944244161534888,
+        "REQUEST_HUMAN_REVIEW": 0.0025055210574984645,
+        "GENERATE_EVIDENCE_REPORT": 0.0030700627890127346
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "04_PROVIDER_FAILURE_RETRYABLE",
+      "rule_selected_action": "RETRY_PROVIDER",
+      "service_lookup_status": "no_match",
+      "eligible_candidates_b2": [
+        "RETRY_PROVIDER",
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "RETRY_PROVIDER",
+      "clm_probabilities_b2": {
+        "RETRY_PROVIDER": 0.6686089004755625,
+        "REQUEST_HUMAN_REVIEW": 0.1460322436984688,
+        "GENERATE_EVIDENCE_REPORT": 0.18535885582596875
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "05_PROVIDER_FAILURE_EXHAUSTED",
+      "rule_selected_action": "STOP_COVERAGE_GAP",
+      "service_lookup_status": "no_match",
+      "eligible_candidates_b2": [
+        "STOP_COVERAGE_GAP",
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "STOP_COVERAGE_GAP",
+      "clm_probabilities_b2": {
+        "STOP_COVERAGE_GAP": 0.6643935013074145,
+        "REQUEST_HUMAN_REVIEW": 0.11247431074551814,
+        "GENERATE_EVIDENCE_REPORT": 0.22313218794706743
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "06_CCTP_CONTINUATION_PENDING",
+      "rule_selected_action": "FOLLOW_CROSS_CHAIN_LINK",
+      "service_lookup_status": "no_match",
+      "eligible_candidates_b2": [
+        "FOLLOW_CROSS_CHAIN_LINK",
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "FOLLOW_CROSS_CHAIN_LINK",
+      "clm_probabilities_b2": {
+        "FOLLOW_CROSS_CHAIN_LINK": 0.4863804233852288,
+        "REQUEST_HUMAN_REVIEW": 0.17684476818519707,
+        "GENERATE_EVIDENCE_REPORT": 0.3367748084295741
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "07_CCTP_DESTINATION_ALREADY_COMPLETED",
+      "rule_selected_action": "GENERATE_EVIDENCE_REPORT",
+      "service_lookup_status": "no_match",
+      "eligible_candidates_b2": [
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "GENERATE_EVIDENCE_REPORT",
+      "clm_probabilities_b2": {
+        "REQUEST_HUMAN_REVIEW": 0.33960300515414793,
+        "GENERATE_EVIDENCE_REPORT": 0.660396994845852
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "08_RECEIPT_UNVERIFIED",
+      "rule_selected_action": "VERIFY_EXECUTION_RECEIPT",
+      "service_lookup_status": "not_checked",
+      "eligible_candidates_b2": [
+        "CHECK_REVIEWED_VASP",
+        "VERIFY_EXECUTION_RECEIPT",
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "VERIFY_EXECUTION_RECEIPT",
+      "clm_probabilities_b2": {
+        "CHECK_REVIEWED_VASP": 0.13340217446883523,
+        "VERIFY_EXECUTION_RECEIPT": 0.8214222988379731,
+        "REQUEST_HUMAN_REVIEW": 0.019648805861056412,
+        "GENERATE_EVIDENCE_REPORT": 0.025526720832135186
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "09_AMBIGUOUS_ORDERING",
+      "rule_selected_action": "REQUEST_HUMAN_REVIEW",
+      "service_lookup_status": "no_match",
+      "eligible_candidates_b2": [
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "REQUEST_HUMAN_REVIEW",
+      "clm_probabilities_b2": {
+        "REQUEST_HUMAN_REVIEW": 0.5130142374181782,
+        "GENERATE_EVIDENCE_REPORT": 0.4869857625818218
+      },
+      "top1_agreement_b2": true
+    },
+    {
+      "scenario_id": "10_REPORT_READY",
+      "rule_selected_action": "GENERATE_EVIDENCE_REPORT",
+      "service_lookup_status": "match_found",
+      "eligible_candidates_b2": [
+        "REQUEST_HUMAN_REVIEW",
+        "GENERATE_EVIDENCE_REPORT"
+      ],
+      "clm_top1_b2": "GENERATE_EVIDENCE_REPORT",
+      "clm_probabilities_b2": {
+        "REQUEST_HUMAN_REVIEW": 0.4541993185020323,
+        "GENERATE_EVIDENCE_REPORT": 0.5458006814979676
+      },
+      "top1_agreement_b2": true
+    }
+  ],
+  "aggregates": {
+    "top1_agreement_count": 9,
+    "top1_agreement_rate": 0.9,
+    "top1_acceptable_count": 9,
+    "top1_acceptable_rate": 0.9,
+    "top3_coverage_count": 10,
+    "top3_coverage_rate": 1.0,
+    "unsafe_execution_rate": 0.0,
+    "median_clm_latency_ms": 72.14947149998352,
+    "p95_clm_latency_ms": 83.44008599999597
+  }
+}

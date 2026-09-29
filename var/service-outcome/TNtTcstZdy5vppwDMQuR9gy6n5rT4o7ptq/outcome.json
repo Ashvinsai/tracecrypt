@@ -1,0 +1,26 @@
+{
+  "acquisition_completeness": "complete_within_scope",
+  "attribution_status": "supported",
+  "case_flow_linkage": "established",
+  "category": "supported_destination",
+  "claim_id": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq->TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir:direct-seed-transfer",
+  "coverage_status": "complete_within_scope",
+  "event_identity_quality": "receipt_event_index",
+  "evidence_references": [
+    {
+      "evidence_id": "tron:chain-observation:incoming-to:TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+      "kind": "seed_transfer"
+    }
+  ],
+  "execution_status": "success",
+  "ordering_quality": "precise",
+  "policy_version": null,
+  "reason_codes": [],
+  "service_name": "OKX",
+  "unresolved": [
+    "The candidate's own review_state is 'unreviewed' and address_role is 'unknown'; naming the anchor as this path's destination service makes no claim about the candidate's own identity, ownership, or role."
+  ],
+  "verification_quality": "receipt_verified",
+  "window_end": "2026-08-10T15:59:54+00:00",
+  "window_start": "2026-08-10T15:59:54+00:00"
+}

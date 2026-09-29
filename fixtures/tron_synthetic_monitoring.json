@@ -1,0 +1,65 @@
+{
+  "fixture_version": "0.1.0",
+  "data_mode": "SYNTHETIC",
+  "network": "tron",
+  "note": "Monitoring demonstration (D029). Deliberately fictional addresses; the asset is the synthetic fixture contract. Never import into a production label database and never send to a live provider. E1 is visible from 10:05, E2 from 10:15; the approval must never alert.",
+  "assets": {
+    "supported": {
+      "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+      "decimals": 6,
+      "display_symbol": "USDT-SYN"
+    }
+  },
+  "addresses": {
+    "watched": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+    "sender": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+    "onward": "TRTqwgSLfUVziqWCyN6ZMThBkMgRvSaYtE"
+  },
+  "events": [
+    {
+      "event_reference": "tron:tx_mon_e1:0",
+      "tx_hash": "tx_mon_e1",
+      "event_kind": "transfer",
+      "asset": {"token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY", "decimals": 6, "display_symbol": "USDT-SYN"},
+      "from_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "to_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "amount_base_units": "250000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000100,
+      "index_in_block": 2,
+      "event_index": 0,
+      "block_time": "2026-08-01T10:05:00Z"
+    },
+    {
+      "event_reference": "tron:tx_mon_approve:0",
+      "tx_hash": "tx_mon_approve",
+      "event_kind": "approval",
+      "asset": {"token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY", "decimals": 6, "display_symbol": "USDT-SYN"},
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TRTqwgSLfUVziqWCyN6ZMThBkMgRvSaYtE",
+      "amount_base_units": "1000000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000280,
+      "index_in_block": 0,
+      "event_index": 0,
+      "block_time": "2026-08-01T10:14:00Z"
+    },
+    {
+      "event_reference": "tron:tx_mon_e2:0",
+      "tx_hash": "tx_mon_e2",
+      "event_kind": "transfer",
+      "asset": {"token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY", "decimals": 6, "display_symbol": "USDT-SYN"},
+      "from_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "to_address": "TRTqwgSLfUVziqWCyN6ZMThBkMgRvSaYtE",
+      "amount_base_units": "249000000",
+      "execution_status": "success",
+      "confirmation_state": "confirmed",
+      "block_height": 71000300,
+      "index_in_block": 5,
+      "event_index": 0,
+      "block_time": "2026-08-01T10:15:00Z"
+    }
+  ]
+}

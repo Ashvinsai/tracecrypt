@@ -1,0 +1,52 @@
+{
+  "transport": "Actual frontend with real-HTTP bridge to Uvicorn+worker. Direct browser localhost navigation blocked; browser cookie transport not tested.",
+  "checks": [
+    {
+      "initial_demo_graph_canvas": 1
+    },
+    {
+      "queued_worker_result": "JOB / NETWORK\tWALLET\tSTATUS\tATTEMPTS\tACTION\nf9b509e9-227\u20263b2fefc3\ntron\tTEocPZsTTRAK\u2026U8zrNxgM\tsucceeded\t1/3\tOpen saved result\nJob details\n\nf88d1ff8-870\u20264e665674\ntron\tTEocPZsTTRAK\u2026U8zrNxgM\tsucceeded\t1/3\tOpen saved result\nJob details\n\n44c9bdfa-ebe\u2026370a2dbd\ntron\tTEocPZsTTRAK\u2026U8zrNxgM\tsucceeded\t1/3\tOpen saved result\nJob details\n\n0cca80ed-647\u2026ec0f7543\ntron\tTEocPZsTTRAK\u2026U8zrNxgM\tsucceeded\t1/3\tOpen saved result\nJob details",
+      "overview": "QUEUED / RETRY\n0\nPersistent jobs\nRUNNING\n0\nLeased workers\nSAVED RUNS\n4\nCompletion \u2260 attribution\nINDEXED OBSERVATIONS\n36\nSaved-run ledger, not the entire chain"
+    },
+    {
+      "nearest": "NEAREST RECEIVING VASP \u00b7 OBSERVED SCOPE\nNorthwind Exchange (FICTIONAL)\n\nTBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz\n\n5 verified transfer hop(s) \u00b7 Reached through observed intermediate transfers \u00b7 Role: deposit\n\nNearest means fewest observed verified transfer hops within this bounded trace, not globally nearest. Sender ownership and victim-fund allocation are not inferred.\n\nFull attribution evidence, all boundaries and recommendations",
+      "graph_canvas": 1
+    },
+    {
+      "export_files": 10,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "page": "cases",
+      "visible": true
+    },
+    {
+      "page": "monitor",
+      "visible": true
+    },
+    {
+      "page": "correlations",
+      "visible": true
+    },
+    {
+      "page": "crosschain",
+      "visible": true
+    },
+    {
+      "page": "decisions",
+      "visible": true
+    },
+    {
+      "page": "system",
+      "visible": true
+    },
+    {
+      "ml_no_fake_scores": "insufficient data \u00b7 1 eligible unique wallets \u00b7 0 held-out scores. No fraud probability.\n\nCohort, scores and limitations"
+    },
+    {
+      "mobile_width": 390,
+      "viewport": 390
+    }
+  ],
+  "page_errors": []
+}

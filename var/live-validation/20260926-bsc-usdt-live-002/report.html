@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Trace evidence — 0x1362b5c4e4de99267e4005eb8a918e16bb8098dc</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { font: 13px/1.5 ui-monospace, "SFMono-Regular", Menlo, monospace;
+       color: #1b1d21; background: #fff; margin: 0; padding: 24px; }
+h1 { font-size: 17px; margin: 0 0 2px; }
+h2 { font-size: 13px; margin: 26px 0 8px; text-transform: uppercase;
+     letter-spacing: .08em; border-bottom: 1px solid #1b1d21; padding-bottom: 4px; }
+.mode { display: inline-block; padding: 3px 9px; margin-bottom: 14px;
+        border: 1px solid #6a5c3f; background: #eeeae1; color: #6a5c3f;
+        font-weight: 700; letter-spacing: .05em; }
+.mode.live { border-color: #3f5747; background: #e9edea; color: #3f5747; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0 2px; }
+th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #d6d8dc;
+         vertical-align: top; word-break: break-all; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: #5a5e66; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 18px; margin: 0; }
+dt { color: #5a5e66; }
+dd { margin: 0; word-break: break-all; }
+.tag { display: inline-block; padding: 1px 6px; border: 1px solid currentColor;
+       font-size: 11px; letter-spacing: .04em; }
+.supported { color: #3f5747; }
+.candidate { color: #6a5c3f; }
+.unresolved, .boundary { color: #5a5e66; }
+.flag { color: #7c4444; }
+.note { color: #5a5e66; font-size: 12px; margin: 4px 0 0; }
+.caveat { border: 1px solid #1b1d21; padding: 10px 12px; margin-top: 26px; font-size: 12px; }
+.empty { color: #5a5e66; font-style: italic; padding: 6px 0; }
+@media print { body { padding: 0; } h2 { break-after: avoid; } tr { break-inside: avoid; } }
+</style></head><body>
+<div class="mode live">LIVE</div>
+<h1>Transfer trace evidence</h1>
+<p class="note">Generated 2026-09-26T18:14:26.537808+00:00 ·
+request 20260926-bsc-usdt-live-002 · engine 0.1.0 ·
+label set 0</p>
+
+<h2>Subject</h2>
+<dl>
+<dt>Network</dt><dd>bsc</dd>
+<dt>Seed address</dt><dd>0x1362b5c4e4de99267e4005eb8a918e16bb8098dc</dd>
+<dt>Seed event</dt><dd>eip155:56:0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f:14</dd>
+<dt>Asset</dt><dd>USDT
+ (contract 0x55d398326f99059fF775485246999027B3197955,
+ 18 decimals)</dd>
+<dt>Case-flow linkage</dt><dd>established</dd>
+</dl>
+
+<h2>Analysis scope</h2>
+<dl>
+<dt>Data mode</dt><dd>LIVE</dd>
+<dt>Analysis cutoff</dt><dd>2026-09-26T17:47:40+00:00</dd>
+<dt>Run window</dt><dd>2026-09-26T18:14:04.593018+00:00 → 2026-09-26T18:14:22.831198+00:00</dd>
+<dt>Coverage</dt><dd>complete_within_scope</dd>
+ <dt>Budget use</dt><dd>0/2 hops ·
+ 0/5000 events ·
+ 1/400 traversal requests ·
+ 18.238s</dd>
+</dl>
+<p class="note">Traversal requests count only the tracer's own forward-walk
+pages, not the seed-event search, enrichment, or receipt verification a live
+run also performs — see the bundle manifest's <code>provider_exchanges</code>
+for the total acquisition count.</p>
+<p class="note">Coverage is complete <em>within the declared scope</em> — this network,
+this asset, this time window, these budgets. It never means complete knowledge of
+the blockchain.</p>
+
+<h2>Observed transfers</h2>
+<table><thead><tr><th>Hop</th><th>Block time (UTC)</th><th>From</th><th>To</th><th>Amount</th><th>Event reference</th><th>Status</th></tr></thead><tbody><tr><td class='num'>0</td><td>2026-09-26T17:47:20+00:00</td><td>0x1362b5c4e4de99267e4005eb8a918e16bb8098dc</td><td>0xe7d52aa5bf9d1135d9e3714ea44e2589437bdf76</td><td class='num'>3850.000000000000000000 USDT</td><td>eip155:56:0x860149df66683847ccef9288fa40211bccfe9ffa59e35057a484ea11aa97161f:14</td><td>success / confirmed</td></tr></tbody></table>
+<p class="note">Hop 0 is the seed transfer that links the case to the path; it is
+shown from the run's own saved event, not re-derived. Later rows are onward
+transfers observed within the analysed scope.</p>
+
+<h2>Branch endings</h2>
+<table><thead><tr><th>Address</th><th>Endpoint</th><th>Entity</th><th>Observed amount</th><th>Case amount</th><th>Boundary</th><th>Hop</th></tr></thead><tbody><tr><td>0xe7d52aa5bf9d1135d9e3714ea44e2589437bdf76</td><td><span class='tag unresolved'>unresolved</span></td><td><span class='note'>no label</span></td><td class='num'>3850.000000000000000000</td><td>allocation_unknown</td><td>no_outgoing_activity</td><td class='num'>0</td></tr></tbody></table>
+<p class="note">A <strong>known_service</strong> ending is supported by a reviewed,
+in-date service-control assertion. A <strong>deposit_candidate</strong> is a lead:
+it is shown, and tracing continues past it. Neither identifies a person.</p>
+
+<h2>Label provenance</h2>
+<p class="empty">No entity attribution was made.</p>
+<p class="note">Every claim above is reproduced from the label set as it stood at
+2026-09-26T18:14:04.593018+00:00, not read from today's files. The source hash identifies the
+document the claim came from; the accepting reviewer and the decision date identify the
+row in <code>review_log.csv</code>.</p>
+
+<h3>Label sets read</h3>
+<table><thead><tr><th>File</th><th>Claims loaded</th><th>Withdrawn by review</th><th>SHA-256</th></tr></thead><tbody><tr><td>verified_anchors.csv</td><td class='num'>2</td><td class='num'>0</td><td><span class='note'>c2018baa8f2ea17873877375c66a0ede0ed0e61a3ba920deec7f3968ef4644a9</span></td></tr><tr><td>deposit_candidates.csv</td><td class='num'>1</td><td class='num'>0</td><td><span class='note'>d133e906be0c66ee184a47983764c64869624d92faa9c6a606a931d9563bb3dd</span></td></tr></tbody></table>
+<p class="note">Label source <strong>reviewed_sets</strong>,
+2 accepted service claim(s) available to this
+run. A withdrawn row is one a reviewer rejected or quarantined; it was not loaded.</p>
+
+<h2>Limitations and unresolved items</h2>
+<table><thead><tr><th>Code</th><th>Detail</th><th>Address</th><th>Event</th></tr></thead><tbody><tr><td>allocation_unknown</td><td>The observed amount is the transfer&#x27;s own value, not an allocation to any specific case or claimant. An observed path is a sequence of transfers, not ownership of fungible units.</td><td>—</td><td>—</td></tr><tr><td>bounded_analysis_window</td><td>Analysed 2026-09-26T17:47:20+00:00 to 2026-09-26T17:47:40+00:00 only -- not the account&#x27;s full history before or after it.</td><td>—</td><td>—</td></tr><tr><td>single_validation_case</td><td>One public-chain validation case, chosen to demonstrate the pipeline end to end. Not a general coverage claim about this address, this entity, or BNB Smart Chain Mainnet activity broadly.</td><td>—</td><td>—</td></tr></tbody></table>
+
+<div class="caveat">
+<strong>Read this before relying on the page above.</strong><br>
+An observed path establishes a sequence of transfers, not ownership of fungible units. Case-associated amounts default to allocation_unknown. This output does not identify a person, establish guilt, or authorise a freeze.<br><br>
+Observed transfer amounts are what the chain shows. A case-associated amount is a
+separate question and defaults to <code>allocation_unknown</code>: an address holding
+pre-existing funds mixes them, and a later outgoing transfer cannot be assumed to
+consist of the funds under investigation.<br><br>
+This document is investigative material for human review. It is not a legal
+instrument, it establishes no authority to restrict any account, and it has not
+been checked by anyone merely because it was generated.
+</div>
+</body></html>

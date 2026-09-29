@@ -1,0 +1,10 @@
+[
+  {
+    "test": "ordering-ambiguous transfers stay visually qualified",
+    "pass": false
+  },
+  {
+    "test": "opening recorded evidence does not change the deployment mode badge",
+    "pass": false
+  }
+]

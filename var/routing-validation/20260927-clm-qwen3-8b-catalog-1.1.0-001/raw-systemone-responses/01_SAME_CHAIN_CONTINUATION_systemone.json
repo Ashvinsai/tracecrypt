@@ -1,0 +1,11 @@
+{
+  "scenario_id": "01_SAME_CHAIN_CONTINUATION",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "CONTINUE_SAME_CHAIN": 0.0171564986276247,
+    "REQUEST_HUMAN_REVIEW": 0.43925976539002864,
+    "GENERATE_EVIDENCE_REPORT": 0.5435837359823465
+  },
+  "input_hash": "373aae0b4b64bdcd36382203617fc0330223d509da745abc2c23c6d03fc00e76"
+}

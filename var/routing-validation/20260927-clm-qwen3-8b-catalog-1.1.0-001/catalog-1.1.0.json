@@ -1,0 +1,8 @@
+{
+  "notice": "DECISION SUPPORT METADATA - NOT BLOCKCHAIN EVIDENCE",
+  "action_catalog_version": "1.1.0",
+  "calibrated_actions": {
+    "CONTINUE_SAME_CHAIN": "Continue automated chronological tracing on the current blockchain while unresolved outgoing branches remain available for investigation.",
+    "FOLLOW_CROSS_CHAIN_LINK": "Continue fund-flow tracing on the destination blockchain through an already verified cross-chain transfer when destination tracing remains pending."
+  }
+}

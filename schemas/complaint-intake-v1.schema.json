@@ -1,0 +1,138 @@
+{
+  "$defs": {
+    "WalletReport": {
+      "additionalProperties": false,
+      "properties": {
+        "network_key": {
+          "enum": [
+            "tron",
+            "ethereum",
+            "bsc",
+            "base"
+          ],
+          "title": "Network Key",
+          "type": "string"
+        },
+        "address": {
+          "maxLength": 128,
+          "minLength": 1,
+          "title": "Address",
+          "type": "string"
+        },
+        "token_contract": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Token Contract"
+        },
+        "seed_event_reference": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Seed Event Reference"
+        }
+      },
+      "required": [
+        "network_key",
+        "address"
+      ],
+      "title": "WalletReport",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "external_reference": {
+      "maxLength": 120,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9._:/-]+$",
+      "title": "External Reference",
+      "type": "string"
+    },
+    "title": {
+      "maxLength": 300,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "allegation_type": {
+      "default": "other",
+      "enum": [
+        "investment_scam",
+        "task_fraud",
+        "sextortion",
+        "ransomware",
+        "phishing",
+        "darknet",
+        "organized_financial_crime",
+        "other"
+      ],
+      "title": "Allegation Type",
+      "type": "string"
+    },
+    "wallets": {
+      "items": {
+        "$ref": "#/$defs/WalletReport"
+      },
+      "maxItems": 20,
+      "minItems": 1,
+      "title": "Wallets",
+      "type": "array"
+    },
+    "incident_start": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Incident Start"
+    },
+    "analysis_cutoff": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Analysis Cutoff"
+    }
+  },
+  "required": [
+    "external_reference",
+    "title",
+    "wallets"
+  ],
+  "title": "ComplaintPayload",
+  "type": "object"
+}

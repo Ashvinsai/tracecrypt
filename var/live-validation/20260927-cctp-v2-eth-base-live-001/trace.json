@@ -1,0 +1,118 @@
+{
+  "cross_chain_links": [
+    {
+      "amount_reconciliation": "MATCHES_PROTOCOL_EXPECTATION",
+      "api_event_nonce": "0x03c1ce4cab19841c55bc11af0cd262e3fd5e20cf3a06ecb50c2874816fbb900d",
+      "attestation_bytes": "0x9de242e58d5f73681ad5305c710f733a79cf4443c657b2dca0f85bdba5cffcd5206f184e4da8f580b48f0f947c16639d533a4aa328100cba99eb22fd26b7543a1b6b6df336215f3f26909e18303bad8240e2c2eaff04fb8b2dd399f16210c5f9472950e9fec2670751900589bb55f62969e7aaf08eb4fc28dcac2a98b080f2d6461b",
+      "attestation_length_bytes": 130,
+      "attestation_signature_verified": false,
+      "attestation_source": "circle_iris_api",
+      "attestation_status": "API_REPORTED_COMPLETE",
+      "burn_message_version": 1,
+      "burn_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "cctp_finality_threshold_executed": 2000,
+      "depositor": "0x38a1c011890bc95fd4b43b622e1432c859d097bc",
+      "destination_block_number": 51826929,
+      "destination_block_time": "2026-09-26T17:20:05+00:00",
+      "destination_chain_id": 8453,
+      "destination_domain": 6,
+      "destination_execution_status": "success",
+      "destination_mint_event_reference": "eip155:8453:0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421:1169",
+      "destination_network": "base",
+      "destination_receipt_finality": "finalized",
+      "destination_receive_event_reference": "eip155:8453:0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421:1170",
+      "destination_tx_hash": "0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421",
+      "evidence_references": [
+        "eip155:1:0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed:320",
+        "eip155:1:0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed:319",
+        "eip155:8453:0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421:1170",
+        "eip155:8453:0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421:1169"
+      ],
+      "fee_executed_base_units": "0",
+      "limitations": [
+        "Cross-chain continuation is protocol-specific to Circle CCTP V2 (Ethereum Mainnet -> Base Mainnet USDC).",
+        "Attestation status is reported by Circle Iris API metadata; independent on-chain ECDSA signature verification is not executed locally."
+      ],
+      "linkage_status": "COMPLETE",
+      "max_fee_base_units": "0",
+      "message_bytes": "0x000000010000000000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028b5a0e9c621a5badaa536219b3a228c8168cf5d00000000000000000000000028b5a0e9c621a5badaa536219b3a228c8168cf5d0000000000000000000000000000000000000000000000000000000000000000000007d00000000000000001000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb4800000000000000000000000038a1c011890bc95fd4b43b622e1432c859d097bc00000000000000000000000000000000000000000000000000000000008f4cd700000000000000000000000038a1c011890bc95fd4b43b622e1432c859d097bc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "message_hash": "0x6ac97f8df13e97580ec6342fd29b075be5a3099db7eb3188c46e6c25f533710e",
+      "message_header_version": 1,
+      "message_nonce": "0x03c1ce4cab19841c55bc11af0cd262e3fd5e20cf3a06ecb50c2874816fbb900d",
+      "mint_recipient": "0x38a1c011890bc95fd4b43b622e1432c859d097bc",
+      "mint_token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "observed_mint_and_withdraw_amount_base_units": "9391319",
+      "observed_recipient_usdc_amount_base_units": "9391319",
+      "protocol_family": "circle_cctp",
+      "protocol_generation": 2,
+      "signature_blob_count": 2,
+      "signature_blob_size_bytes": 65,
+      "source_block_number": 26062983,
+      "source_block_time": "2026-09-26T17:01:11+00:00",
+      "source_burn_amount_base_units": "9391319",
+      "source_burn_event_reference": "eip155:1:0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed:320",
+      "source_chain_id": 1,
+      "source_domain": 0,
+      "source_event_nonce": null,
+      "source_finality": "finalized",
+      "source_message_event_reference": "eip155:1:0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed:319",
+      "source_network": "ethereum",
+      "source_tx_hash": "0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed"
+    }
+  ],
+  "discovery": {
+    "candidate_logs_count": 1,
+    "contract": "0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+    "discovered_transaction": "0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421",
+    "expected_nonce": "0x03c1ce4cab19841c55bc11af0cd262e3fd5e20cf3a06ecb50c2874816fbb900d",
+    "from_block": 51826900,
+    "method": "bounded_eth_getLogs_scan",
+    "requests_count": 8,
+    "source_domain": 0,
+    "span": 5,
+    "to_block": 51826935,
+    "topic0": "0xff48c13eda96b1cceacc6b9edeedc9e9db9d6226afbc30146b720c19d3addb1c"
+  },
+  "protocol": "circle_cctp_v2",
+  "receipts": {
+    "destination": {
+      "block_number": 51826929,
+      "block_time": "2026-09-26T17:20:05+00:00",
+      "chain_id": 8453,
+      "finality": "finalized",
+      "network": "base",
+      "status": "0x1",
+      "transaction_hash": "0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421"
+    },
+    "source": {
+      "block_number": 26062983,
+      "chain_id": 1,
+      "finality": "finalized",
+      "network": "ethereum",
+      "status": "0x1",
+      "transaction_hash": "0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed"
+    }
+  },
+  "route": "ethereum_mainnet_to_base_mainnet",
+  "run_id": "20260927-cctp-v2-eth-base-live-001",
+  "transfers": [
+    {
+      "amount_base_units": 9391319,
+      "asset_symbol": "USDC",
+      "event_type": "cctp_burn",
+      "from_address": "0x38a1c011890bc95fd4b43b622e1432c859d097bc",
+      "network": "ethereum",
+      "to_address": "0x28b5a0e9c621a5badaa536219b3a228c8168cf5d",
+      "transaction_hash": "0x722f02281716e6e6dba159a06bf62be63ba0bdc5c77db84c4e9c06b224c797ed"
+    },
+    {
+      "amount_base_units": 9391319,
+      "asset_symbol": "USDC",
+      "event_type": "cctp_mint",
+      "from_address": "0x0000000000000000000000000000000000000000",
+      "network": "base",
+      "to_address": "0x38a1c011890bc95fd4b43b622e1432c859d097bc",
+      "transaction_hash": "0xb198d3a7863340934f35fa31b6788c4c21d61350fccc12c6e97ad1c519c12421"
+    }
+  ]
+}

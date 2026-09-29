@@ -1,0 +1,56 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "source_tx_hash": {
+      "pattern": "^0x[0-9a-fA-F]{64}$",
+      "title": "Source Tx Hash",
+      "type": "string"
+    },
+    "destination_tx_hash": {
+      "anyOf": [
+        {
+          "pattern": "^0x[0-9a-fA-F]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Destination Tx Hash"
+    },
+    "destination_from_block": {
+      "anyOf": [
+        {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Destination From Block"
+    },
+    "destination_to_block": {
+      "anyOf": [
+        {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Destination To Block"
+    }
+  },
+  "required": [
+    "source_tx_hash"
+  ],
+  "title": "CctpRequest",
+  "type": "object"
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": "09_AMBIGUOUS_ORDERING",
+  "model": "clm-latest",
+  "choice": "REQUEST_HUMAN_REVIEW",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.5130142374181782,
+    "GENERATE_EVIDENCE_REPORT": 0.4869857625818218
+  },
+  "input_hash": "5571efa66ced0b08108f9833ab714d30c86bad5ac2c7283956847738e54c1db7"
+}

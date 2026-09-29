@@ -1,0 +1,10 @@
+{
+  "scenario_id": "02_REVIEWED_VASP_REACHED",
+  "model": "clm-latest",
+  "choice": "GENERATE_EVIDENCE_REPORT",
+  "probabilities": {
+    "REQUEST_HUMAN_REVIEW": 0.3198055899326652,
+    "GENERATE_EVIDENCE_REPORT": 0.6801944100673348
+  },
+  "input_hash": "f550542a978c3479215eef8d25a6c6c0c4dcdec0db89273e330a2c4451d3070c"
+}

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+
+# Secrets and local state
+.env
+*.env
+!.env.example
+
+# Local database files. var/ itself is tracked so a clean clone can run the demo.
+var/*.db
+var/*.db-journal
+var/**/*.db
+var/**/*.db-journal
+
+# Agent tooling state
+.commandcode/
+
+# Bulk downloaded disclosures. Preserved on disk, never committed.
+okx.com/
+
+# Stale presentation backups
+*.pptx.bak
+*.pptx.bak2
+
+# SQLite WAL side files and local demo recording frames
+*.db-shm
+*.db-wal
+video/

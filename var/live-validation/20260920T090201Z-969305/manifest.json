@@ -1,0 +1,44 @@
+{
+  "bundle_version": "1",
+  "caveat": "A hash establishes that these files have not changed since the run. It does not establish that the attribution is correct.",
+  "configuration": {
+    "acquisition_max_requests": null,
+    "budgets": {
+      "max_events": 5000,
+      "max_hops": 8,
+      "max_provider_requests": 400
+    },
+    "label_dir": "/home/ash/Work/crypto-attribution/data",
+    "label_source": "reviewed_sets",
+    "tron_api_base": "https://api.trongrid.io",
+    "tron_api_key_configured": true
+  },
+  "data_mode": "RECORDED_PUBLIC",
+  "failure": null,
+  "files": {
+    "accepted-label-snapshot.json": "12c435d29b5e4a05430568f9641ae2553ded2da20d69c3cf38a7578d2c764da8",
+    "normalized-transfers.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "receipts.json": "12238c8fd723b101c00468d64500d6ab9405dee1257a4e36991dfc8d38066d79",
+    "report.html": "a1ce1b5028f8c644aaeef31869e046d672d372e3ad783e6b1ea088bf94a86417",
+    "trace.json": "d05ac7e267f50fc6dfa999cb553bf8f6b91b41f1721c099bd3a9b2f74dfeaa16"
+  },
+  "finished_at": "2026-09-20T09:02:01.456763+00:00",
+  "mode": "replay",
+  "provider_exchanges": 3,
+  "query": {
+    "address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "analysis_cutoff": "2026-08-10T15:59:55+00:00",
+    "analysis_start": "2026-08-10T15:59:53+00:00",
+    "network": "tron",
+    "seed_event_reference": "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0",
+    "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  },
+  "run_id": "20260920T090201Z-969305",
+  "started_at": "2026-09-20T09:02:01.454447+00:00",
+  "status": "succeeded",
+  "versions": {
+    "engine": "0.1.0",
+    "label_set": "0",
+    "parser": "0.1.0"
+  }
+}

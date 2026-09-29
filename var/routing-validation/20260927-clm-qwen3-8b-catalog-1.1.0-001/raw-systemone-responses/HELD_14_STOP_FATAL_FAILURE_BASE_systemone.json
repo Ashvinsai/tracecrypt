@@ -1,0 +1,11 @@
+{
+  "scenario_id": "HELD_14_STOP_FATAL_FAILURE_BASE",
+  "model": "clm-latest",
+  "choice": "STOP_COVERAGE_GAP",
+  "probabilities": {
+    "STOP_COVERAGE_GAP": 0.4631038009307059,
+    "REQUEST_HUMAN_REVIEW": 0.15474061724662408,
+    "GENERATE_EVIDENCE_REPORT": 0.38215558182266995
+  },
+  "input_hash": "2f599b860f05540bf367cfd1312c00d02ebc6f42f519d12e4ad68855503ea03e"
+}

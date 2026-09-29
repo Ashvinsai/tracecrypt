@@ -1,0 +1,66 @@
+{
+  "address_only_context": [],
+  "anchor": {
+    "address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+    "assertion_type": "service_control",
+    "entity_name": "OKX",
+    "review_state": "accepted",
+    "source_hash": "dd3ac9a359a4a140f00b2f0a13338c3edff5d08dd01d1fd4db6fe2971658142a",
+    "source_reference": "https://www.okx.com/proof-of-reserves/download",
+    "valid_from": "2026-08-10T15:59:54+00:00",
+    "valid_to": "2026-08-10T15:59:54+00:00"
+  },
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+      "anchor": {
+        "address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+        "entity_name": "OKX"
+      },
+      "coverage_complete": true,
+      "evidence_references": [
+        "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0"
+      ],
+      "features": {
+        "distinct_incoming_senders": 0,
+        "distinct_observation_dates": 1,
+        "observed_amount_base_units": "72140000",
+        "repeated_transfer_count": 1
+      },
+      "first_observed_at": "2026-08-10T15:59:54+00:00",
+      "human_reviewed": false,
+      "last_observed_at": "2026-08-10T15:59:54+00:00",
+      "limitations": [],
+      "matched_rules": [],
+      "network": "tron",
+      "not_service_control_reason": "This relationship is a candidate generated from observed transactions; it does not establish service ownership, address role, customer identity, common control, fraud, or unique fund ownership. Only an independently evidence-backed, human-reviewed service_control claim can establish that.",
+      "policy_version": "1",
+      "relationship_type": "deposit_candidate",
+      "review_status": "unreviewed",
+      "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+    }
+  ],
+  "coverage": {
+    "address_limit": 10,
+    "addresses_examined": 1,
+    "complete": true,
+    "limitations": [],
+    "max_requests": 20,
+    "page_limit": 2,
+    "pages_per_address": 0,
+    "pages_used": 3,
+    "requests_used": 0
+  },
+  "disclaimer": "This relationship is a candidate generated from observed transactions; it does not establish service ownership, address role, customer identity, common control, fraud, or unique fund ownership. Only an independently evidence-backed, human-reviewed service_control claim can establish that.",
+  "excluded_observation_count": 1,
+  "limitations": [],
+  "network": "tron",
+  "observation_window": {
+    "end": "2026-08-10T16:00:24+00:00",
+    "start": "2026-08-10T15:59:24+00:00"
+  },
+  "policy_version": "1",
+  "report_type": "vasp_candidate_neighborhood",
+  "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+}

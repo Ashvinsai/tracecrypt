@@ -1,0 +1,58 @@
+{
+  "fixture_version": "0.1.0",
+  "note": "Deliberately fictional complaints for the MOCK local complaint queue (Stage 4). Not NCRP, not SAHYOG, not any real government portal. Never send to a live provider or present as a real complaint intake. See app/services/mock_complaint_adapter.py and docs/DECISIONS.md D028.",
+  "source_channel": "MOCK_LOCAL_QUEUE",
+  "complaints": [
+    {
+      "complaint_reference": "MOCK-Q-2026-000101",
+      "received_at": "2026-09-15T09:12:00Z",
+      "network_key": "tron",
+      "reported_address": "TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "display_symbol": "USDT-SYN"
+      },
+      "reported_transaction_hash": "tx_seed_multi",
+      "seed_event_reference": "tron:tx_seed_multi:0",
+      "incident_time": "2026-08-01T10:10:00Z",
+      "amount_reported_base_units": "100000000",
+      "incident_summary": "FICTIONAL. Complainant states they were persuaded, via a messaging-app investment group, to transfer funds to the address above as a 'trading deposit'. This narrative and every address it names are invented for this fixture (see fixtures/tron_synthetic_case_alpha.json).",
+      "reporter_contact": "FICTIONAL -- synthetic-reporter-1@example.test",
+      "category": "investment_scam"
+    },
+    {
+      "complaint_reference": "MOCK-Q-2026-000102",
+      "received_at": "2026-09-17T14:40:00Z",
+      "network_key": "tron",
+      "reported_address": "TMockOnlyAddressNeverTracedByAnyF1x",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "display_symbol": "USDT-SYN"
+      },
+      "reported_transaction_hash": null,
+      "seed_event_reference": null,
+      "incident_time": "2026-09-10T18:30:00Z",
+      "amount_reported_base_units": "25000000",
+      "incident_summary": "FICTIONAL. Complainant reports a romance-scam pattern with a request to send funds to the address above. This address is intentionally absent from every trace fixture in this repository, to demonstrate a complaint the tracer has no recorded activity for.",
+      "reporter_contact": "FICTIONAL -- synthetic-reporter-2@example.test",
+      "category": "romance_scam"
+    },
+    {
+      "complaint_reference": "MOCK-Q-2026-000103",
+      "received_at": "2026-09-19T08:05:00Z",
+      "network_key": "tron",
+      "reported_address": "TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz",
+      "asset": {
+        "token_contract": "TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY",
+        "display_symbol": "USDT-SYN"
+      },
+      "reported_transaction_hash": null,
+      "seed_event_reference": null,
+      "incident_time": "2026-09-05T12:00:00Z",
+      "amount_reported_base_units": "60000000",
+      "incident_summary": "FICTIONAL. A second, independent complainant reports funds sent to this address (fixtures/tron_synthetic_case_alpha.json's 'hop1'), naming a different messaging-app group than MOCK-Q-2026-000101. Included to demonstrate two complaints converging on the same downstream address, without this queue itself asserting they are related -- that determination belongs to an investigator, not this adapter.",
+      "reporter_contact": "FICTIONAL -- synthetic-reporter-3@example.test",
+      "category": "investment_scam"
+    }
+  ]
+}

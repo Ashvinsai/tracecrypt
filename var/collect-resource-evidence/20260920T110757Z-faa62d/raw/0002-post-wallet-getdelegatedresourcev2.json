@@ -1,0 +1,24 @@
+{
+  "body": {
+    "delegatedResource": [
+      {
+        "from": "TTz9gYGZnAuDpqaQ77VFoBYt937bReAQo4",
+        "frozen_balance_for_bandwidth": 249650000000,
+        "frozen_balance_for_energy": 884092000000,
+        "to": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq"
+      }
+    ]
+  },
+  "captured_at": "2026-09-20T11:07:58.423685+00:00",
+  "key": "15c9a860d6c02aa94640fda4c62d68ec258b24c8305ff1c976baa089d04a5f7b",
+  "method": "POST",
+  "params": {},
+  "path": "/wallet/getdelegatedresourcev2",
+  "payload": {
+    "fromAddress": "TTz9gYGZnAuDpqaQ77VFoBYt937bReAQo4",
+    "toAddress": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "visible": true
+  },
+  "sequence": 2,
+  "status": 200
+}

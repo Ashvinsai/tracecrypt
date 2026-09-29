@@ -1,0 +1,41 @@
+{
+  "body": {
+    "data": [
+      {
+        "block_timestamp": 1786376709000,
+        "from": "TNRyJuZoY9p7x9aMGQ3PyvcSzo31XfTQZB",
+        "to": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+        "token_info": {
+          "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+          "decimals": 6,
+          "name": "Tether USD",
+          "symbol": "USDT"
+        },
+        "transaction_id": "3dc3ef5f088498d1e3d5a63698fee730850b090368cf6ea463bf24610463a78a",
+        "type": "Transfer",
+        "value": "750000000000"
+      }
+    ],
+    "meta": {
+      "at": 1790419021857,
+      "page_size": 1
+    },
+    "success": true
+  },
+  "captured_at": "2026-09-26T10:37:01.993663+00:00",
+  "key": "529940d5ae3287b964940b692db0863b953a1e820d8082745c94b9e9d1f23f39",
+  "method": "GET",
+  "params": {
+    "contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "limit": 200,
+    "max_timestamp": 1786377594000,
+    "min_timestamp": 1786376487000,
+    "only_confirmed": "true",
+    "only_from": "true",
+    "order_by": "block_timestamp,asc"
+  },
+  "path": "/v1/accounts/TNRyJuZoY9p7x9aMGQ3PyvcSzo31XfTQZB/transactions/trc20",
+  "payload": {},
+  "sequence": 3,
+  "status": 200
+}

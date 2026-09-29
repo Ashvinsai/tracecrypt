@@ -1,0 +1,107 @@
+{
+  "data_mode": "SYNTHETIC",
+  "note": "Fictional fixture data and an injected clock; not a live observation.",
+  "observation_method": "polling of indexed provider history; not a mempool feed",
+  "fixture": "fixtures/tron_synthetic_monitoring.json",
+  "steps": [
+    {
+      "step": "poll at 10:10",
+      "poll_run_id": "68fe3150-4062-49d6-b8a7-e87bcc37e0f1",
+      "watch_id": "e67ed3f5-df5e-496e-9cec-b435b522d85b",
+      "status": "succeeded",
+      "coverage_status": "complete_within_scope",
+      "data_mode": "SYNTHETIC",
+      "window_start": "2026-08-01T10:00:00+00:00",
+      "window_end": "2026-08-01T10:10:00+00:00",
+      "checkpoint_before": null,
+      "checkpoint_after": "2026-08-01T10:10:00+00:00",
+      "checkpoint_advanced": true,
+      "pages_fetched": 1,
+      "events_observed": 1,
+      "new_alerts": 1,
+      "new_alert_references": [
+        "tron:tx_mon_e1:0"
+      ],
+      "duplicate_events": 0,
+      "retracted_references": [],
+      "excluded": {},
+      "error_class": null,
+      "error_message": null
+    },
+    {
+      "step": "poll at 10:20",
+      "poll_run_id": "e778dd46-6b4d-4dea-8bd1-ba75229bbfc9",
+      "watch_id": "e67ed3f5-df5e-496e-9cec-b435b522d85b",
+      "status": "succeeded",
+      "coverage_status": "complete_within_scope",
+      "data_mode": "SYNTHETIC",
+      "window_start": "2026-08-01T10:00:00+00:00",
+      "window_end": "2026-08-01T10:20:00+00:00",
+      "checkpoint_before": "2026-08-01T10:10:00+00:00",
+      "checkpoint_after": "2026-08-01T10:20:00+00:00",
+      "checkpoint_advanced": true,
+      "pages_fetched": 1,
+      "events_observed": 3,
+      "new_alerts": 1,
+      "new_alert_references": [
+        "tron:tx_mon_e2:0"
+      ],
+      "duplicate_events": 1,
+      "retracted_references": [],
+      "excluded": {
+        "approval": 1
+      },
+      "error_class": null,
+      "error_message": null
+    },
+    {
+      "step": "same poll again, same process",
+      "poll_run_id": "2c8e6bd3-0fab-43ff-8b40-ba92e6c5c303",
+      "watch_id": "e67ed3f5-df5e-496e-9cec-b435b522d85b",
+      "status": "succeeded",
+      "coverage_status": "complete_within_scope",
+      "data_mode": "SYNTHETIC",
+      "window_start": "2026-08-01T10:10:00+00:00",
+      "window_end": "2026-08-01T10:20:00+00:00",
+      "checkpoint_before": "2026-08-01T10:20:00+00:00",
+      "checkpoint_after": "2026-08-01T10:20:00+00:00",
+      "checkpoint_advanced": false,
+      "pages_fetched": 1,
+      "events_observed": 2,
+      "new_alerts": 0,
+      "new_alert_references": [],
+      "duplicate_events": 1,
+      "retracted_references": [],
+      "excluded": {
+        "approval": 1
+      },
+      "error_class": null,
+      "error_message": null
+    },
+    {
+      "step": "same poll again, new process (restart)",
+      "poll_run_id": "c969aee0-c14c-4818-9ce8-6b232164e465",
+      "watch_id": "e67ed3f5-df5e-496e-9cec-b435b522d85b",
+      "status": "succeeded",
+      "coverage_status": "complete_within_scope",
+      "data_mode": "SYNTHETIC",
+      "window_start": "2026-08-01T10:10:00+00:00",
+      "window_end": "2026-08-01T10:20:00+00:00",
+      "checkpoint_before": "2026-08-01T10:20:00+00:00",
+      "checkpoint_after": "2026-08-01T10:20:00+00:00",
+      "checkpoint_advanced": false,
+      "pages_fetched": 1,
+      "events_observed": 2,
+      "new_alerts": 0,
+      "new_alert_references": [],
+      "duplicate_events": 1,
+      "retracted_references": [],
+      "excluded": {
+        "approval": 1
+      },
+      "error_class": null,
+      "error_message": null
+    }
+  ],
+  "total_alerts": 2
+}

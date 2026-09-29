@@ -1,0 +1,149 @@
+{
+  "acquisitions": [],
+  "branch_endings": [
+    {
+      "address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+      "arrival_event_reference": "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0",
+      "attribution_status": "supported",
+      "boundary_reason": "service_boundary",
+      "branch_path": [
+        "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0"
+      ],
+      "case_amount_basis": "allocation_unknown",
+      "endpoint_class": "known_service",
+      "hop_depth": 0,
+      "label": {
+        "address_role": "unknown",
+        "assertion_type": "service_control",
+        "entity_name": "OKX",
+        "entity_type": "exchange",
+        "label_set_version": "okx-por-2026081100-V6",
+        "label_source": "reviewed_sets",
+        "last_verified_at": "2026-09-20T07:51:29.489220+00:00",
+        "methodology": "Row 53373 of the address section of okx_por_2026081100_V6.csv, inside por_csv_2026081100_V6.zip (sha256 7db12d643664e0b84ff1e54ffdba339d47298a249afe494c7e770d63dc117462; original preserved unmodified at okx.com/por_csv_2026081100_V6.zip; official download URL https://static.okx.com/cdn/okx/por/chain/por_csv_2026081100_V6.zip). Selected as coin=USDT-TRC20 Network=TRON Type='Non Staking' at Snapshot Height 85235532 -- the same disclosure and snapshot height as TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv, a separate row. Discovered 2026-09-20 via a bounded on-chain search of block 85235532 itself (not a per-address history search): the block's full transaction list was read via one live read-only call to POST /wallet/gettransactioninfobyblocknum {num: 85235532} (685 transactions), cross-referenced against the 17,429 TRON/USDT-TRC20 addresses in this disclosure at this snapshot height. A genuine successful USDT-TRC20 Transfer event landed on this address inside that exact block: transaction 84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997, log index 0, from TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq, amount 72140000 base units (72.14 USDT), decoded from the raw Transfer(address,address,uint256) log topics/data (topic0 independently verified as keccak256('Transfer(address,address,uint256)') = ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef). Execution and finality independently reconciled via POST /walletsolidity/gettransactioninfobyid for that transaction: SUCCESS, solidified, confirmed, block_time 2026-08-10T15:59:54Z -- matching the snapshot instant exactly and matching the head-node receipt already embedded in the block-info response. The transaction's presence in this block was also cross-checked against the previously saved SolidityNode GetBlockByNum response for block 85235532 (offline, no new request): present, same 685-transaction count, same blockID. This on-chain match is evidence that this address received a genuine transfer during the snapshot block; it is not evidence of anything beyond that, and does not by itself establish OKX's control of the address -- that rests on the disclosure row and its signature alone, as below. Report date as displayed on https://www.okx.com/proof-of-reserves/download: 'Aug 11, 2026, 12:00 AM' under column 'Date (UTC+8)' -- source timezone UTC+8, normalized to 2026-08-10T16:00:00Z. This is OKX's report label, not the on-chain snapshot instant, and is not used as valid_from. valid_from is set to the resolved snapshot instant 2026-08-10T15:59:54+00:00 (block 85235532), independently established in an earlier step via /walletsolidity/getblockbynum (blockID 000000000514974cfa8275d3e82a92f014f20c5a2abf2b8116002bc058974c88; raw timestamp 1786377594000 ms) -- not re-fetched for this row. The row carries message 'I am an OKX address' with a 130-byte signature1 (0xd69eb1e8...7f31c). This signature is THIS row's own and was verified separately from any other address's: 2026-09-20, TIP-191 (keccak256(\"\\x19TRON Signed Message:\\n\" + len + message), secp256k1 ECDSA recovery), isolated version-pinned verifier (eth-keys 0.8.0 + pycryptodome 3.23.0 + base58 2.1.1, not an application dependency): the recovered address matches TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir exactly. This shows control of the signing key over this message; it does not show a signing date, continuous control, or a customer-deposit role. Proposed scope, for human review, mirrors the sibling claim: valid_from and valid_to both 2026-08-10T15:59:54+00:00 -- the scope of this reviewed snapshot disclosure, not an interval of continuing control. No forward-looking assumption is made or reviewer-approved. Role left unknown: a reserve attestation establishes dated control, not whether the address is cold storage, a hot wallet or a deposit address; the on-chain match above does not independently support a narrower role.",
+        "original_hash": "7db12d643664e0b84ff1e54ffdba339d47298a249afe494c7e770d63dc117462",
+        "original_member": "okx_por_2026081100_V6.csv",
+        "original_reference": "okx.com/por_csv_2026081100_V6.zip",
+        "original_row_locator": "section=address;section_header_absolute_line=25;absolute_line=53373;section_row=53348;snapshot_height=85235532",
+        "retrieval_date": "2026-09-20T07:42:18.041260+00:00",
+        "review_reference": "dd3ac9a359a4a140@2026-09-20T07:51:29.489220+00:00",
+        "review_state": "accepted",
+        "reviewed_at": "2026-09-20T07:51:29.489220+00:00",
+        "reviewed_by": "ash",
+        "reviewer": "prepared-for-review",
+        "source_file": "dd3ac9a359a4a140-selection-53373.csv",
+        "source_hash": "dd3ac9a359a4a140f00b2f0a13338c3edff5d08dd01d1fd4db6fe2971658142a",
+        "source_reference": "https://www.okx.com/proof-of-reserves/download",
+        "valid_from": "2026-08-10T15:59:54+00:00",
+        "valid_to": "2026-08-10T15:59:54+00:00"
+      },
+      "note": null,
+      "observed_amount_base_units": "72140000",
+      "observed_amount_display": "72.140000"
+    }
+  ],
+  "budget_use": {
+    "elapsed_seconds": 0.0,
+    "event_limit": 5000,
+    "events_examined": 0,
+    "hop_limit": 8,
+    "hops_used": 0,
+    "note": "budgets are configuration targets, not measured performance",
+    "traversal_request_limit": 400,
+    "traversal_requests": 0,
+    "wall_clock_limit_seconds": 300
+  },
+  "disclaimer": "An observed path establishes a sequence of transfers, not ownership of fungible units. Case-associated amounts default to allocation_unknown. This output does not identify a person, establish guilt, or authorise a freeze.",
+  "limitations": [
+    {
+      "address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+      "code": "snapshot_only_label",
+      "event_reference": null,
+      "message": "OKX's claim over TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir is scoped to a single instant (2026-08-10T15:59:54+00:00), not a period of continuing control."
+    },
+    {
+      "address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+      "code": "address_role_unknown",
+      "event_reference": null,
+      "message": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir's role under OKX is not established beyond service control -- not confirmed as a customer deposit address, hot wallet, or cold reserve."
+    },
+    {
+      "address": null,
+      "code": "allocation_unknown",
+      "event_reference": null,
+      "message": "The observed amount is the transfer's own value, not an allocation to any specific case or claimant. An observed path is a sequence of transfers, not ownership of fungible units."
+    },
+    {
+      "address": null,
+      "code": "bounded_analysis_window",
+      "event_reference": null,
+      "message": "Analysed 2026-08-10T15:59:53+00:00 to 2026-08-10T16:00:05+00:00 only -- not the account's full history before or after it."
+    },
+    {
+      "address": null,
+      "code": "single_validation_case",
+      "event_reference": null,
+      "message": "One public-chain validation case, chosen to demonstrate the pipeline end to end. Not a general coverage claim about this address, this entity, or TRON activity broadly."
+    }
+  ],
+  "observed_transfers": [],
+  "scope": {
+    "analysis_cutoff": "2026-08-10T16:00:05+00:00",
+    "case_flow_linkage": "established",
+    "coverage_status": "complete_within_scope",
+    "data_mode": "RECORDED_PUBLIC",
+    "engine_version": "0.1.0",
+    "finished_at": "2026-09-26T07:09:46.831259+00:00",
+    "label_set_version": "0",
+    "label_snapshot": {
+      "accepted_service_claims": 2,
+      "claims_loaded": 3,
+      "files": [
+        {
+          "name": "verified_anchors.csv",
+          "rows_loaded": 2,
+          "rows_withdrawn": 0,
+          "sha256": "c2018baa8f2ea17873877375c66a0ede0ed0e61a3ba920deec7f3968ef4644a9"
+        },
+        {
+          "name": "deposit_candidates.csv",
+          "rows_loaded": 1,
+          "rows_withdrawn": 0,
+          "sha256": "d133e906be0c66ee184a47983764c64869624d92faa9c6a606a931d9563bb3dd"
+        }
+      ],
+      "source": "reviewed_sets"
+    },
+    "started_at": "2026-09-26T07:09:46.831196+00:00"
+  },
+  "seed": {
+    "address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "asset": {
+      "decimals": 6,
+      "display_symbol": "USDT",
+      "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+    },
+    "event_reference": "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0",
+    "network_key": "tron"
+  },
+  "seed_transfer": {
+    "acquisition_id": null,
+    "amount_base_units": "72140000",
+    "amount_display": "72.140000",
+    "asset": {
+      "decimals": 6,
+      "display_symbol": "USDT",
+      "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+    },
+    "block_time": "2026-08-10T15:59:54+00:00",
+    "chain_sequence": null,
+    "confirmation_state": "confirmed",
+    "event_reference": "tron:84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997:0",
+    "execution_status": "unknown",
+    "from_address": "TNtTcstZdy5vppwDMQuR9gy6n5rT4o7ptq",
+    "hop_depth": 0,
+    "ordering_ambiguous": false,
+    "to_address": "TYfxtkCooUX7rzjRqBGLan9XkCxqkrCRir",
+    "tx_hash": "84025aacbd098c91c8ea240481c6304d528807a84d3591246c06782071709997"
+  }
+}

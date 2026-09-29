@@ -1,0 +1,37 @@
+Stage 3B.1 Handoff
+==================
+
+Repository: crypto-attribution
+Prepared: 2026-09-21
+
+Included evidence
+-----------------
+- docs/PROGRESS.md
+- docs/ACCEPTANCE_CATALOG.md
+- docs/DECISIONS.md
+- data/evaluation_wallets.csv
+- var/evaluation-readiness/readiness.json
+- var/evaluation-readiness/readiness.html
+- All Stage 3B.1 modified/new source and test files listed by git status.
+- STAGE_3B1_CHANGES.patch (git diff)
+- STAGE_3B1_GIT_STATUS.txt (git status --short)
+
+Current state
+-------------
+- Stage 3B.1 evidence and evaluation-wallet ingestion/materialization work is present.
+- The readiness report concludes NOT_READY_FOR_REAL_EVALUATION; no ML model has been trained.
+- Two real public operational confounder/control wallets are recorded, both unreviewed.
+- No private credentials, keys, screenshots, victim information, or raw response bundles are included.
+- ppt/ and Python cache files are intentionally excluded.
+
+Verification recorded in docs/PROGRESS.md
+------------------------------------------
+- Final verification: 394 passed, 1 deselected.
+- ruff check . clean.
+- mypy app clean (56 files).
+
+Notes for reviewer
+------------------
+- Inspect the readiness JSON first, then the CSV and the progress/decision documents.
+- The patch and status files provide the complete working-tree change inventory.
+- The wallet CSV contains recorded public evidence only; review authorization state remains unreviewed.

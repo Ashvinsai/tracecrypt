@@ -1,0 +1,11 @@
+{
+  "scenario_id": "04_PROVIDER_FAILURE_RETRYABLE",
+  "model": "clm-latest",
+  "choice": "RETRY_PROVIDER",
+  "probabilities": {
+    "RETRY_PROVIDER": 0.6686089004755625,
+    "REQUEST_HUMAN_REVIEW": 0.1460322436984688,
+    "GENERATE_EVIDENCE_REPORT": 0.18535885582596875
+  },
+  "input_hash": "37cd30c7528bf7f181ffc0d8f5b08fb45a0572d1befa5636249e22666efc7b7f"
+}

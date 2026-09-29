@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Trace evidence — TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { font: 13px/1.5 ui-monospace, "SFMono-Regular", Menlo, monospace;
+       color: #1b1d21; background: #fff; margin: 0; padding: 24px; }
+h1 { font-size: 17px; margin: 0 0 2px; }
+h2 { font-size: 13px; margin: 26px 0 8px; text-transform: uppercase;
+     letter-spacing: .08em; border-bottom: 1px solid #1b1d21; padding-bottom: 4px; }
+.mode { display: inline-block; padding: 3px 9px; margin-bottom: 14px;
+        border: 1px solid #6a5c3f; background: #eeeae1; color: #6a5c3f;
+        font-weight: 700; letter-spacing: .05em; }
+.mode.live { border-color: #3f5747; background: #e9edea; color: #3f5747; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0 2px; }
+th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #d6d8dc;
+         vertical-align: top; word-break: break-all; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: #5a5e66; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 18px; margin: 0; }
+dt { color: #5a5e66; }
+dd { margin: 0; word-break: break-all; }
+.tag { display: inline-block; padding: 1px 6px; border: 1px solid currentColor;
+       font-size: 11px; letter-spacing: .04em; }
+.supported { color: #3f5747; }
+.candidate { color: #6a5c3f; }
+.unresolved, .boundary { color: #5a5e66; }
+.flag { color: #7c4444; }
+.note { color: #5a5e66; font-size: 12px; margin: 4px 0 0; }
+.caveat { border: 1px solid #1b1d21; padding: 10px 12px; margin-top: 26px; font-size: 12px; }
+.empty { color: #5a5e66; font-style: italic; padding: 6px 0; }
+@media print { body { padding: 0; } h2 { break-after: avoid; } tr { break-inside: avoid; } }
+</style></head><body>
+<div class="mode">SYNTHETIC — NOT LIVE CHAIN DATA</div>
+<h1>Transfer trace evidence</h1>
+<p class="note">Generated 2026-09-21T11:40:51.902682+00:00 ·
+request cli · engine 0.1.0 ·
+label set 0</p>
+
+<h2>Subject</h2>
+<dl>
+<dt>Network</dt><dd>tron</dd>
+<dt>Seed address</dt><dd>TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM</dd>
+<dt>Seed event</dt><dd>tron:tx_seed_multi:0</dd>
+<dt>Asset</dt><dd>USDT-SYN
+ (contract TQghWzGAMfcTPWzsDGWREVqKbbFMzegaGY,
+ 6 decimals)</dd>
+<dt>Case-flow linkage</dt><dd>established</dd>
+</dl>
+
+<h2>Analysis scope</h2>
+<dl>
+<dt>Data mode</dt><dd>SYNTHETIC</dd>
+<dt>Analysis cutoff</dt><dd>2027-01-01T00:00:00+00:00</dd>
+<dt>Run window</dt><dd>2026-09-21T11:40:51.899445+00:00 → 2026-09-21T11:40:51.901084+00:00</dd>
+<dt>Coverage</dt><dd>complete_within_scope</dd>
+ <dt>Budget use</dt><dd>4/8 hops ·
+ 15/5000 events ·
+ 8/400 traversal requests ·
+ 0.002s</dd>
+</dl>
+<p class="note">Traversal requests count only the tracer's own forward-walk
+pages, not the seed-event search, enrichment, or receipt verification a live
+run also performs — see the bundle manifest's <code>provider_exchanges</code>
+for the total acquisition count.</p>
+<p class="note">Coverage is complete <em>within the declared scope</em> — this network,
+this asset, this time window, these budgets. It never means complete knowledge of
+the blockchain.</p>
+
+<h2>Observed transfers</h2>
+<table><thead><tr><th>Hop</th><th>Block time (UTC)</th><th>From</th><th>To</th><th>Amount</th><th>Event reference</th><th>Status</th></tr></thead><tbody><tr><td class='num'>0</td><td>2026-08-01T10:10:00+00:00</td><td>TEocPZsTTRAK9x5TR66GnEbxKKU8zrNxgM</td><td>TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz</td><td class='num'>100.000000 USDT-SYN</td><td>tron:tx_seed_multi:0</td><td>success / confirmed</td></tr><tr><td class='num'>1</td><td>2026-08-01T10:20:00+00:00</td><td>TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz</td><td>TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6</td><td class='num'>3.000000 USDT-SYN</td><td>tron:tx_ambiguous:unknown-index</td><td>success / confirmed<br><span class='flag'>ordering ambiguous</span></td></tr><tr><td class='num'>1</td><td>2026-08-01T10:20:00+00:00</td><td>TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz</td><td>THLEvxEkNUHb5bx3YsFDfePYjfYQEtAhJf</td><td class='num'>60.000000 USDT-SYN</td><td>tron:tx_fan_a:0</td><td>success / confirmed</td></tr><tr><td class='num'>1</td><td>2026-08-01T10:20:00+00:00</td><td>TMrjWHAq1BPg9iG9ZaBTsG1AoxWERR29Mz</td><td>TLWMNpqoxFXwXUmVpdPHoYyjMEs2fEuxne</td><td class='num'>40.000000 USDT-SYN</td><td>tron:tx_fan_b:0</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-08-01T11:20:00+00:00</td><td>TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6</td><td>TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6</td><td class='num'>115792089237316195423570985008687907853269984665640564039457584007913129.639935 USDT-SYN</td><td>tron:tx_huge:0</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-08-01T10:30:00+00:00</td><td>THLEvxEkNUHb5bx3YsFDfePYjfYQEtAhJf</td><td>TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5</td><td class='num'>60.000000 USDT-SYN</td><td>tron:tx_recon_a:0</td><td>success / confirmed</td></tr><tr><td class='num'>2</td><td>2026-08-01T10:31:00+00:00</td><td>TLWMNpqoxFXwXUmVpdPHoYyjMEs2fEuxne</td><td>TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5</td><td class='num'>40.000000 USDT-SYN</td><td>tron:tx_recon_b:0</td><td>success / confirmed</td></tr><tr><td class='num'>3</td><td>2026-08-01T10:40:00+00:00</td><td>TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5</td><td>TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK</td><td class='num'>95.000000 USDT-SYN</td><td>tron:tx_to_candidate:0</td><td>success / confirmed</td></tr><tr><td class='num'>4</td><td>2026-08-01T10:50:00+00:00</td><td>TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK</td><td>TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz</td><td class='num'>95.000000 USDT-SYN</td><td>tron:tx_to_service:0</td><td>success / confirmed</td></tr></tbody></table>
+<p class="note">Hop 0 is the seed transfer that links the case to the path; it is
+shown from the run's own saved event, not re-derived. Later rows are onward
+transfers observed within the analysed scope.</p>
+
+<h2>Branch endings</h2>
+<table><thead><tr><th>Address</th><th>Endpoint</th><th>Entity</th><th>Observed amount</th><th>Case amount</th><th>Boundary</th><th>Hop</th></tr></thead><tbody><tr><td>TWrxsNpcC7h1rQ3g47AMJh3A1hui2smyc6</td><td><span class='tag unresolved'>unresolved</span></td><td><span class='note'>no label</span></td><td class='num'>115792089237316195423570985008687907853269984665640564039457584007913129.639935</td><td>allocation_unknown</td><td>no_outgoing_activity</td><td class='num'>2</td></tr><tr><td>TQBX8jVc7vjsjUs3RA8pxFpvrMDujDafu5</td><td><span class='tag unresolved'>unresolved</span></td><td><span class='note'>no label</span></td><td class='num'>40.000000</td><td>allocation_unknown</td><td>—</td><td class='num'>2</td></tr><tr><td>TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK</td><td><span class='tag deposit_candidate'>deposit_candidate</span></td><td>Northwind Exchange (FICTIONAL)<br><span class='note'>deposit_candidate · deposit · unreviewed</span></td><td class='num'>95.000000</td><td>allocation_unknown</td><td>—</td><td class='num'>3</td></tr><tr><td>TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz</td><td><span class='tag known_service'>known_service</span></td><td>Northwind Exchange (FICTIONAL)<br><span class='note'>service_control · deposit · accepted</span></td><td class='num'>95.000000</td><td>allocation_unknown</td><td>service_boundary</td><td class='num'>4</td></tr></tbody></table>
+<p class="note">A <strong>known_service</strong> ending is supported by a reviewed,
+in-date service-control assertion. A <strong>deposit_candidate</strong> is a lead:
+it is shown, and tracing continues past it. Neither identifies a person.</p>
+
+<h2>Label provenance</h2>
+<table><thead><tr><th>Entity</th><th>Address</th><th>Source</th><th>Retrieved</th><th>Methodology</th><th>Validity</th><th>Last verified</th><th>Accepted by</th><th>Source hash</th></tr></thead><tbody><tr><td>Northwind Exchange (FICTIONAL)</td><td>TC5LeXwG3r6shFz9KjnJpyaddvg2acWYNK</td><td>fixtures/tron_synthetic_case_alpha.json</td><td>2026-09-20T00:00:00+00:00</td><td>Forwarding behaviour in the synthetic fixture only. A candidate, not an ownership claim; it does not terminate a trace.</td><td>2026-01-01T00:00:00+00:00 → open</td><td>2026-09-20T00:00:00+00:00</td><td>—<br><span class='note'>not reviewed</span></td><td><span class='note'>—</span></td><td>—</td></tr><tr><td>Northwind Exchange (FICTIONAL)</td><td>TBvGC1Nd8i5wmj185HTdoTWAZPmRUTFBZz</td><td>fixtures/tron_synthetic_case_alpha.json</td><td>2026-09-20T00:00:00+00:00</td><td>Invented for the synthetic demonstration fixture. This is not evidence about any real service and must never be imported into a production label set.</td><td>2026-01-01T00:00:00+00:00 → open</td><td>2026-09-20T00:00:00+00:00</td><td>—<br><span class='note'>not reviewed</span></td><td><span class='note'>—</span></td><td>—</td></tr></tbody></table>
+<p class="note">Every claim above is reproduced from the label set as it stood at
+2026-09-21T11:40:51.899445+00:00, not read from today's files. The source hash identifies the
+document the claim came from; the accepting reviewer and the decision date identify the
+row in <code>review_log.csv</code>.</p>
+
+<h3>Label sets read</h3>
+<table><thead><tr><th>File</th><th>Claims loaded</th><th>Withdrawn by review</th><th>SHA-256</th></tr></thead><tbody><tr><td>anchors.csv</td><td class='num'>2</td><td class='num'>0</td><td><span class='note'>d93144366c2815496a8b29366c04685ff42c3c93fe15d44fe9fd29316f7bc52c</span></td></tr></tbody></table>
+<p class="note">Label source <strong>synthetic_fixture</strong>,
+1 accepted service claim(s) available to this
+run. A withdrawn row is one a reviewer rejected or quarantined; it was not loaded.</p>
+
+<h2>Limitations and unresolved items</h2>
+<p class="empty">No limitations were recorded for this run.</p>
+
+<div class="caveat">
+<strong>Read this before relying on the page above.</strong><br>
+An observed path establishes a sequence of transfers, not ownership of fungible units. Case-associated amounts default to allocation_unknown. This output does not identify a person, establish guilt, or authorise a freeze.<br><br>
+Observed transfer amounts are what the chain shows. A case-associated amount is a
+separate question and defaults to <code>allocation_unknown</code>: an address holding
+pre-existing funds mixes them, and a later outgoing transfer cannot be assumed to
+consist of the funds under investigation.<br><br>
+This document is investigative material for human review. It is not a legal
+instrument, it establishes no authority to restrict any account, and it has not
+been checked by anyone merely because it was generated.
+</div>
+</body></html>

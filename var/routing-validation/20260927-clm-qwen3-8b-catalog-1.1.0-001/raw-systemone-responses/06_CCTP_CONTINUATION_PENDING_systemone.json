@@ -1,0 +1,11 @@
+{
+  "scenario_id": "06_CCTP_CONTINUATION_PENDING",
+  "model": "clm-latest",
+  "choice": "FOLLOW_CROSS_CHAIN_LINK",
+  "probabilities": {
+    "FOLLOW_CROSS_CHAIN_LINK": 0.4863804233852288,
+    "REQUEST_HUMAN_REVIEW": 0.17684476818519707,
+    "GENERATE_EVIDENCE_REPORT": 0.3367748084295741
+  },
+  "input_hash": "0296f9cde97b80264da2bd6b9cbc16cb2f5d80bd0572cb8a5776ed116ea52ba6"
+}

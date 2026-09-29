@@ -1,0 +1,27 @@
+# Local development infrastructure only. Not a production deployment (phase 17).
+services:
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: cfa
+      POSTGRES_PASSWORD: cfa
+      POSTGRES_DB: cfa
+    ports: ["5433:5432"]
+    volumes: ["cfa_pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cfa -d cfa"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:8-alpine
+    ports: ["6380:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  cfa_pgdata:

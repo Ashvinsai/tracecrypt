@@ -1,0 +1,761 @@
+{
+  "purpose": "Stage 1 search for a genuine incoming USDT transfer to the accepted anchor whose block timestamp exactly equals the snapshot instant 1786377594000ms (2026-08-10T15:59:54Z, block 85235532).",
+  "anchor_address": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+  "token_contract_used": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+  "snapshot_timestamp_ms": 1786377594000,
+  "requests_used": 2,
+  "query_1": {
+    "description": "exact-instant query: min_timestamp == max_timestamp == snapshot",
+    "params": {
+      "only_to": "true",
+      "only_confirmed": "true",
+      "contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      "min_timestamp": 1786377594000,
+      "max_timestamp": 1786377594000,
+      "limit": 50
+    },
+    "endpoint": "https://api.trongrid.io/v1/accounts/TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv/transactions/trc20",
+    "http_result": "200, well-formed JSON, empty data array -- a genuine empty successful response, not a provider error",
+    "rows_returned": 0,
+    "raw_response": {
+      "data": [],
+      "success": true,
+      "meta": {
+        "at": 1789889404990,
+        "page_size": 0
+      }
+    }
+  },
+  "query_2": {
+    "description": "confirmatory widen: +/-5 minutes around the snapshot, to rule out a broken/empty search mechanism rather than a broken window",
+    "params": {
+      "only_to": "true",
+      "only_confirmed": "true",
+      "contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      "min_timestamp": 1786377294000,
+      "max_timestamp": 1786377894000,
+      "limit": 50
+    },
+    "endpoint": "https://api.trongrid.io/v1/accounts/TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv/transactions/trc20",
+    "http_result": "200, well-formed JSON",
+    "rows_returned": 50,
+    "distinct_block_timestamps_seen_ms": [
+      1786377891000
+    ],
+    "note": "All 50 returned rows share one single block_timestamp, 1786377891000ms (2026-08-10T16:04:51Z), 297 seconds after the snapshot -- real, dense incoming activity exists nearby, confirming the query mechanism works, but none of it lands in the snapshot's own block. The page is capped at limit=50 so more rows may exist at that later timestamp; none of that would qualify regardless, since none of it is at the required exact instant.",
+    "raw_response": {
+      "data": [
+        {
+          "transaction_id": "2acbe8c25b171d4d4bfe7cd4c6a08dd2a8a07ccde9f86ea207cc8ea0b3e4de34",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TDSFUfd3esKQHwjY64wCQTym7MHPdDnWHG",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1312717903"
+        },
+        {
+          "transaction_id": "497519ab120a367a23451dea4b46625f1236f6fa297c0788ad5eea84a1462a28",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TAegUeNtAznEF4KSTv86u3wVRCDxL444rm",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1136700000"
+        },
+        {
+          "transaction_id": "977eb8ee72b859600c61c671a2a5d313d5a468bbf1e72ba99ff6913f12fd17b0",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TCpeG6xYAcGzZDCrdKLPPdMUsqtRPtrVGj",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1200000000"
+        },
+        {
+          "transaction_id": "56f3bad12ffdac0b73e0a3a27ea998b883ec1eddc95e32142f4bdfd5c2d38408",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "THgHTpxBUm7wTkCVXTFFHZPMq8DUAd4zJw",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1199260000"
+        },
+        {
+          "transaction_id": "bac499ec709b84249f10bea1dd73dbbb5fc28f1d4166da474ca4c8fa3e385257",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TTdZ91r3TE11C7x5BsPFX2pR6bbKnnrWXc",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1195000000"
+        },
+        {
+          "transaction_id": "0d83d0848827e573d0b012d2231996e97a372c8cfadda5497a8fd4f456eeba4d",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TGfPKwiuFbwMGZt2C8CGaCor2JRf8Wrkza",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1151000000"
+        },
+        {
+          "transaction_id": "4f1d0cc58abc151ca0756944ead976bf7b79368d941905e192c6ea2f65cc3f19",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TLifmhtM4tAF267cps7CVMrnmb9tgAoE3J",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1314000000"
+        },
+        {
+          "transaction_id": "c729c018678f3df39b4c3c01a696eef001b9557e2291431e0dbc967bfb684fe0",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TQrVwuAZzEaDTFWaYbXNRvNchK27YAHVWc",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1096000000"
+        },
+        {
+          "transaction_id": "234ec2240d6978fd3688554c7ddca6ff8345a3b1ca90706624e357aaf3edb899",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TDwogkZ7EqxQq1GF8F62oTHdNu3jQUSjAD",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1128000000"
+        },
+        {
+          "transaction_id": "d2864c710ae00a3619298a75dbb0382dc7937ae73bb1ad1d0145d2f6e185f3fa",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "THJJRNK7HvHnwmn5bW8MZapre9muzsaMhr",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1115000000"
+        },
+        {
+          "transaction_id": "d4f25d8f63295730f051829823e9a275db1bb761e0b294e3cb27f6087fd8e5f6",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TRegukjdr2bdXMQ277LZiFxVJAePLuBBRg",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1103260000"
+        },
+        {
+          "transaction_id": "dce5eff1aa8c07039991d908a3d7886be65a2666bef79e4a21d1343b6dced301",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TV72nLbgcCrQBSWRzLm1shUs9XjSjsfuvf",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1122754000"
+        },
+        {
+          "transaction_id": "d4fc717222885715570e1d29e0486ad92084ca56fcab1578b96da0ed5029a0ca",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TWdyqhHedSrj8SaABso9bqvTEgxEwHY5oL",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1192250000"
+        },
+        {
+          "transaction_id": "a8eabe5e32b63d44a7e0326d856639accb42f445bfc2161118b568fc7bb2e545",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TALkVEV1kMrdfXMHNM7PJDTH9esSWRUWEy",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1092850000"
+        },
+        {
+          "transaction_id": "4a2a8c979df4ab7420834ba89f2fe378b360e6f7020d37ca48a556ab3da59d09",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TSeszdv9UaS3eUGW1TWmjSr17y7usFHVsL",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1049000000"
+        },
+        {
+          "transaction_id": "dcde87371a991b4fc5c6c184b98266ddd980ed569b7c870287011ef8eb8ccf01",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TXQQPytZsZ6She75Xt11d4TCsgCF5kYbJa",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1140000000"
+        },
+        {
+          "transaction_id": "52ec60979d7f8e8a384f36a16e5e3d7e8f7e5406ef1e688563c5c5d607de25e2",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TJwoBrVjk3p4tfCjjTN5Y3XUgzNQDCNDev",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1037000000"
+        },
+        {
+          "transaction_id": "705056a9c0362c6e9b1b3350120c641517f09d8a995ee8a061445a14772e90d8",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TPE7VP1wqa1sGkJvkQDTvmusu3f6rjwg4G",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1310000000"
+        },
+        {
+          "transaction_id": "71df8910fc00fff5196083127a10a4beabf6f1cc02315dfb75eb83bca6bdad25",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TD2en343XGpKj6wehPpZoDRHAVvE6F61RP",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1227710000"
+        },
+        {
+          "transaction_id": "3518eb681f4c307c61529d1b9fbb699f181c4441add8450700ea2ffbf7fe29d6",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TVnBtYcvHejmuet4pr6Hws69FknBnj1ZbD",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1058500791"
+        },
+        {
+          "transaction_id": "ac269c4703b4362af1a6573f5dd659e84ff65d14da8d8c1a6b232d2f45005293",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TEpauJUVJZCcmoRsk3aWyZjkYqtv137U37",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1142000000"
+        },
+        {
+          "transaction_id": "97b87e9254da3590c6dd5e110154226fdd414cf57b75e0dba93d0d5298f3e1f6",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TDsy99wFxkRW4VuofMdVdVCQRfAVYv3RF2",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1061280000"
+        },
+        {
+          "transaction_id": "47ad923716688fe12992472544b9f9417a71f3e5f78a2258292a860b3d297db7",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TYYjbPTBW6ynuVB7rDz2fwTHtU8XCnpJQZ",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1089355322"
+        },
+        {
+          "transaction_id": "a8ad9ace64551716f2a3e3720e70afb6a5ccd7535e59972fdcca9e36778efe97",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TX62qdi6Cn1JnFUEoD9VjqQEKrkGqJp8Xo",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1185000000"
+        },
+        {
+          "transaction_id": "197ef4859a679129565ecceb9856bfddb9d7c0bcd03e315fa3b04f54a8546f37",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TGiVhwxVqKtGNcbXxjJpYumymwuhd9aXPb",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1238500000"
+        },
+        {
+          "transaction_id": "128ef836329d8d735cf6ea4a9ea9e2e8e6ef9d529a612d90e41fd462bcacf3ba",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TGiPxLMECqnG1QAHSuM3yYFdwXBXqSYnBD",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1054540000"
+        },
+        {
+          "transaction_id": "550fb2805044a2edf0dc76a308f8abf76f9f8c57687dfbb2f1a7e170c1b1957e",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TKn2z4XR1mputKmqDQa1WEXCahiASCqKqA",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1096500000"
+        },
+        {
+          "transaction_id": "549731040ad68cdb3a56cec5ab7abaafa30181187ab0f5fb129d3447419a1516",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TP65u6vHghAUEfThYWbgnGCWqDBnfcqMnr",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1197000000"
+        },
+        {
+          "transaction_id": "b775f16eb4b6da2c326832fb9e5b1dcdde76f3d72ae9f01583c2135cf5c6c112",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TJTGU3T2pgWd5zAsF9WM2UjNGURJLH5K2K",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1235000000"
+        },
+        {
+          "transaction_id": "1f58f7d606e1bf565432709d3cfd705a65bd2761665af23f306a6b2ca0780283",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TK9LCWE37NyjNV5ujKc5catbRSjFvhy5Xj",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1050000000"
+        },
+        {
+          "transaction_id": "593e900f14050deb5e96cf1030fc84b87c2e60c333a2aa71e3ae72cef8bd9076",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TZFyFhUFtMK6SwCxydEChCt3aF5t9CVjkT",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1098000000"
+        },
+        {
+          "transaction_id": "91bd0bccd85de4670a3e2dcb033d343af68c95c98d36c21b768629111ec7f58f",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TUNRDjVxoDNfXuVHKjVZdfCvvdtKPBEAZm",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1155150000"
+        },
+        {
+          "transaction_id": "888ec7f4fcd43512ff4c40ffed0888fc116d48c8f6f910ee0ebf0cccf6c0f370",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TEV6Mvnk2XsQHjmNFqq6LFG6EtEgEkdeA9",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1275000000"
+        },
+        {
+          "transaction_id": "688af44a91d1bfed1d4d0c0d5ea784c422ed3ccb5c052f0f7a3e8d32c0164968",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TEjVRocaX3bfEcQvLHmZ8tMrUF7kvnm2CV",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1198000000"
+        },
+        {
+          "transaction_id": "77130f35f0e91b289924f315129cab1c54f3b5d3a12d70cd91e9be51bdec121e",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TVikHqke6KqX3hbWv5bnNTDU5vbknFJw77",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1057290653"
+        },
+        {
+          "transaction_id": "76382c8e506b646c413106182d3860da07d8c2a5a91a14e437cda0d915bb6c39",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TNHKhFxpgcxTBj2cFhSWV279ooM4ijixfK",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1043818604"
+        },
+        {
+          "transaction_id": "ca467750b8b5f4a6374ac06c2b295512108c83e4f8c616fefe27bdff024dfdf5",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TSucJc6k4LfDMmY2NiJkK4YLBbmZ2cV5EG",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1206000000"
+        },
+        {
+          "transaction_id": "e4f1a432d3cbb28222d7bb92806b66a2149028022d37de8c02f2d84843a73b1d",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TEBUscFGQipZDo5Cmvb1e3e5JuJ87WeddY",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1225000000"
+        },
+        {
+          "transaction_id": "8b0c9fa1723530e4e8816e2cce531d79b46ba02eed314eea9b41e52c57c7fb93",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TTMduCCcmyJ47qujHgLy7t6GhuX3Mwvxyu",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1253600000"
+        },
+        {
+          "transaction_id": "9b02c9032e9d99845ffeb349d53a230dc13cea0365cbcd39e912305241209969",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TNMBSPfaK4rpQ2hreqvt4WfC5BZPaLS5Bw",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1083960000"
+        },
+        {
+          "transaction_id": "0646fba30077e1ada69e4ec1982d01cf1c55f00a85e129232d020c2b46c4fb37",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TT7Hf4g8Rj9v27AKvQLJk8nCe7hh9oJgrW",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1180000000"
+        },
+        {
+          "transaction_id": "c4f89e0456dbb2b2fa98fff77c2dd484a14250f92ffbbfc1fd1edaa1ccb85817",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TYChDKvstKAXyWKZPHrH4B9jGcGCgnNL54",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1152000000"
+        },
+        {
+          "transaction_id": "b7709b0f19944feb3612f38cdda1be1a4339c9b8a1107894a7533954dae4d647",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TB8AAqddKwbUGcFZoqg1RXxiah1mhaGgzJ",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1040000000"
+        },
+        {
+          "transaction_id": "c14d4a78fe3b9295b93582a3502058b46fe579fd56524e12e57c2d820581bee2",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TCm6hcY4WEed1hUmX3cJvFU5ooryhMawd5",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1049850000"
+        },
+        {
+          "transaction_id": "64e9ceb7bf1b5f9fb2139d5aa651c2d6c9ed1dce3716fc116bade7f2d794091d",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TNMnJ2KCaPBefUVt2khxMzGQVAMhuh2HtX",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1300000000"
+        },
+        {
+          "transaction_id": "ea6c5d60abfbf05195adf67ac0e22541d82f3fce17997f9d35c896d36e1dd28b",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TNMqEQJFQaKrba3hMxBMjq4C9A8A4JhcGr",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1082335000"
+        },
+        {
+          "transaction_id": "6c412fe65b1908cacece7e2d62eb64407bf553bdf4efdccc751594d8a95379f1",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TWvW6SzaXbeLHnjSxyKbF3W1JLiQWZe7hx",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1187000000"
+        },
+        {
+          "transaction_id": "58959ac2f61d3e9bf9ebf01deedcc11c75c7a782d619b38dfbf313ffdd33ee7c",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TBhCKFtA21U1MjqDCLN5FGPoJSBQpTrnLh",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1235780000"
+        },
+        {
+          "transaction_id": "7156c2b925958e1dc1c6a7a23dcf12e28b4e2a81a2131d9de70d6cddddb7e537",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TEQ9Wh3w6EMjNb68m7GrxVcbEw5pkRgJ4T",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1029000000"
+        },
+        {
+          "transaction_id": "f5a0cacb16e0408ad18a886b60aab9cac4cf6300fbb92f52da165b7d831cb7d2",
+          "token_info": {
+            "symbol": "USDT",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "decimals": 6,
+            "name": "Tether USD"
+          },
+          "block_timestamp": 1786377891000,
+          "from": "TLyzRBwnmdsn9MjVqm8EePy25nuEPCzGKH",
+          "to": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+          "type": "Transfer",
+          "value": "1076000000"
+        }
+      ],
+      "success": true,
+      "meta": {
+        "at": 1789889405807,
+        "fingerprint": "4xdFfkWW7jKdJxsfqt47bBS9PxwesRLRC9aam4qkF2HJPFyYyi7VcGLiM3XD2tpeShpPpfXAPEGFsTRLQLS3kSjFAWKt9knyFPpGTrragrQDZXfCVqeXPmbvms88PNfwSaFqqoN1LMQCVqqPDZRm5TGSnncuGPnidZAm8ya6UJjQtxH2izXUBLeVTt7g35v6QPqMsPBzmLcka4hasUsde5cAb9UUvPprhvQhdKkp5Jax25hZVyFWXPNm7JAnoN7rbwsor6TRrx4zyr9G",
+        "links": {
+          "next": "https://api.trongrid.io/v1/accounts/TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv/transactions/trc20?contract_address=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t&limit=50&max_timestamp=1786377894000&min_timestamp=1786377294000&only_confirmed=true&only_to=true&fingerprint=4xdFfkWW7jKdJxsfqt47bBS9PxwesRLRC9aam4qkF2HJPFyYyi7VcGLiM3XD2tpeShpPpfXAPEGFsTRLQLS3kSjFAWKt9knyFPpGTrragrQDZXfCVqeXPmbvms88PNfwSaFqqoN1LMQCVqqPDZRm5TGSnncuGPnidZAm8ya6UJjQtxH2izXUBLeVTt7g35v6QPqMsPBzmLcka4hasUsde5cAb9UUvPprhvQhdKkp5Jax25hZVyFWXPNm7JAnoN7rbwsor6TRrx4zyr9G"
+        },
+        "page_size": 50
+      }
+    }
+  },
+  "conclusion": "No qualifying example found within the searched scope. Query 1 is definitive on its own: it asked TronGrid for incoming USDT transfers to the accepted anchor with min_timestamp == max_timestamp == the snapshot instant, and zero exist. Query 2 is confirmatory only."
+}
