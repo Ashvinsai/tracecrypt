@@ -12,6 +12,10 @@ Real-time identification of fraud-linked cryptocurrency exchanges from victim-re
 ![Tests](https://img.shields.io/badge/automated%20tests-790%20passing-2E7D32)
 ![Status](https://img.shields.io/badge/status-investigative%20prototype-orange)
 
+[![Watch the TraceCrypt prototype video on YouTube](https://img.youtube.com/vi/2K8n6qzgyus/hqdefault.jpg)](https://youtu.be/2K8n6qzgyus)
+
+**[Watch the prototype video on YouTube](https://youtu.be/2K8n6qzgyus)**
+
 Smart India Hackathon 2026 · Problem Statement **SIH26183** · Team **HACKTILLDAWN** (ID 170857)
 
 <img src="docs/ui-redesign/screenshots/overview-light.png" alt="TraceCrypt overview workspace" width="900">
@@ -126,15 +130,25 @@ Use only one SQLite queue worker and one watch scheduler per local database.
 
 ## How fast is it
 
-Measured on the SYNTHETIC demo case (18 events, 11 addresses, TRON), one local laptop, worker running, 20 complaints submitted through the intake API one after another:
+**LIVE, real data.** A real 72.14 USDT transfer on TRON (2026-08-10) from wallet `TNtTcst…ptq` to an OKX proof-of-reserves address, traced through the full application against TronGrid with an API key. Six runs:
 
 | Step | Median | Range |
 |---|---|---|
-| Trace itself (job `duration_ms`) | 12 ms | 4 to 18 ms |
-| Intake API accepts the complaint | 17 ms | up to 32 ms |
-| Submit to finished result | about 3 s | 2.4 to 3.0 s |
+| Trace itself (job `duration_ms`) | 1.3 s | 1.15 to 1.47 s |
+| Complaint submitted to finished result | 2.4 s | 2.1 to 3.0 s |
 
-Most of the 3 seconds is the queue worker's polling interval, not tracing. These figures come from an offline fixture. LIVE traces call TronGrid and EVM RPC providers, so they will take longer, and no LIVE latency has been measured yet.
+The result names OKX as the receiving exchange, 1 hop from the reported wallet, with coverage complete within scope. This is one real case with one hop, and the OKX address role is recorded as unknown, so it is not a claim about deposit addresses.
+
+**Real 2-hop, Ethereum.** A wallet sent 800.6 USDT to a one-use deposit address (one transfer in, one out, same amount), which forwarded it to an OKX proof-of-reserves address in the same snapshot window (2026-08-10, blocks 25725640 to 25725648). Six runs:
+
+| Step | Median | Range |
+|---|---|---|
+| Trace itself | 36.6 s | 36.2 to 39.4 s |
+| Complaint submitted to finished result | 37.7 s | 37.2 to 40.4 s |
+
+OKX is named 2 hops from the reported wallet, coverage complete within scope. A second Ethereum chain (3401.49 USDT) took 19.1 s (1 run). On TRON, a 2-hop path through a high-volume wallet took a median of 36.3 s (6 runs); it fans out to many wallets, so it shows path observation only. The exchange label is a snapshot-time claim, valid only at the proof-of-reserves snapshot instant, so arrivals can be verified only at that moment. These are validation cases, not victim reports, the OKX address role is unknown, and nothing is claimed about paths longer than 2 hops.
+
+**Offline synthetic demo case** (18 events, 11 addresses): trace median 12 ms (4 to 18 ms, 20 runs), about 3 s from submission to result, most of it the queue worker's pickup delay.
 
 ## Architecture
 
